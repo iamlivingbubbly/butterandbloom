@@ -1206,7 +1206,7 @@ const html = `<!DOCTYPE html>
 
   // hero rotating taglines
   const heroSlides = [
-    'Simple, useful,<br>and thoughtful.',
+    'Artisanal skincare made by hand,<br>vegan and traceable, Ontario-made.',
     'Made slowly.<br>Made thoughtfully.',
     'Cured for six weeks,<br>made by hand.',
     'Vegan, traceable,<br>small-batch care.',

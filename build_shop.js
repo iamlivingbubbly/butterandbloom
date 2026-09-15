@@ -357,6 +357,7 @@ function home() {
       <p class="hero-sub">Handmade vegan skincare, proudly made in Ontario, Canada. From a passion project to a dream come true, we make simple, useful, and thoughtful products with care that you can feel.</p>
       <div class="hero-cta">
         <a class="btn btn-pine" href="#shop" data-nav="shop">Shop the collection</a>
+        <a class="btn btn-ghost" href="#scent-guide" data-nav="scent-guide">How to read a scent</a>
       </div>
     </div>
   </section>
@@ -506,11 +507,6 @@ function configurator() {
 }
 
 function collectionsPage() {
-  const blendRule = [
-    ['Top', '20–30%', 'Bright, immediate — the first impression, fastest to fade.'],
-    ['Middle', '40–50%', 'The main body and heart of the scent — it lingers longest.'],
-    ['Base', '20–30%', 'Depth and longevity — the warm finish that stays on the skin.'],
-  ];
   return `
   <section class="block" id="collections">
     <div class="block-head">
@@ -520,16 +516,9 @@ function collectionsPage() {
 
     <div class="blend-rule">
       <div class="blend-rule-head">
-        <div class="blend-rule-title">How we blend a scent</div>
-        <p>Every Butter &amp; Bloom fragrance follows the same honest architecture, built in three acts, so the scent unfolds instead of shouting. Unscented options leave the stage empty on purpose.</p>
-      </div>
-      <div class="blend-rule-body">
-        ${blendRule.map(b => `
-        <div class="blend-note">
-          <div class="bn-name">${b[0]} notes</div>
-          <div class="bn-pct">${b[1]}</div>
-          <p>${b[2]}</p>
-        </div>`).join('')}
+        <div class="blend-rule-title">New to fragrance?</div>
+        <p>Every Butter &amp; Bloom scent is built in three acts — top, middle, and base. We show every pyramid, scent by scent, in our quick guide.</p>
+        <a class="btn btn-ghost" href="#scent-guide" data-nav="scent-guide">How to read a scent</a>
       </div>
     </div>
 
@@ -559,6 +548,73 @@ function collectionsPage() {
         <div class="cp-swatches">${c.tones.map(t => `<span class="swatch" style="background:${t}"></span>`).join('')}</div>
       </div>
     </div>`).join('')}
+  </section>`;
+}
+
+function scentGuide() {
+  const acts = [
+    ['Top notes', '20–30%', 'Bright, immediate — the first impression, fastest to fade. Citrus and mint say hello first, then bow out.'],
+    ['Middle notes', '40–50%', 'The main body and heart of the scent — it lingers longest. This is the fragrance you actually remember.'],
+    ['Base notes', '20–30%', 'Depth and longevity — the warm finish that stays on the skin after the top has gone.'],
+  ];
+  const scentCards = configData.collections.map(c => `
+  <div class="coll-panel" style="margin-top:2.4rem">
+    <h3 class="g-h3">${esc(c.name)} <span class="g-h3-sub">${esc(c.frag)}</span></h3>
+    ${c.scents.map(s => s.notes ? `
+    <div class="scent-pyramid">
+      <div class="sp-name">${esc(s.name)} <span>${esc(s.hint)}</span></div>
+      <div class="blend-rule-body">${s.notes.map(n => `
+        <div class="blend-note">
+          <div class="bn-name">${n[0]} notes</div>
+          <div class="bn-pct">${n[1]}</div>
+          <p>${n[2]}</p>
+        </div>`).join('')}</div>
+    </div>` : `
+    <div class="scent-pyramid">
+      <div class="sp-name">Unscented <span>No fragrance, no fuss</span></div>
+      <p class="about-p">No pyramid at all — the stage is left empty on purpose. Some of our most loyal customers reach for it when the formula should do the talking.</p>
+    </div>`).join('')}
+  </div>`).join('');
+
+  return `
+  <section class="block" id="scent-guide-top">
+    <div class="block-head">
+      <p class="eyebrow">Know your scent</p>
+      <h2>How to read a scent</h2>
+      <p class="about-p" style="max-width:660px">Every Butter &amp; Bloom fragrance is built in three acts. Once you can spot them, you’ll know how a bar will feel the second it hits your nose — and whether that’s the story you want in your bath today.</p>
+    </div>
+
+    <div class="blend-rule">
+      <div class="blend-rule-head">
+        <div class="blend-rule-title">The three acts</div>
+      </div>
+      <div class="blend-rule-body">
+        ${acts.map(a => `
+        <div class="blend-note">
+          <div class="bn-name">${a[0]}</div>
+          <div class="bn-pct">${a[1]}</div>
+          <p>${a[2]}</p>
+        </div>`).join('')}
+      </div>
+    </div>
+
+    <h3 class="g-h3" style="margin-top:2.4rem">Every scent we make, laid bare</h3>
+    <p class="about-p">The top row is the first breath. The middle is the heart. The base is the memory that stays behind.</p>
+    ${scentCards}
+
+    <h3 class="g-h3" style="margin-top:2.6rem">Natural, but honest</h3>
+    <div class="two-col">
+      <div class="ing-card"><div class="ing-name">Essential Oils</div><div class="ing-role">Scent</div><p>Naturally-derived aromatherapy. Citrus oils are photo-sensitive, so we batch them into evening products.</p></div>
+      <div class="ing-card"><div class="ing-name">Fragrance Oils</div><div class="ing-role">Scent</div><p>Cosmetic-grade, IFRA-compliant. Used where a scent can’t be made from plants alone — always skin-safe.</p></div>
+    </div>
+    <p class="about-p">Every scent source is named honestly on the label and in our fragrance profiles — “essential oil”, “fragrance oil”, or a blend of both. Want the full breakdown for your actual jar? Email us the batch code.</p>
+
+    <div class="block-head" style="margin-top:2.6rem">
+      <p class="eyebrow">Ready when you are</p>
+      <h2>Build your own</h2>
+    </div>
+    <p class="about-p">Not sure which scent is “you”? The customizer lets you compare collections and read every pyramid before you commit.</p>
+    <a class="btn btn-pine" href="#collections" data-nav="collections">Build your collection</a>
   </section>`;
 }
 
@@ -749,6 +805,7 @@ function privacy() {
 const nav = [
   ['home', '#home', 'Home'],
   ['shop', '#shop', 'Shop'],
+  ['scent-guide', '#scent-guide', 'Scent Guide'],
   ['about', '#about', 'About'],
   ['guide', '#guide', 'Care Guide'],
   ['contact', '#contact', 'Contact'],
@@ -811,7 +868,7 @@ const html = `<!DOCTYPE html>
   .hero-inner { max-width:1080px; margin:0 auto; padding:0 2rem; width:100%; }
   .hero h1 { font-size:clamp(2.6rem,7vw,4.6rem); line-height:1.08; color:var(--pine-deep); margin:1rem 0 1.4rem; }
   .hero-sub { max-width:540px; color:var(--ink-soft); font-size:1.02rem; margin-bottom:1.8rem; }
-  .hero-line { transition:opacity .28s ease, transform .28s ease; min-height:1.2em; }
+  .hero-line { transition:opacity .38s ease, transform .38s ease; min-height:2.35em; display:flex; flex-direction:column; justify-content:center; }
   .hero-line.switching { opacity:0; transform:translateY(8px); }
   .hero-cta { display:flex; gap:.8rem; flex-wrap:wrap; }
   .hero-sig { margin-top:2rem; font-size:.82rem; color:var(--sage); letter-spacing:.02em; }
@@ -998,6 +1055,11 @@ const html = `<!DOCTYPE html>
   .ing-name { font-family:Georgia,serif; color:var(--pine-deep); font-size:1.02rem; }
   .ing-role { font-size:.72rem; text-transform:uppercase; letter-spacing:.09em; color:var(--clay); margin:.15rem 0 .55rem; }
   .ing-card p { font-size:.82rem; color:var(--ink-soft); }
+  .g-h3-sub { display:block; font-size:.9rem; color:var(--ink-soft); font-family:'Segoe UI',system-ui,sans-serif; font-weight:400; margin-top:.1rem; }
+  .scent-pyramid { margin:1.1rem 0 1.7rem; }
+  .sp-name { font-weight:600; color:var(--pine-deep); margin-bottom:.55rem; }
+  .sp-name span { font-weight:400; color:var(--ink-soft); font-size:.84rem; margin-left:.35rem; }
+  .two-col { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; margin:0 0 1.1rem; }
   .tbl { overflow-x:auto; background:var(--panel); border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow); margin-bottom:2rem; }
   table { width:100%; border-collapse:collapse; font-size:.88rem; }
   th,td { text-align:left; padding:.7rem .95rem; border-bottom:1px solid var(--line); vertical-align:top; }
@@ -1068,6 +1130,7 @@ const html = `<!DOCTYPE html>
   <div class="page visible" id="home">${home()}</div>
   <div class="page" id="shop">${shop()}</div>
   <div class="page" id="collections">${collectionsPage()}</div>
+  <div class="page" id="scent-guide">${scentGuide()}</div>
   <div class="page" id="about">${about()}</div>
   <div class="page" id="guide">${guide()}</div>
   <div class="page" id="contact">${contact()}</div>
@@ -1084,7 +1147,7 @@ const html = `<!DOCTYPE html>
       <a href="#shop" data-nav="shop">Shop</a><a href="#collections" data-nav="collections">Collections</a><a href="#about" data-nav="about">About</a>
     </div>
     <div class="foot-col"><div class="fc-title">Learn</div>
-      <a href="#guide" data-nav="guide">Care Guide</a><a href="#guide" data-nav="guide">Ingredients</a><a href="#guide" data-nav="guide">Shelf Life</a>
+      <a href="#guide" data-nav="guide">Care Guide</a><a href="#scent-guide" data-nav="scent-guide">How to read a scent</a><a href="#guide" data-nav="guide">Shelf Life</a>
     </div>
     <div class="foot-col"><div class="fc-title">Legal</div>
       <a href="#privacy" data-nav="privacy">Privacy Policy</a>
@@ -1157,8 +1220,8 @@ const html = `<!DOCTYPE html>
       setTimeout(() => {
         heroLine.innerHTML = heroSlides[h];
         heroLine.classList.remove('switching');
-      }, 280);
-    }, 4400);
+      }, 380);
+    }, 6400);
   }
 
   // design-your-own configurator

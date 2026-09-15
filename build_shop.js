@@ -354,7 +354,7 @@ function home() {
   <section class="hero">
     <div class="hero-inner">
       <h1 class="hero-line" aria-live="polite">Made slowly.<br>Made thoughtfully.</h1>
-      <p class="hero-sub">Handmade vegan skincare, proudly made in Ontario, Canada. From a passion project to a dream come true, we make simple, useful, and thoughtful products with care that you can feel.</p>
+      <p class="hero-sub">Skincare proudly handmade in Ontario, Canada. From a passion project to a dream come true, we make simple, useful, and thoughtful products with care that you can feel.</p>
       <div class="hero-cta">
         <a class="btn btn-pine" href="#shop" data-nav="shop">Shop the collection</a>
         <a class="btn btn-ghost" href="#scent-guide" data-nav="scent-guide">How to read a scent</a>
@@ -1206,6 +1206,7 @@ const html = `<!DOCTYPE html>
 
   // hero rotating taglines
   const heroSlides = [
+    'Simple, useful,<br>and thoughtful.',
     'Made slowly.<br>Made thoughtfully.',
     'Cured for six weeks,<br>made by hand.',
     'Vegan, traceable,<br>small-batch care.',

@@ -1,0 +1,12 @@
+# Business / financial documents - keep out of the repo
+[0-9]_*.txt
+[0-9][0-9]_*.txt
+*.csv
+*.xlsx
+
+# Local / OS
+node_modules/
+npm-debug.log*
+.DS_Store
+Thumbs.db
+*.log

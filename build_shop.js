@@ -15,15 +15,15 @@ const collections = [
     frag: 'Lavender · Chamomile · Oat & Honey',
     palette: ['Purple', 'Beige', 'Soft Brown'],
     blend: [
-      ['Top', '20–30%', 'Chamomile — a soft, herbal lift'],
-      ['Middle', '40–50%', 'Lavender — the calming heart'],
-      ['Base', '20–30%', 'Oat & honey — warm, milky depth'],
+      ['Top', '20–30%', 'Chamomile, a soft, herbal lift'],
+      ['Middle', '40–50%', 'Lavender, the calming heart'],
+      ['Base', '20–30%', 'Oat & honey, warm, milky depth'],
     ],
     feel: 'whipped, creamy, hug-adjacent',
     for: 'sensitive skin, wind-chapped cheeks, anyone who needs the world to feel softer',
     story: [
-      'Soft Glow is the collection we’d press into the hands of anyone whose skin is tired. It’s oat-in-the-milk calm — gentle, warm, and quietly luxurious, built on natural ingredients and skin-first care that feels like a deep breath.',
-      'Think lavender on a slow Sunday, whipped shea butter melting into warm skin, a honey-oat bar that cleanses without ever stripping. Nothing here shouts for attention — just buttery textures, gentle botanicals, and soft scents that soothe rather than announce.',
+      'Soft Glow is the collection we’d press into the hands of anyone whose skin is tired. It’s oat-in-the-milk calm, gentle, warm, and quietly luxurious, built on natural ingredients and skin-first care that feels like a deep breath.',
+      'Think lavender on a slow Sunday, whipped shea butter melting into warm skin, a honey-oat bar that cleanses without ever stripping. Nothing here shouts for attention, just buttery textures, gentle botanicals, and soft scents that soothe rather than announce.',
       'It’s for slow mornings with the coffee going cold, evenings that end before screen-time, and the quiet ritual of simply showing up for your skin.',
     ],
   },
@@ -35,15 +35,15 @@ const collections = [
     frag: 'Citrus · Berry · Floral',
     palette: ['Pinks', 'Yellow/Orange', 'Red'],
     blend: [
-      ['Top', '20–30%', 'Citrus — a bright, fizzy opener'],
-      ['Middle', '40–50%', 'Berry — the juicy, candy heart'],
-      ['Base', '20–30%', 'Soft vanilla & floral warmth — sweet staying power'],
+      ['Top', '20–30%', 'Citrus, a bright, fizzy opener'],
+      ['Middle', '40–50%', 'Berry, the juicy, candy heart'],
+      ['Base', '20–30%', 'Soft vanilla & floral warmth, for sweet staying power'],
     ],
     feel: 'fizzy, candy-coloured, irresistible',
     for: 'celebrations, gifting, Tuesday-night rescues',
     story: [
-      'Sweet Playful is a wink in the routine — the collection that turns the everyday into a tiny celebration. Bright citrus, candy-adjacent scents, cheerful colour, and fizz that actually fizzes.',
-      'Drop a hand-pressed bath bomb into warm water after a long Tuesday and watch the tub turn to sherbet. Scoop out a brown-sugar scrub like the treat it is. Blow into a peppermint lip balm and grin. This line is cute on purpose — without apology.',
+      'Sweet Playful is a wink in the routine, the collection that turns the everyday into a tiny celebration. Bright citrus, candy-adjacent scents, cheerful colour, and fizz that actually fizzes.',
+      'Drop a hand-pressed bath bomb into warm water after a long Tuesday and watch the tub turn to sherbet. Scoop out a brown-sugar scrub like the treat it is. Blow into a peppermint lip balm and grin. This line is cute on purpose, without apology.',
       'It’s the bath-time joy for kids, and for grown-ups who kept their wonder: whimsical, bubbly, and shamelessly fun.',
     ],
   },
@@ -55,16 +55,16 @@ const collections = [
     frag: 'Eucalyptus · Mint · Unscented',
     palette: ['Green', 'Black', 'Dark Brown'],
     blend: [
-      ['Top', '20–30%', 'Mint — cool and instant'],
-      ['Middle', '40–50%', 'Eucalyptus — the clearing heart'],
-      ['Base', '20–30%', 'Quiet woody finish — depth that lingers'],
+      ['Top', '20–30%', 'Mint, cool and instant'],
+      ['Middle', '40–50%', 'Eucalyptus, the clearing heart'],
+      ['Base', '20–30%', 'Quiet woody finish, depth that lingers'],
     ],
     feel: 'cool, airy, precisely tuned',
     for: 'congestion days, winding down, minimalists and reset-seekers',
     story: [
-      'Reset Minimal is the deep breath at the end of a long day. Clean, restrained, and modern, it strips everything away until only the essentials remain — honest ingredients, precise scents, a calmer head.',
-      'Eucalyptus steams and cool mint cut through the fog; shower steamers turn an ordinary shower into a breathing room, no bath required and no fuss involved. The palette is quiet and the formulas are shorter than your to-do list.',
-      'It’s for people who want skincare that stays out of the way — no noise, no clutter, no twelve-step regimen. Just a clean ritual and a moment to reset.',
+      'Reset Minimal is the deep breath at the end of a long day. Clean, restrained, and modern, it strips everything away until only the essentials remain: honest ingredients, precise scents, a calmer head.',
+      'Eucalyptus steams and cool mint cut through the fog; shower steamers turn an ordinary shower into a breathing room. No bath required, no fuss involved. The palette is quiet and the formulas are shorter than your to-do list.',
+      'It’s for people who want skincare that stays out of the way, no noise, no clutter, no twelve-step regimen. Just a clean ritual and a moment to reset.',
     ],
   },
 ];
@@ -88,32 +88,32 @@ const configData = {
       id: 'soft-glow', name: 'Soft Glow', tag: 'Gentle · soft · natural',
       frag: 'Lavender · Chamomile · Oat & Honey', dot: '#C9A39B', t1: '#F1EAE0', t2: '#A9B894',
       scents: [
-        { name: 'Lavender', hint: 'The calming classic', notes: [['Top', '20–30%', 'Chamomile — soft herbal lift'], ['Middle', '40–50%', 'Lavender — the calming heart'], ['Base', '20–30%', 'Oat & honey — warm, milky depth']] },
-        { name: 'Chamomile', hint: 'Gentle, tea-like calm', notes: [['Top', '20–30%', 'Chamomile blossom — floral lift'], ['Middle', '40–50%', 'Lavender & oat — the soothing body'], ['Base', '20–30%', 'Honey — sweet, warm depth']] },
-        { name: 'Oat & Honey', hint: 'Milky, skin-first comfort', notes: [['Top', '20–30%', 'Oat milk — soft, creamy opening'], ['Middle', '40–50%', 'Honey & chamomile — the heart'], ['Base', '20–30%', 'Milk-sweet warmth']] },
+        { name: 'Lavender', hint: 'The calming classic', notes: [['Top', '20–30%', 'Chamomile, soft herbal lift'], ['Middle', '40–50%', 'Lavender, the calming heart'], ['Base', '20–30%', 'Oat & honey, warm, milky depth']] },
+        { name: 'Chamomile', hint: 'Gentle, tea-like calm', notes: [['Top', '20–30%', 'Chamomile blossom, floral lift'], ['Middle', '40–50%', 'Lavender & oat, the soothing body'], ['Base', '20–30%', 'Honey, sweet, warm depth']] },
+        { name: 'Oat & Honey', hint: 'Milky, skin-first comfort', notes: [['Top', '20–30%', 'Oat milk, soft, creamy opening'], ['Middle', '40–50%', 'Honey & chamomile, the heart'], ['Base', '20–30%', 'Milk-sweet warmth']] },
       ],
     },
     {
       id: 'sweet-playful', name: 'Sweet Playful', tag: 'Cute · cheerful · whimsical',
       frag: 'Citrus · Berry · Floral', dot: '#D9A441', t1: '#F7EED2', t2: '#F2C9C3',
       scents: [
-        { name: 'Citrus', hint: 'Bright, fizzy burst', notes: [['Top', '20–30%', 'Sweet orange & lemon — fizzy opener'], ['Middle', '40–50%', 'Juicy berry — the candy heart'], ['Base', '20–30%', 'Sherbet-soft vanilla']] },
-        { name: 'Berry', hint: 'Juicy, candy-forward', notes: [['Top', '20–30%', 'Raspberry sparkle'], ['Middle', '40–50%', 'Strawberry & blueberry — the heart'], ['Base', '20–30%', 'Cotton-candy sweet depth']] },
-        { name: 'Floral', hint: 'Playful, never stuffy', notes: [['Top', '20–30%', 'Light blossom — the hello'], ['Middle', '40–50%', 'Rose & peony — the playful body'], ['Base', '20–30%', 'Soft musk-sugar finish']] },
+        { name: 'Citrus', hint: 'Bright, fizzy burst', notes: [['Top', '20–30%', 'Sweet orange & lemon, fizzy opener'], ['Middle', '40–50%', 'Juicy berry, the candy heart'], ['Base', '20–30%', 'Sherbet-soft vanilla']] },
+        { name: 'Berry', hint: 'Juicy, candy-forward', notes: [['Top', '20–30%', 'Raspberry sparkle'], ['Middle', '40–50%', 'Strawberry & blueberry, the heart'], ['Base', '20–30%', 'Cotton-candy sweet depth']] },
+        { name: 'Floral', hint: 'Playful, never stuffy', notes: [['Top', '20–30%', 'Light blossom, the hello'], ['Middle', '40–50%', 'Rose & peony, the playful body'], ['Base', '20–30%', 'Soft musk-sugar finish']] },
       ],
     },
     {
       id: 'reset-minimal', name: 'Reset Minimal', tag: 'Clean · restrained · modern',
       frag: 'Eucalyptus · Mint · Unscented', dot: '#7C916F', t1: '#EDEDE8', t2: '#9AA7A0',
       scents: [
-        { name: 'Eucalyptus', hint: 'Clears the fog', notes: [['Top', '20–30%', 'Mint — cool and instant'], ['Middle', '40–50%', 'Eucalyptus — the clearing heart'], ['Base', '20–30%', 'Quiet cedar — depth that lingers']] },
-        { name: 'Mint', hint: 'Cool, precise, clean', notes: [['Top', '20–30%', 'Peppermint — crisp opener'], ['Middle', '40–50%', 'Eucalyptus & green breath'], ['Base', '20–30%', 'Clean woody calm']] },
+        { name: 'Eucalyptus', hint: 'Clears the fog', notes: [['Top', '20–30%', 'Mint, cool and instant'], ['Middle', '40–50%', 'Eucalyptus, the clearing heart'], ['Base', '20–30%', 'Quiet cedar, depth that lingers']] },
+        { name: 'Mint', hint: 'Cool, precise, clean', notes: [['Top', '20–30%', 'Peppermint, crisp opener'], ['Middle', '40–50%', 'Eucalyptus & green breath'], ['Base', '20–30%', 'Clean woody calm']] },
         { name: 'Unscented', hint: 'No fragrance, no fuss', unscented: true, notes: null },
       ],
     },
   ],
   products: ['Soap', 'Bath Bomb', 'Shower Steamer', 'Sugar Scrub', 'Lip Balm', 'Body Butter'],
-  productHints: ['Bar of cold-process soap', 'Fizz, colour & soak', 'Steam — no bath required', 'Gentle exfoliation', 'Silky vegan moisture', 'Whipped deep care'],
+  productHints: ['Bar of cold-process soap', 'Fizz, colour & soak', 'Steam, no bath required', 'Gentle exfoliation', 'Silky vegan moisture', 'Whipped deep care'],
   shapes: ['bar', 'bomb', 'steamer', 'jar', 'tube', 'jar'],
   sizes: [
     ['Travel', '1 oz'], ['Standard', '4 oz'], ['Luxury', '8 oz'],
@@ -123,37 +123,37 @@ const configData = {
 const products = [
   { cat: 'butters', name: 'Whipped Body Butter', format: '450 g', price: 7.00, icon: 'jar', out: false,
     scents: 'Lavender Dream · Vanilla Bean · Citrus Sunrise', coll: 'Soft Glow',
-    note: 'Whipped shea & coconut. Softens above 25°C — that’s normal, give it a stir.',
+    note: 'Whipped shea & coconut. Softens above 25°C. That’s normal, just give it a stir.',
     desc: [
       'Whipped body butter is the closest thing we make to a hug. Shea butter and coconut oil are whipped until light as mousse, softened with sweet almond oil, and set with a whisper of arrowroot so it melts into skin instead of leaving you slick.',
-      'Spread it on just-showered, warm skin and watch it disappear — soft, never greasy, with a gentle scent that stays close to the skin. Real moisturizing, not a surface-level lotion.',
-      'Because it’s made with real butter, it softens above 25°C. That’s normal — give it a stir and it’s right back to whipped. Available in Lavender Dream, Vanilla Bean, and Citrus Sunrise.',
+      'Spread it on just-showered, warm skin and watch it disappear, soft, never greasy, with a gentle scent that stays close to the skin. Real moisturizing, not a surface-level lotion.',
+      'Because it’s made with real butter, it softens above 25°C. That’s normal. Give it a stir and it’s right back to whipped. Available in Lavender Dream, Vanilla Bean, and Citrus Sunrise.',
     ],
     ingredients: ['Shea butter', 'Coconut oil', 'Sweet almond oil', 'Arrowroot powder', 'Fragrance / essential oils'],
     use: 'Massage in after a shower while skin is still warm.',
     life: '12 months (refrigerate in hot weather).',
     faq: [
-      ['Why does it soften above 25°C?', 'Real shea butter and coconut oil are naturally temperature-sensitive — that’s a sign there’s nothing fake in the jar. Give it a stir, or pop it in the fridge for ten minutes.'],
+      ['Why does it soften above 25°C?', 'Real shea butter and coconut oil are naturally temperature-sensitive, that’s a sign there’s nothing fake in the jar. Give it a stir, or pop it in the fridge for ten minutes.'],
       ['Is it greasy?', 'Not the way you expect. We set it with a touch of arrowroot powder, which helps the butter melt in rather than sit on top of the skin.'],
-      ['Is it gluten-free?', 'Yes — shea, coconut oil, sweet almond oil, arrowroot, and fragrance. Nothing in the formula contains gluten.'],
+      ['Is it gluten-free?', 'Yes, shea, coconut oil, sweet almond oil, arrowroot, and fragrance. Nothing in the formula contains gluten.'],
       ['How much should I use?', 'A little goes a long way. Start with a fingertip-sized scoop, massage into warm just-showered skin, and build from there.'],
     ] },
   { cat: 'balms', name: 'Lip Balm', format: '10 g', price: 2.00, icon: 'tube', out: false,
     scents: 'Peppermint · Honey · Vanilla Bean', coll: 'Sweet Playful',
-    note: 'Fully vegan — candelilla wax, cocoa or mango butter.',
+    note: 'Fully vegan, candelilla wax, cocoa or mango butter.',
     desc: [
-      'A fully vegan lip balm that actually feels like a balm — not a crayon, and not grease.',
+      'A fully vegan lip balm that actually feels like a balm, not a crayon, and not grease.',
       'We use candelilla wax, the plant kingdom’s answer to beeswax, whipped with cocoa or mango butter and sweet almond oil. It glides on softly, sinks in, and stays comfortable for hours.',
       'Choose Peppermint for a cool tingle, Honey for soft sweetness, or Vanilla Bean for comfort in a tube. Keep one by the door, one in the car, and one in the pocket that always goes missing.',
     ],
     ingredients: ['Sweet almond oil', 'Candelilla wax', 'Cocoa or mango butter', 'Flavour / essential oil'],
-    use: 'Apply as often as you like — our vegan formula is gentle enough for daily protection.',
+    use: 'Apply as often as you like, our vegan formula is gentle enough for daily protection.',
     life: '12 months.',
     faq: [
-      ['Is it really vegan?', 'Yes. Instead of beeswax or lanolin, we use candelilla wax — a plant wax — with cocoa or mango butter in every tube.'],
+      ['Is it really vegan?', 'Yes. Instead of beeswax or lanolin, we use candelilla wax, a plant wax, with cocoa or mango butter in every tube.'],
       ['Does it contain tree nuts?', 'It contains sweet almond oil, a tree-nut derived oil. It’s always clearly labelled, so nut-sensitive households can decide with full information.'],
       ['Will it melt in my pocket?', 'Candelilla wax has a higher melt point than beeswax, so it holds its shape in warm pockets far better than most natural balms.'],
-      ['How much should I use?', 'One light pass is plenty — it’s rich enough to last between applications without constant reapplying.'],
+      ['How much should I use?', 'One light pass is plenty, it’s rich enough to last between applications without constant reapplying.'],
     ] },
   { cat: 'scrubs', name: 'Sugar Scrub', format: '450 g', price: 5.00, icon: 'jar', out: false,
     scents: 'Vanilla Bean · Brown Sugar Glow · Coffee', coll: 'Sweet Playful',
@@ -161,31 +161,31 @@ const products = [
     desc: [
       'A sugar scrub is exfoliation with a silver lining: as the sugar polishes away the dull, the oil underneath is already moisturizing the fresh skin it reveals.',
       'Ours is a generous 450 gram jar of sugar suspended in light grapeseed oil (sweet almond when we’re feeling extra luxurious), kept fresh with vitamin E, and scented with warm vanilla, brown sugar, or rich coffee.',
-      'The texture is gritty enough to really scrub, but never harsh — it rinses clean and leaves skin soft and lightly glowing.',
+      'The texture is gritty enough to really scrub, but never harsh, it rinses clean and leaves skin soft and lightly glowing.',
     ],
     ingredients: ['Sugar', 'Grapeseed or sweet almond oil', 'Vitamin E', 'Fragrance / essential oils'],
     use: 'Scoop a small amount with dry hands, massage onto damp skin, and rinse. Keep water out of the jar.',
     life: '12 months.',
     faq: [
-      ['Is it too rough for my skin?', 'Gritty enough to do the job — never harsh. If your skin feels tight afterwards, ease up on pressure and amount; your skin will tell you what it likes.'],
-      ['Can I use it on my face?', 'We formulate it for the body. Facial skin is thinner, and a body scrub’s oil base can be too rich — stick to the neck down.'],
-      ['How do I stop it from spoiling?', 'Keep water out of the jar above all else — scoop with completely dry hands. Sealed and dry, it keeps for about a year.'],
+      ['Is it too rough for my skin?', 'Gritty enough to do the job, never harsh. If your skin feels tight afterwards, ease up on pressure and amount; your skin will tell you what it likes.'],
+      ['Can I use it on my face?', 'We formulate it for the body. Facial skin is thinner, and a body scrub’s oil base can be too rich, stick to the neck down.'],
+      ['How do I stop it from spoiling?', 'Keep water out of the jar above all else, scoop with completely dry hands. Sealed and dry, it keeps for about a year.'],
       ['Which scent should I try first?', 'Vanilla Bean is our most-loved. Coffee is the morning pick, and Brown Sugar Glow is the gentle sweet spot between the two.'],
     ] },
   { cat: 'soaps', name: 'Soap', format: '70 g', price: 5.00, icon: 'bar', out: false,
     scents: 'Lavender Oat · Tea Tree Charcoal · Honey Oat · Rose Clay · Eucalyptus Mint', coll: 'Soft Glow',
     note: 'Slow-cured at least six weeks for a hard, gentle bar.',
     desc: [
-      'Soap is where Butter & Bloom started, and it’s still our heart. Each 70 gram bar is a slow, traditional cold-process recipe — generous olive oil for a gentle cleanse, coconut for a rich, cloud-like lather, skin-softening shea butter, and a touch of castor oil for that creamy, pillowy finish. No shortcuts, no melt-and-pour.',
+      'Soap is where Butter & Bloom started, and it’s still our heart. Each 70 gram bar is a slow, traditional cold-process recipe: generous olive oil for a gentle cleanse, coconut for a rich, cloud-like lather, skin-softening shea butter, and a touch of castor oil for that creamy, pillowy finish. No shortcuts, no melt-and-pour.',
       'Every batch is weighed by hand, mixed at carefully controlled temperatures, and left to cure for at least six weeks. That long, patient cure makes a bar that is hard enough to last, gentle enough for sensitive skin, and rich in the skin-loving glycerin that modern factory soaps boil right off.',
-      'And it’s traceable: every ingredient is named on the label, and every bar carries a batch code and a date — so you can always ask what went into yours, and when.',
+      'And it’s traceable: every ingredient is named on the label, and every bar carries a batch code and a date, so you can always ask what went into yours and when.',
     ],
     ingredients: ['Olive oil', 'Coconut oil', 'RSPO-certified sustainable palm oil', 'Shea butter', 'Castor oil', 'Water', 'Sodium hydroxide* (fully consumed during saponification)', 'Essential oils & botanicals'],
     use: 'Lather on damp skin and rinse. Keep the bar dry between uses.',
     life: '1–2 years, kept dry.',
     faq: [
-      ['Is your soap vegan?', 'Yes — every bar is made from plant oils and plant butters. The only process ingredient, sodium hydroxide, is fully consumed during saponification and is never present in the finished bar.'],
-      ['Is it really cold-process?', 'Yes. Each batch is mixed at a controlled temperature and left to cure at least six weeks — that slow cure gives the bar a long-lasting body and plenty of naturally occurring glycerin, which glycerin-boiling factory soaps lose.'],
+      ['Is your soap vegan?', 'Yes, every bar is made from plant oils and plant butters. The only process ingredient, sodium hydroxide, is fully consumed during saponification and is never present in the finished bar.'],
+      ['Is it really cold-process?', 'Yes. Each batch is mixed at a controlled temperature and left to cure at least six weeks, that slow cure gives the bar a long-lasting body and plenty of naturally occurring glycerin, which glycerin-boiling factory soaps lose.'],
       ['My skin is sensitive. Is this for me?', 'Our formula leans gently on olive oil and shea butter, both of which sensitive skin tends to love. As with any new skincare, do a small patch test first.'],
       ['How should I store it?', 'Between washes, keep the bar somewhere it can drain and dry. A dry bar genuinely lasts months longer.'],
       ['How long does one bar last?', 'With basic care, a single 70 g bar typically lasts four to six weeks of daily body use.'],
@@ -194,7 +194,7 @@ const products = [
     scents: 'Eucalyptus Mint · Lavender · Citrus Burst', coll: 'Reset Minimal',
     note: 'Aromatherapy for breathing rooms, not baths.',
     desc: [
-      'A shower steamer is aromatherapy without the bath — set one on the floor, let the warm water spark it, and breathe.',
+      'A shower steamer is aromatherapy without the bath. Set one on the floor, let the warm water spark it, and breathe.',
       'Each 340 gram pack comes with three tablets pressed from baking soda, citric acid, and a binding kiss of kaolin clay, scented generously with pure essential oils.',
       'This is our congestion-season hero: eucalyptus and mint steam that opens up sinuses and turns a rushed shower into a genuine reset. Equally lovely on grey winter mornings, when a hot shower is the best idea of the day.',
     ],
@@ -202,27 +202,27 @@ const products = [
     use: 'Set on the shower floor, away from the direct water stream. Breathe slowly.',
     life: '6 months, kept dry and sealed.',
     faq: [
-      ['Do I need a bathtub?', 'No — that’s the whole point. A shower steamer is aromatherapy for people without a tub: place it on the floor and let the warm water do the rest.'],
-      ['How long does one tablet last?', 'Each tablet fizzes on and off for the length of a normal shower — one tablet per shower is usually plenty.'],
+      ['Do I need a bathtub?', 'No, that’s the whole point. A shower steamer is aromatherapy for people without a tub: place it on the floor and let the warm water do the rest.'],
+      ['How long does one tablet last?', 'Each tablet fizzes on and off for the length of a normal shower, one tablet per shower is usually plenty.'],
       ['Is it safe for kids?', 'Yes, with adult supervision, with the tablet placed out of a child’s reach. Essential-oil products should never be eaten, so keep them up and away from little hands.'],
       ['What are they good for?', 'Congestion, stuffy winter sinuses, or simply turning a rushed morning shower into a mindful two minutes. Eucalyptus Mint is the classic pick.'],
     ] },
   { cat: 'bombs', name: 'Bath Bomb', format: '70 g', price: 5.00, icon: 'bomb', out: true,
     scents: 'Rose Garden · Lavender Dream · Citrus Sunrise', coll: 'Sweet Playful',
-    note: 'Hand-pressed in small batches. Use caution getting out — the tub gets slippery.',
+    note: 'Hand-pressed in small batches. Use caution getting out. The tub gets slippery.',
     desc: [
-      'Our bath bombs are made the old-fashioned way: pressed by hand into every sphere, not blown from a machine. A good bomb is chemistry and patience — baking soda meeting citric acid in warm water for a long, bubbly, sherbet fizz.',
+      'Our bath bombs are made the old-fashioned way: pressed by hand into every sphere, not blown from a machine. A good bomb is chemistry and patience, baking soda meeting citric acid in warm water for a long, bubbly, sherbet fizz.',
       'We use skin-kind sweet almond oil and a touch of polysorbate 80 to disperse the buttery oils through your bath water. Each 70 gram bomb is single-use, saturated in scent, and honestly a little like dropping candy into your tub.',
-      'Rose Garden is the romantic soak, Lavender Dream the wind-down, and Citrus Sunrise the cheerful morning start — restocked in small batches as fast as we can press them.',
+      'Rose Garden is the romantic soak, Lavender Dream the wind-down, and Citrus Sunrise the cheerful morning start, restocked in small batches as fast as we can press them.',
     ],
     ingredients: ['Baking soda', 'Citric acid', 'Cornstarch', 'Sweet almond oil', 'Polysorbate 80', 'Fragrance / essential oils', 'Witch hazel'],
-    use: 'Drop one into warm bath water. Use caution getting out — the tub gets slippery as it fizzies.',
+    use: 'Drop one into warm bath water. Use caution getting out. The tub gets slippery as it fizzies.',
     life: '6 months, sealed away from moisture.',
     faq: [
-      ['Is it vegan?', 'Yes — all of our bath bombs are made without any animal products, and the oils we use are plant-based.'],
+      ['Is it vegan?', 'Yes, all of our bath bombs are made without any animal products, and the oils we use are plant-based.'],
       ['Why does the tub get slippery?', 'The skin-kind sweet almond oil dispersing through the water is the culprit. Take your time getting out, and when in doubt, rinse the tub.'],
       ['How long do they keep?', 'About six months when kept sealed away from moisture. A humid bathroom is a fizz’s worst enemy.'],
-      ['Do they stain the tub or skin?', 'We use cosmetic-grade, skin-safe colorants in soft, translucent amounts — they rinse away clean and leave nothing behind.'],
+      ['Do they stain the tub or skin?', 'We use cosmetic-grade, skin-safe colorants in soft, translucent amounts that rinse away clean and leave nothing behind.'],
     ] },
 ];
 
@@ -233,28 +233,28 @@ const categories = [
 ];
 
 const ingredients = [
-  ['Olive & Coconut Oils', 'Carrier oils', 'The base of every bar — gentle cleansing and a creamy lather.'],
+  ['Olive & Coconut Oils', 'Carrier oils', 'The base of every bar, gentle cleansing and a creamy lather.'],
   ['Shea Butter', 'Butter', 'Deep conditioning softness. The heart of the body butter and the skin-loving edge of the soap.'],
-  ['Candelilla Wax', 'Wax', 'A plant wax from the candelilla shrub — our vegan answer to beeswax in lip balm.'],
+  ['Candelilla Wax', 'Wax', 'A plant wax from the candelilla shrub, our vegan answer to beeswax in lip balm.'],
   ['Cocoa & Mango Butters', 'Butter', 'Rich, protective. Mango keeps the balm fully plant-based.'],
-  ['Sweet Almond & Jojoba Oils', 'Carrier oils', 'Light, fast-absorbing. Almond is a tree nut — labelled clearly on everything it touches.'],
-  ['Grapeseed Oil', 'Carrier oil', 'Non-greasy, feather-light — the scrub base with vitamin E to keep it fresh.'],
+  ['Sweet Almond & Jojoba Oils', 'Carrier oils', 'Light, fast-absorbing. Almond is a tree nut, labelled clearly on everything it touches.'],
+  ['Grapeseed Oil', 'Carrier oil', 'Non-greasy, feather-light, the scrub base with vitamin E to keep it fresh.'],
   ['Essential Oils', 'Scent', 'Naturally-derived aromatherapy. Citrus oils are photo-sensitive, so we batch them into evening products.'],
-  ['Fragrance Oils', 'Scent', 'Cosmetic-grade, IFRA-compliant. Used where a scent can’t be made from plants alone — always skin-safe.'],
-  ['Baking Soda & Citric Acid', 'Fizz', 'The chemistry of a good bath bomb — two pantry staples meeting in warm water.'],
+  ['Fragrance Oils', 'Scent', 'Cosmetic-grade, IFRA-compliant. Used where a scent can’t be made from plants alone, always skin-safe.'],
+  ['Baking Soda & Citric Acid', 'Fizz', 'The chemistry of a good bath bomb, two pantry staples meeting in warm water.'],
   ['Kaolin Clay & Arrowroot', 'Texture', 'Kaolin binds steamers; arrowroot sets body butter so it stays whipped.'],
   ['Vitamin E', 'Keep-fresh', 'A natural antioxidant that protects our nut and seed oils from going rancid.'],
-  ['Sodium Hydroxide', 'Saponification', 'Present only in the soapmaking process — it becomes soap. Nothing of it remains in the finished bar.'],
+  ['Sodium Hydroxide', 'Saponification', 'Present only in the soapmaking process, it becomes soap. Nothing of it remains in the finished bar.'],
 ];
 
 const usage = [
   ['Cold-Process Soap', 'Lather on damp skin and rinse. Keep the bar dry between uses to maintain its gentle texture.'],
   ['Hot-Process Soap', 'Ready for immediate use. Use as a gentle cleanser and rinse thoroughly to remove all residue.'],
-  ['Bath Bomb', 'Drop one into warm bath water. Use caution getting out — the tub gets slippery as it fizzies.'],
+  ['Bath Bomb', 'Drop one into warm bath water. Use caution getting out, the tub gets slippery as it fizzies.'],
   ['Shower Steamer', 'Set on the shower floor, away from the direct water stream. Breathe slowly to enjoy the steam.'],
   ['Sugar Scrub', 'Massage a small scoop onto damp skin and rinse. Scoop with dry hands and keep water out of the jar.'],
   ['Lip Balm', 'Apply as often as you like. Our vegan formulas are gentle and perfect for daily protection.'],
-  ['Whipped Body Butter', 'Massage in after a shower while skin is still warm. It softens above 25°C — that’s normal, give it a stir.'],
+  ['Whipped Body Butter', 'Massage in after a shower while skin is still warm. It softens above 25°C, that’s normal, give it a stir.'],
 ];
 
 const shelfLife = [
@@ -405,7 +405,7 @@ function home() {
   <section class="block quote">
     <div class="leaf-big">${leaf}</div>
     <blockquote>Simple. Thoughtful. Slowly made.</blockquote>
-    <p class="quote-src">— the Butter &amp; Bloom kitchen</p>
+    <p class="quote-src">from the Butter &amp; Bloom kitchen</p>
   </section>`;
 }
 
@@ -456,7 +456,7 @@ function configurator() {
   const scentBtns = configData.collections.map(c => c.scents.map(s => `
     <button type="button" class="cfg-opt cfg-scent" data-group="scent" data-coll="${c.name}" data-value="${s.name}">
       <b>${s.name}</b><span>${s.hint}</span>
-      ${s.notes ? `<span class="cfg-pyr">${s.notes.map(n => `<span class="pyr-tier"><i>${n[0]}</i><b>${n[1]}</b>${n[2]}</span>`).join('')}</span>` : '<span class="cfg-pyr unscented">No fragrance — the stage is empty on purpose.</span>'}
+      ${s.notes ? `<span class="cfg-pyr">${s.notes.map(n => `<span class="pyr-tier"><i>${n[0]}</i><b>${n[1]}</b>${n[2]}</span>`).join('')}</span>` : '<span class="cfg-pyr unscented">No fragrance, the stage is empty on purpose.</span>'}
     </button>`).join('')).join('');
   const sizeBtns = configData.sizes.map(s => `<button type="button" class="cfg-opt cfg-size" data-group="size" data-value="${s[0]} (${s[1]})"><b>${s[0]}</b><span>${s[1]}</span></button>`).join('');
 
@@ -465,7 +465,7 @@ function configurator() {
     <div class="block-head">
       <p class="eyebrow">Custom order</p>
       <h2>Design your own</h2>
-      <p class="sub">Four steps to your own bar — collection, product, scent, finish. The preview beside you updates as you go.</p>
+      <p class="sub">Four steps to your own bar, collection, product, scent, finish. The preview beside you updates as you go.</p>
     </div>
 
     <div class="cfg-layout">
@@ -473,12 +473,12 @@ function configurator() {
         ${step('01', 'Collection &amp; fragrance', 'Three moods, three scent homes', collBtns)}
         ${step('02', 'Product', 'Whatever your ritual needs', prodBtns)}
 
-        ${step('03', 'Scent', 'Collection-specific — tap one to read its pyramid', scentBtns)}
+        ${step('03', 'Scent', 'Collection-specific, tap one to read its pyramid', scentBtns)}
         <div class="cfg-legend">
           <b>Note guide</b>
-          <span><i class="lg-top"></i>Top <b>20–30%</b> — bright, immediate, fastest fading</span>
-          <span><i class="lg-mid"></i>Middle <b>40–50%</b> — main body &amp; heart, lingers longest</span>
-          <span><i class="lg-base"></i>Base <b>20–30%</b> — depth &amp; longevity, stays on the skin</span>
+          <span><i class="lg-top"></i>Top <b>20–30%</b> · bright, immediate, fastest fading</span>
+          <span><i class="lg-mid"></i>Middle <b>40–50%</b> · main body &amp; heart, lingers longest</span>
+          <span><i class="lg-base"></i>Base <b>20–30%</b> · depth &amp; longevity, stays on the skin</span>
         </div>
 
         ${step('04', 'Finish', 'Name it, pick a size',
@@ -502,7 +502,7 @@ function configurator() {
       <div class="cfg-summary"><span>Your order</span><b id="cfgSummary">Soft Glow · Soap · Lavender · My Butter &amp; Bloom · Standard (4 oz)</b></div>
       <button type="button" class="btn btn-pine" id="cfgRequest">Request this order</button>
     </div>
-    <p class="cfg-note">Configurations are handmade to order — lead time and price confirmed by email. Travel 1 oz · Standard 4 oz · Luxury 8 oz.</p>
+    <p class="cfg-note">Configurations are handmade to order, lead time and price confirmed by email. Travel 1 oz · Standard 4 oz · Luxury 8 oz.</p>
   </section>`;
 }
 
@@ -517,7 +517,7 @@ function collectionsPage() {
     <div class="blend-rule">
       <div class="blend-rule-head">
         <div class="blend-rule-title">New to fragrance?</div>
-        <p>Every Butter &amp; Bloom scent is built in three acts — top, middle, and base. We show every pyramid, scent by scent, in our quick guide.</p>
+        <p>Every Butter &amp; Bloom scent is built in three acts, top, middle, and base. We show every pyramid, scent by scent, in our quick guide.</p>
         <a class="btn btn-ghost" href="#scent-guide" data-nav="scent-guide">How to read a scent</a>
       </div>
     </div>
@@ -533,8 +533,8 @@ function collectionsPage() {
         <p class="cp-blurb">${c.blurb}</p>
         ${c.story.map(p => `<p class="about-p">${p}</p>`).join('')}
         <div class="cp-keywords">${c.keywords.map(k => `<span class="kw">${k}</span>`).join('')}</div>
-        <div class="cp-feel"><b>Signature feel</b> — ${esc(c.feel)}</div>
-        <div class="cp-scents"><b>Fragrance profile</b> — ${esc(c.frag)}</div>
+        <div class="cp-feel"><b>Signature feel</b> · ${esc(c.feel)}</div>
+        <div class="cp-scents"><b>Fragrance profile</b> · ${esc(c.frag)}</div>
         <div class="cp-blend">
           ${c.blend.map(n => `
           <div class="cp-blend-row">
@@ -543,7 +543,7 @@ function collectionsPage() {
             <span class="cbr-in">${n[2]}</span>
           </div>`).join('')}
         </div>
-        <div class="cp-for"><b>Made for</b> — ${esc(c.for)}</div>
+        <div class="cp-for"><b>Made for</b> · ${esc(c.for)}</div>
         <div class="cp-palette">${c.palette.map(p => `<span class="pal-chip"><i style="background:${paletteHex[p] || '#ccc'}"></i>${p}</span>`).join('')}</div>
         <div class="cp-swatches">${c.tones.map(t => `<span class="swatch" style="background:${t}"></span>`).join('')}</div>
       </div>
@@ -553,9 +553,9 @@ function collectionsPage() {
 
 function scentGuide() {
   const acts = [
-    ['Top notes', '20–30%', 'Bright, immediate — the first impression, fastest to fade. Citrus and mint say hello first, then bow out.'],
-    ['Middle notes', '40–50%', 'The main body and heart of the scent — it lingers longest. This is the fragrance you actually remember.'],
-    ['Base notes', '20–30%', 'Depth and longevity — the warm finish that stays on the skin after the top has gone.'],
+    ['Top notes', '20–30%', 'Bright, immediate, the first impression, fastest to fade. Citrus and mint say hello first, then bow out.'],
+    ['Middle notes', '40–50%', 'The main body and heart of the scent, it lingers longest. This is the fragrance you actually remember.'],
+    ['Base notes', '20–30%', 'Depth and longevity, the warm finish that stays on the skin after the top has gone.'],
   ];
   const scentCards = configData.collections.map(c => `
   <div class="coll-panel" style="margin-top:2.4rem">
@@ -572,7 +572,7 @@ function scentGuide() {
     </div>` : `
     <div class="scent-pyramid">
       <div class="sp-name">Unscented <span>No fragrance, no fuss</span></div>
-      <p class="about-p">No pyramid at all — the stage is left empty on purpose. Some of our most loyal customers reach for it when the formula should do the talking.</p>
+      <p class="about-p">No pyramid at all, the stage is left empty on purpose. Some of our most loyal customers reach for it when the formula should do the talking.</p>
     </div>`).join('')}
   </div>`).join('');
 
@@ -581,7 +581,7 @@ function scentGuide() {
     <div class="block-head">
       <p class="eyebrow">Know your scent</p>
       <h2>How to read a scent</h2>
-      <p class="about-p" style="max-width:660px">Every Butter &amp; Bloom fragrance is built in three acts. Once you can spot them, you’ll know how a bar will feel the second it hits your nose — and whether that’s the story you want in your bath today.</p>
+      <p class="about-p" style="max-width:660px">Every Butter &amp; Bloom fragrance is built in three acts. Once you can spot them, you’ll know how a bar will feel the second it hits your nose, and whether that’s the story you want in your bath today.</p>
     </div>
 
     <div class="blend-rule">
@@ -605,9 +605,9 @@ function scentGuide() {
     <h3 class="g-h3" style="margin-top:2.6rem">Natural, but honest</h3>
     <div class="two-col">
       <div class="ing-card"><div class="ing-name">Essential Oils</div><div class="ing-role">Scent</div><p>Naturally-derived aromatherapy. Citrus oils are photo-sensitive, so we batch them into evening products.</p></div>
-      <div class="ing-card"><div class="ing-name">Fragrance Oils</div><div class="ing-role">Scent</div><p>Cosmetic-grade, IFRA-compliant. Used where a scent can’t be made from plants alone — always skin-safe.</p></div>
+      <div class="ing-card"><div class="ing-name">Fragrance Oils</div><div class="ing-role">Scent</div><p>Cosmetic-grade, IFRA-compliant. Used where a scent can’t be made from plants alone, always skin-safe.</p></div>
     </div>
-    <p class="about-p">Every scent source is named honestly on the label and in our fragrance profiles — “essential oil”, “fragrance oil”, or a blend of both. Want the full breakdown for your actual jar? Email us the batch code.</p>
+    <p class="about-p">Every scent source is named honestly on the label and in our fragrance profiles, “essential oil”, “fragrance oil”, or a blend of both. Want the full breakdown for your actual jar? Email us the batch code.</p>
 
     <div class="block-head" style="margin-top:2.6rem">
       <p class="eyebrow">Ready when you are</p>
@@ -620,7 +620,7 @@ function scentGuide() {
 
 function about() {
   const principles = [
-    ['Small batches', 'We batch in counts we can watch over — never a production line we can’t look in the eye.'],
+    ['Small batches', 'We batch in counts we can watch over, never a production line we can’t look in the eye.'],
     ['Ingredients we can name', 'Every ingredient is plant-based or trustworthy enough to print in full on the label.'],
     ['Safety before speed', 'Lye is measured twice. pH is checked. Every batch gets a QC pass before it’s sold.'],
     ['Minimal, honest packaging', 'Kraft, glass, and compostable labels where we can manage it.'],
@@ -632,15 +632,15 @@ function about() {
         <p class="eyebrow">About</p>
         <h2>Our story</h2>
         <h3 class="about-h3">Proudly made in Ontario, Canada</h3>
-        <p class="about-p">Butter &amp; Bloom is proudly based in the gorgeous lands of Ontario, Canada. Every bar, bomb, scrub, and butter we make is handcrafted in small batches from our home studio — surrounded by maples in spring, lake light in summer, and the quiet of a winter that insists a hot shower is the best idea of the day. Ontario’s seasons are part of the recipe: they remind us to make things slowly, and to make them well.</p>
+        <p class="about-p">Butter &amp; Bloom is proudly based in the gorgeous lands of Ontario, Canada. Every bar, bomb, scrub, and butter we make is handcrafted in small batches from our home studio, surrounded by maples in spring, lake light in summer, and the quiet of a winter that insists a hot shower is the best idea of the day. Ontario’s seasons are part of the recipe: they remind us to make things slowly, and to make them well.</p>
         <h3 class="about-h3">From passion project to dream come true</h3>
-        <p class="about-p">Butter &amp; Bloom blossomed from a passion project. It began with a curious maker, a bag of olive oil, a kitchen scale, and one very stubborn pot of lye slurry — the way most great handmade-soap stories do. We learned soapmaking the slow way: six-week cures, plenty of failed batches, and finally the first golden bar that actually lathered. That little bar was a revelation, and we’ve been chasing that feeling ever since.</p>
+        <p class="about-p">Butter &amp; Bloom blossomed from a passion project. It began with a curious maker, a bag of olive oil, a kitchen scale, and one very stubborn pot of lye slurry, the way most great handmade-soap stories do. We learned soapmaking the slow way: six-week cures, plenty of failed batches, and finally the first golden bar that actually lathered. That little bar was a revelation, and we’ve been chasing that feeling ever since.</p>
         <h3 class="about-h3">Care that you can feel</h3>
         <p class="about-p">Today we pour every ounce of our hearts into creating stunning, high-performance skincare treasures. Nothing is stamped out by a machine. Oils are weighed by hand, shea butter is whipped until it’s light enough to float, candelilla wax is melted slowly so our vegan lip balms set perfectly silky, and essential oils are measured drop by drop. When you hold a Butter &amp; Bloom product, you’re holding a small piece of a very good day.</p>
         <h3 class="about-h3">Clean, simple, fiercely dedicated</h3>
-        <p class="about-p">As we grow, we remain fiercely dedicated to what started it all: clean, simple formulas and traceable vegan ingredients that celebrate our handmade quality. Our recipes are deliberately short — every ingredient has one job and earns its place. And traceable is only a promise if you can check it: every batch carries a code and a date, so you can write to us and we’ll tell you exactly what went into your jar on the day it was made.</p>
+        <p class="about-p">As we grow, we remain fiercely dedicated to what started it all: clean, simple formulas and traceable vegan ingredients that celebrate our handmade quality. Our recipes are deliberately short, every ingredient has one job and earns its place. And traceable is only a promise if you can check it: every batch carries a code and a date, so you can write to us and we’ll tell you exactly what went into your jar on the day it was made.</p>
         <h3 class="about-h3">Handmade, with the fingerprints to prove it</h3>
-        <p class="about-p">Because everything is made by hand, in small batches, no two runs are perfectly identical — a softer curve here, a different marble of rose clay there. We call that the quiet signature of handmade, and we wouldn’t smooth it out if we could. That’s the Butter &amp; Bloom promise: slow-made, traceable, vegan skincare, made with love and labelled with the truth.</p>
+        <p class="about-p">Because everything is made by hand, in small batches, no two runs are perfectly identical. A softer curve here, a different marble of rose clay there. We call that the quiet signature of handmade, and we wouldn’t smooth it out if we could. That’s the Butter &amp; Bloom promise: slow-made, traceable, vegan skincare, made with love and labelled with the truth.</p>
       </div>
       <div class="about-tile" style="background:linear-gradient(150deg,#efe7dc,#e3d5c4)">${productSVG('jar', '#7C916F')}</div>
     </div>
@@ -659,7 +659,7 @@ function about() {
       <div>
         <p class="eyebrow">What we stand for</p>
         <h2>Good ingredients, honest labels,<br>and time on our side.</h2>
-        <p class="about-p">We’d rather sell a little, slowly, to people who come back — than make a lot, fast, for people who don’t.</p>
+        <p class="about-p">We’d rather sell a little, slowly, to people who come back, than make a lot, fast, for people who don’t.</p>
       </div>
     </div>
   </section>`;
@@ -700,7 +700,7 @@ function guide() {
 
     <div class="guide-note">
       <div class="leaf-big">${leaf}</div>
-      <p>Spotting a concern? Every label lists the full ingredient list in descending order, and every batch is dated — write to us with the code, and we’ll tell you exactly what went into it and when.</p>
+      <p>Spotting a concern? Every label lists the full ingredient list in descending order, and every batch is dated, write to us with the code, and we’ll tell you exactly what went into it and when.</p>
     </div>
   </section>`;
 }
@@ -719,7 +719,7 @@ function contact() {
       <h2>Contact</h2>
     </div>
     <div class="contact-grid">
-      <form class="contact-form" onsubmit="event.preventDefault();var f=this;document.getElementById('sent').hidden=false;document.getElementById('sent').innerHTML='Sending…';fetch('https://formsubmit.co/butterandbloom.ca.shop@gmail.com',{method:'POST',body:new FormData(f),mode:'no-cors'}).then(function(){document.getElementById('sent').innerHTML='Thanks — your message is on its way. We reply within a day or two.';f.reset()}).catch(function(){document.getElementById('sent').innerHTML='Sorry — sending hit a hiccup. Please email us directly instead.'})">
+      <form class="contact-form" onsubmit="event.preventDefault();var f=this;document.getElementById('sent').hidden=false;document.getElementById('sent').innerHTML='Sending…';fetch('https://formsubmit.co/butterandbloom.ca.shop@gmail.com',{method:'POST',body:new FormData(f),mode:'no-cors'}).then(function(){document.getElementById('sent').innerHTML='Thanks, your message is on its way. We reply within a day or two.';f.reset()}).catch(function(){document.getElementById('sent').innerHTML='Sorry, sending hit a hiccup. Please email us directly instead.'})">
         <label>Name<input name="name" required placeholder="Your name"></label>
         <label>Email<input name="email" type="email" required placeholder="you@example.com"></label>
         <label>Message<textarea name="message" rows="5" required placeholder="Ask about a custom order, a batch code, or just say hi…"></textarea></label>
@@ -735,7 +735,7 @@ function contact() {
           </div>
         </div>
         <div class="ca-block"><div class="ca-label">Custom orders</div>
-          <p>Markets, weddings, and small corporate gifting — tell us the occasion and we’ll work something out in the right collection.</p>
+          <p>Markets, weddings, and small corporate gifting. Tell us the occasion and we’ll work something out in the right collection.</p>
         </div>
       </div>
     </div>
@@ -754,10 +754,10 @@ function privacy() {
 
     <h3 class="g-h3">1. What we collect and why</h3>
     <p class="about-p"><strong>Contact and custom-order form.</strong> The contact form collects your name, your email address, and your message. Messages may include custom-order details you share with us (collection, product, size, scent, occasion). We use this information only to reply to you and to prepare custom orders. Form messages are delivered to our support inbox (butterandbloom.ca.shop@gmail.com) by email; we keep the conversation only for as long as needed to serve you.</p>
-    <p class="about-p"><strong>Orders and checkout.</strong> We take orders through our Wix store. To fulfil an order we receive your name, email, shipping address, and the products you ordered. Payments are processed by Wix and its payment providers — we never see or store your card number. Order details are kept on file to make your products, arrange shipment, and meet our record-keeping and product-safety obligations.</p>
+    <p class="about-p"><strong>Orders and checkout.</strong> We take orders through our Wix store. To fulfil an order we receive your name, email, shipping address, and the products you ordered. Payments are processed by Wix and its payment providers, we never see or store your card number. Order details are kept on file to make your products, arrange shipment, and meet our record-keeping and product-safety obligations.</p>
     <p class="about-p"><strong>Shipping.</strong> To deliver your order we share your name and shipping address with the courier (such as Canada Post) you select at checkout.</p>
     <p class="about-p"><strong>Mailing list.</strong> If we ever offer a newsletter or mailing list, we will only add you with your express consent, in line with Canada's Anti-Spam Legislation (CASL). You can unsubscribe with one click, in every email, at any time.</p>
-    <p class="about-p"><strong>Analytics.</strong> We use website analytics (such as Google Analytics and Meta pixels) to understand how people use our site and what they enjoy. These tools collect technical information such as your device type, browser, IP address, and pages visited. This helps us improve the site and — where enabled — measure advertising. You can see our cookie options in section 2.</p>
+    <p class="about-p"><strong>Analytics.</strong> We use website analytics (such as Google Analytics and Meta pixels) to understand how people use our site and what they enjoy. These tools collect technical information such as your device type, browser, IP address, and pages visited. This helps us improve the site and, where enabled, measure advertising. You can see our cookie options in section 2.</p>
     <p class="about-p"><strong>Cookies and similar technologies.</strong> This site uses Google Fonts, a third-party service that may log requests from your browser and set cookies when loading fonts. Our store platform (Wix) sets cookies to keep a shopping experience working, remember your preferences, and support analytics. See section 2 for the full picture.</p>
 
     <h3 class="g-h3">2. Cookies</h3>
@@ -769,7 +769,7 @@ function privacy() {
     <p class="about-p">Most browsers let you block or delete cookies in their settings, and you can "Do Not Track" where supported. Blocking cookies may limit some site features.</p>
 
     <h3 class="g-h3">3. How we share information</h3>
-    <p class="about-p">We never sell or rent your information. We share it only with the limited service providers needed to run the business — payment processors, shipping carriers, our email service, and analytics tools — and only what each needs to do their job. These providers are bound to keep your data confidential. We may also disclose information where the law requires it (for example, to regulators or in response to lawful requests).</p>
+    <p class="about-p">We never sell or rent your information. We share it only with the limited service providers needed to run the business, payment processors, shipping carriers, our email service, and analytics tools, and only what each needs to do their job. These providers are bound to keep your data confidential. We may also disclose information where the law requires it (for example, to regulators or in response to lawful requests).</p>
 
     <h3 class="g-h3">4. Children</h3>
     <p class="about-p">Our products and website are intended for people aged 13 and older. We do not knowingly collect personal information from children under 13. If you believe a child has shared personal information with us, contact us and we will delete it.</p>
@@ -778,7 +778,7 @@ function privacy() {
     <p class="about-p">We keep order and correspondence records only as long as needed to serve you and to meet legal, tax, and product-safety obligations in Canada. Analytics data is kept in aggregate form. When information is no longer needed, we delete or anonymise it.</p>
 
     <h3 class="g-h3">6. Security</h3>
-    <p class="about-p">This site is served over HTTPS, we limit who can access personal information, and we treat your data with care. No method of transmission over the internet is 100% secure, so we cannot guarantee absolute security — but we use reasonable safeguards.</p>
+    <p class="about-p">This site is served over HTTPS, we limit who can access personal information, and we treat your data with care. No method of transmission over the internet is 100% secure, so we cannot guarantee absolute security, but we use reasonable safeguards.</p>
 
     <h3 class="g-h3">7. Your rights</h3>
     <p class="about-p">Under Canada's Personal Information Protection and Electronic Documents Act (PIPEDA) you have the right to access the personal information we hold about you, to ask us to correct it, and to withdraw your consent to our use of it. To make a request, email butterandbloom.ca.shop@gmail.com with the subject line "Privacy request". We will verify your identity and respond within 30 days. If you are not satisfied, you may complain to the Office of the Privacy Commissioner of Canada.</p>
@@ -821,8 +821,8 @@ const html = `<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
-<title>Butter &amp; Bloom — Made slowly. Made thoughtfully. | Handmade vegan bath &amp; body care, Ontario</title>
-<meta name="description" content="Butter &amp; Bloom is a small-batch, vegan handcrafted bath and body care brand based in Ontario, Canada. Slow-cured cold-process soap, bath bombs, shower steamers, sugar scrubs, lip balm, and whipped body butter — made slowly, made thoughtfully. Every batch traceable, every ingredient named.">
+<title>Butter &amp; Bloom | Made slowly. Made thoughtfully. | Handmade vegan bath &amp; body care, Ontario</title>
+<meta name="description" content="Butter &amp; Bloom is a small-batch, vegan handcrafted bath and body care brand based in Ontario, Canada. Slow-cured cold-process soap, bath bombs, shower steamers, sugar scrubs, lip balm, and whipped body butter, made slowly, made thoughtfully. Every batch traceable, every ingredient named.">
 <style>
   :root {
     --paper:#FBF9F4; --panel:#FFFFFF; --cream:#F4EFE6; --sand:#F4EFE6;

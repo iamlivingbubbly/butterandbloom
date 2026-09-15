@@ -944,12 +944,13 @@
       <h2>Contact</h2>
     </div>
     <div class="contact-grid">
-      <form class="contact-form" onsubmit="event.preventDefault();document.getElementById('sent').hidden=false;this.reset()">
+      <form class="contact-form" onsubmit="event.preventDefault();var f=this;document.getElementById('sent').hidden=false;document.getElementById('sent').innerHTML='Sending…';fetch('https://formsubmit.co/hello@butterbloom.ca',{method:'POST',body:new FormData(f),mode:'no-cors'}).then(function(){document.getElementById('sent').innerHTML='Thanks — your message is on its way to hello@butterbloom.ca. We reply within a day or two.';f.reset()}).catch(function(){document.getElementById('sent').innerHTML='Sorry — sending hit a hiccup. Please email hello@butterbloom.ca directly.'})">
         <label>Name<input name="name" required placeholder="Your name"></label>
         <label>Email<input name="email" type="email" required placeholder="you@example.com"></label>
         <label>Message<textarea name="message" rows="5" required placeholder="Ask about a custom order, a batch code, or just say hi…"></textarea></label>
+        <input type="hidden" name="_subject" value="Butter &amp; Bloom website message">
         <button class="btn btn-pine" type="submit">Send</button>
-        <p id="sent" class="sent" hidden>Thanks — this demo doesn’t send anywhere yet. Wire it up to your mail service and you’re live. 🌿</p>
+        <p id="sent" class="sent" hidden>Messages go to hello@butterbloom.ca.</p>
       </form>
       <div class="contact-aside">
         <div class="ca-block"><div class="ca-label">Email</div><a href="mailto:hello@butterbloom.ca">hello@butterbloom.ca</a></div>

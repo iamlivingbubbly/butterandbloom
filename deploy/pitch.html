@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Butter &amp; Bloom — Pitch Deck</title>
+<style>
+  :root{
+    --paper:#FBF9F4; --cream:#F1EAE0; --sage:#7C916F; --pine:#3E5340;
+    --pine-deep:#2A372B; --clay:#B9805F; --ink:#28261E; --ink-soft:#6B675C;
+    --line:#E4DCCB;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{height:100%;}
+  body{font-family:"Segoe UI",-apple-system,Helvetica,Arial,sans-serif;background:#29261F;color:var(--ink);}
+  .deck{position:fixed;inset:0;overflow:hidden;}
+  .slide{position:absolute;inset:0;display:none;flex-direction:column;justify-content:center;
+    padding:7vw 8vw 9vw;background:var(--paper);animation:fade .35s ease;}
+  .slide.on{display:flex;}
+  @keyframes fade{from{opacity:0;}to{opacity:1;}}
+  .eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--sage);margin-bottom:18px;}
+  h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;color:var(--pine-deep);
+    font-size:clamp(38px,5.6vw,78px);line-height:1.02;}
+  h2{font-family:Georgia,serif;font-weight:400;color:var(--pine-deep);
+    font-size:clamp(26px,3.6vw,52px);line-height:1.1;margin-bottom:26px;}
+  .big{font-size:clamp(20px,2.6vw,36px);color:var(--ink);max-width:26ch;}
+  .sub{color:var(--ink-soft);font-size:clamp(14px,1.5vw,20px);line-height:1.55;max-width:62ch;}
+  .stat{display:flex;gap:clamp(14px,2.4vw,34px);flex-wrap:wrap;margin-top:34px;}
+  .stat b{display:block;font-family:Georgia,serif;font-weight:400;font-size:clamp(26px,3.4vw,52px);color:var(--clay);}
+  .stat span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);}
+  .grid{display:grid;gap:12px;margin-top:28px;}
+  .g2{grid-template-columns:repeat(2,1fr);}
+  .g3{grid-template-columns:repeat(3,1fr);}
+  .g4{grid-template-columns:repeat(4,1fr);}
+  .card{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:16px 18px;}
+  .card b{font-size:15px;color:var(--pine-deep);display:block;margin-bottom:4px;}
+  .card p{font-size:13px;color:var(--ink-soft);line-height:1.4;}
+  .row{display:flex;align-items:center;gap:26px;margin-top:30px;}
+  .num{font-family:Georgia,serif;font-size:clamp(30px,4vw,60px);color:var(--sage);margin-bottom:6px;}
+  ul{margin-left:0;list-style:none;}
+  li{padding:7px 0 7px 22px;position:relative;font-size:clamp(14px,1.6vw,20px);color:var(--ink);line-height:1.45;max-width:64ch;}
+  li:before{content:"";position:absolute;left:0;top:16px;width:9px;height:9px;border-radius:50%;background:var(--clay);}
+  table{width:100%;border-collapse:collapse;margin-top:22px;font-size:clamp(13px,1.35vw,17px);}
+  th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);text-align:left;padding:8px 10px;border-bottom:2px solid var(--line);}
+  td{padding:9px 10px;border-bottom:1px solid var(--line);color:var(--ink);}
+  td.hl{font-family:Georgia,serif;color:var(--clay);font-weight:700;}
+  .govern{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px;}
+  .chip{background:var(--pine);color:#fff;font-size:12px;letter-spacing:.06em;border-radius:999px;padding:7px 14px;}
+  .foot{position:fixed;left:8vw;right:8vw;bottom:26px;display:flex;justify-content:space-between;align-items:center;color:var(--sage);font-size:12px;letter-spacing:.1em;}
+  .ctrl{position:fixed;right:8vw;bottom:24px;display:flex;gap:10px;}
+  .ctrl button{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--cream);color:var(--pine-deep);font-size:16px;cursor:pointer;}
+  .ctrl button:hover{background:var(--sage);color:#fff;}
+  .dots{position:fixed;left:50%;bottom:34px;transform:translateX(-50%);display:flex;gap:8px;}
+  .dots i{width:8px;height:8px;border-radius:50%;background:var(--line);cursor:pointer;}
+  .dots i::marker,.dots i.on{background:var(--sage);}
+  @media print{
+    body{background:#fff;}
+    .slide{position:relative;display:flex !important;page-break-after:always;min-height:100vh;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .ctrl,.dots,.foot{display:none !important;}
+  }
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <section class="slide">
+    <p class="eyebrow">Pitch Deck · September 2026</p>
+    <h1>Butter &amp; Bloom</h1>
+    <p class="big" style="margin-top:18px">Handmade vegan skincare, proudly made in Ontario.</p>
+    <p class="sub" style="margin-top:14px">Simple, useful, thoughtful bath &amp; body products — made slowly, labelled with the truth.</p>
+    <div class="stat">
+      <div><b>$8.3B</b><span>global handmade soap market</span></div>
+      <div><b>74.4%</b><span>gross margin per batch</span></div>
+      <div><b>12×</b><span>ingredient dollar multiplier</span></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">The problem</p>
+    <h2>Clean beauty is marketed. Rarely proven.</h2>
+    <ul>
+      <li>Mass bath &amp; body = long unpronounceable labels, undisclosed fragrance, machine-made sameness.</li>
+      <li>"Natural" claims without proof, cruelty-free without receipts.</li>
+      <li>Real vegan craft exists only at prestige prices shoppers resent, or via an Etsy gamble on trust.</li>
+    </ul>
+    <div class="stat">
+      <div><b>+6%</b><span>Canada beauty growth H1 2026</span></div>
+      <div><b>&gt;75%</b><span>of beauty's dollar growth is online</span></div>
+      <div><b>+26%</b><span>premium body care / body oils</span></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">The product</p>
+    <h2>Six products. Zero compromises.</h2>
+    <div class="grid g3">
+      <div class="card"><b>Cold-Process Soap · $8</b><p>70 g · six-week cure · olive oil, shea, coconut</p></div>
+      <div class="card"><b>Bath Bomb · $6</b><p>70 g · hand-pressed · essential-oil scented</p></div>
+      <div class="card"><b>Shower Steamer · $10</b><p>340 g · eucalyptus steam room</p></div>
+      <div class="card"><b>Sugar Scrub · $6</b><p>450 g · shea + cane sugar</p></div>
+      <div class="card"><b>Lip Balm · $3</b><p>10 g · vegan candelilla wax</p></div>
+      <div class="card"><b>Whipped Body Butter · $10</b><p>450 g · light enough to float</p></div>
+    </div>
+    <div class="govern">
+      <span class="chip">3 designed scent collections</span>
+      <span class="chip">Vegan</span>
+      <span class="chip">Custom order program</span>
+      <span class="chip">Gift bundles</span>
+    </div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">Proof, not promises</p>
+    <h2>Every jar can be verified.</h2>
+    <div class="grid g2">
+      <div class="card"><b>Batch-traceable</b><p>Every product carries a batch code + date. Write it in, we tell you exactly what went into it — and when.</p></div>
+      <div class="card"><b>Ingredient-exact</b><p>Full INCI lists, bilingual labelling (Health Canada), fragrance allergens disclosed — now 24, moving to 81.</p></div>
+      <div class="card"><b>Formulation discipline</b><p>Written formulas, batch records, QC pass before anything sells. Made to a standard, not a whim.</p></div>
+      <div class="card"><b>Vegan &amp; cruelty-free</b><p>Every ingredient plant-based and printed in full. No asterisks.</p></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">The market</p>
+    <h2>A growing tide for craft + clean.</h2>
+    <div class="stat">
+      <div><b>$8.3B→12.5B</b><span>handmade soap, 5.2% CAGR</span></div>
+      <div><b>$1.75B→3.03B</b><span>Canada natural/org personal care</span></div>
+      <div><b>9.2%</b><span>Canada bath soap CAGR</span></div>
+      <div><b>+68%</b><span>Etsy handmade soap sales ('23)</span></div>
+    </div>
+    <ul style="margin-top:26px">
+      <li>Skin care = largest vegan-cosmetics slice; shower products = fastest-growing type in Canada.</li>
+      <li>"Masstige": accessible-premium beauty is growing +22%; shoppers want credible craft below Lush prices.</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">Positioning</p>
+    <h2>Premium proof at an accessible price.</h2>
+    <table>
+      <tr><th></th><th>Mass</th><th>Artisan</th><th>Prestige (Lush)</th><th>B&amp;B</th></tr>
+      <tr><th>Price band</th><td>$2–5</td><td>$6–12</td><td>$8.50–20</td><td>$6–10</td></tr>
+      <tr><th>Full ingredient proof</th><td>rare</td><td>varies</td><td>good</td><td class="hl">always</td></tr>
+      <tr><th>Batch traceability</th><td>none</td><td>sometimes</td><td>limited</td><td class="hl">every jar</td></tr>
+      <tr><th>Made in Ontario, local</th><td>no</td><td>some</td><td>no</td><td class="hl">yes</td></tr>
+    </table>
+    <p class="sub" style="margin-top:18px">Masstige lane: mid-price, maximum proof, local story. Growing +22% while prestige lags.</p>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">Business model</p>
+    <h2>Diversified channels, margin-first.</h2>
+    <div class="grid g4">
+      <div class="card"><b>Markets / pickup</b><p>~84% gross, no shipping. Local-first loyalty engine.</p></div>
+      <div class="card"><b>Online bundles</b><p>~70–72% net. 4-item bundles beat singles on shipping.</p></div>
+      <div class="card"><b>Wholesale boutiques</b><p>~65% margin below retail. Shelf reach, repeat orders.</p></div>
+      <div class="card"><b>Custom / wedding</b><p>~70%+ project margin. High ticket, low effort.</p></div>
+    </div>
+    <p class="sub" style="margin-top:22px">Single-item online sales are deliberately the price-bait, not the profit engine.</p>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">The unit economics</p>
+    <h2>One $450 batch → 802 handmade products → $5,688.</h2>
+    <table>
+      <tr><th>Product</th><th>Units</th><th>Price</th><th>Revenue</th></tr>
+      <tr><td>Soap 70 g</td><td>200</td><td>$8</td><td>$1,600</td></tr>
+      <tr><td>Bath bomb 70 g</td><td>145</td><td>$6</td><td>$870</td></tr>
+      <tr><td>Shower steamer</td><td>145</td><td>$10</td><td>$1,450</td></tr>
+      <tr><td>Sugar scrub 450 g</td><td>128</td><td>$6</td><td>$768</td></tr>
+      <tr><td>Lip balm 10 g</td><td>120</td><td>$3</td><td>$360</td></tr>
+      <tr><td>Body butter 450 g</td><td>64</td><td>$10</td><td>$640</td></tr>
+      <tr><td class="hl">Totals</td><td class="hl">802</td><td></td><td class="hl">$5,688</td></tr>
+    </table>
+    <div class="stat">
+      <div><b>$1,457</b><span>full COGS / batch</span></div>
+      <div><b>74.4%</b><span>gross margin</span></div>
+      <div><b>$4,231</b><span>gross profit / batch</span></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">Financial forecast · base case</p>
+    <h2>Profitable year one, doubling each year.</h2>
+    <table>
+      <tr><th></th><th>Y1</th><th>Y2</th><th>Y3</th></tr>
+      <tr><td>Batches</td><td>12</td><td>24</td><td>36</td></tr>
+      <tr><td>Revenue</td><td class="hl">$68,256</td><td class="hl">$136,512</td><td class="hl">$204,768</td></tr>
+      <tr><td>Gross profit (74.4%)</td><td>$50,767</td><td>$101,534</td><td>$152,302</td></tr>
+      <tr><td>Owner draw</td><td>$12,000</td><td>$26,000</td><td>$44,000</td></tr>
+      <tr><td>Net retained</td><td>$24,767</td><td>$53,534</td><td>$78,302</td></tr>
+    </table>
+    <div class="stat">
+      <div><b>~0.5/mo</b><span>break-even (incl. draw)</span></div>
+      <div><b>1.0/mo</b><span>base plan = 2× break-even</span></div>
+      <div><b>+$802</b><span>per +$1 avg price, per batch</span></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">The ask</p>
+    <h2>$20,000. Grants first, loans second, zero dilution.</h2>
+    <table>
+      <tr><th>Use of funds</th><th>Amount</th></tr>
+      <tr><td>Equipment (molds, racks, scales, immersion blender)</td><td>$2,100</td></tr>
+      <tr><td>First two batches — ingredients + packaging</td><td>$2,515</td></tr>
+      <tr><td>Regulatory (CNF filings, bilingual labels, allergen kits)</td><td>$850</td></tr>
+      <tr><td>Business setup (registration, insurance, GST/HST)</td><td>$800</td></tr>
+      <tr><td>Launch marketing (market stock, photos, ads)</td><td>$750</td></tr>
+      <tr><td>Working capital — first ~90 days</td><td>$12,985</td></tr>
+      <tr><td class="hl">Total</td><td class="hl">$20,000</td></tr>
+    </table>
+    <div class="govern">
+      <span class="chip">Owner cash $2,000</span>
+      <span class="chip">SCP grant $5,000 (+$1,250 match)</span>
+      <span class="chip">Futurpreneur loan ask $12,000</span>
+    </div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">The founder</p>
+    <h2>Hands in the lye, head in the numbers.</h2>
+    <ul>
+      <li>33, based in Cornwall, Ontario; trained in cold-process soapmaking &amp; cosmetic formulation.</li>
+      <li>Built the full operating system herself: formulas, QC checklists, batch records, inventory, costing &amp; pricing model, and a live product site.</li>
+      <li>Disabled founder building an accessible, home-studio micro-manufactory — with ODSP-compliant draw planning and startup supports stacked (file 16).</li>
+      <li>Why not: passion only. Why yes: a business with margin discipline, written processes, and proof built into every unit.</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">Roadmap</p>
+    <h2>Twelve months to self-sustaining.</h2>
+    <div class="row">
+      <div><div class="num">01</div><b>Oct–Nov 2026</b><p class="sub">Register business · Futurpreneur app · first CNFs · insurance · photos</p></div>
+      <div><div class="num">02</div><b>Dec 2026</b><p class="sub">Holiday market season · social launch · first revenue</p></div>
+      <div><div class="num">03</div><b>Jan–Mar 2027</b><p class="sub">SCP Spring 2027 application · first verdicts · wholesale outreach</p></div>
+      <div><div class="num">04</div><b>Jun 2027</b><p class="sub">12th batch · break-even review · pre-order &amp; bundle program live</p></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">The close</p>
+    <h1>The tea is steeping.<br>The soap is curing.</h1>
+    <p class="big" style="margin-top:16px">We just need the runway.</p>
+    <p class="sub" style="margin-top:12px">Butter &amp; Bloom — ButterAndBloom on GitHub · hello@butterbloom.ca · Cornwall, Ontario</p>
+    <div class="stat">
+      <div><b>Vegan</b><span>every formula</span></div>
+      <div><b>Traceable</b><span>every batch</span></div>
+      <div><b>Ontario-made</b><span>every product</span></div>
+    </div>
+  </section>
+
+  <div class="foot"><span>Butter &amp; Bloom — Pitch Deck</span><span id="idx">1 / 14</span></div>
+  <div class="ctrl">
+    <button id="prev" aria-label="Previous slide">‹</button>
+    <button id="next" aria-label="Next slide">›</button>
+  </div>
+  <div class="dots" id="dots"></div>
+
+</div>
+<script>
+  const slides=[...document.querySelectorAll('.slide')];
+  const dots=document.getElementById('dots');
+  const idx=document.getElementById('idx');
+  let i=0;
+  slides.forEach((_,n)=>{const d=document.createElement('i');d.onclick=()=>go(n);dots.appendChild(d);});
+  const dotEls=[...dots.children];
+  function go(n){i=Math.max(0,Math.min(slides.length-1,n));
+    slides.forEach((s,k)=>s.classList.toggle('on',k===i));
+    dotEls.forEach((d,k)=>d.classList.toggle('on',k===i));
+    idx.textContent=(i+1)+' / '+slides.length;}
+  document.getElementById('next').onclick=()=>go(i+1);
+  document.getElementById('prev').onclick=()=>go(i-1);
+  document.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown')go(i+1);
+    if(e.key==='ArrowLeft'||e.key==='PageUp')go(i-1);
+    if(e.key==='Home')go(0); if(e.key==='End')go(slides.length-1);
+  });
+  go(0);
+</script>
+</body>
+</html>

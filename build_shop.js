@@ -1208,7 +1208,6 @@ const html = `<!DOCTYPE html>
   const heroSlides = [
     'Artisanal skincare made by hand,<br>vegan and traceable, Ontario-made.',
     'Made slowly.<br>Made thoughtfully.',
-    'Cured for six weeks,<br>made by hand.',
     'Vegan, traceable,<br>small-batch care.',
     'Ontario-made,<br>with love and truth.',
   ];
@@ -1222,7 +1221,7 @@ const html = `<!DOCTYPE html>
         heroLine.innerHTML = heroSlides[h];
         heroLine.classList.remove('switching');
       }, 380);
-    }, 6400);
+    }, 10000);
   }
 
   // design-your-own configurator

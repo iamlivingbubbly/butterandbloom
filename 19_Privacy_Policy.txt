@@ -11,7 +11,7 @@ Contact and custom-order form. The contact form collects your name, your email
 address, and your message. Messages may include custom-order details you share
 with us (collection, product, size, scent, occasion). We use this information
 only to reply to you and to prepare custom orders. Messages are delivered to
-our support inbox (hello@butterbloom.ca) by email; we keep the conversation
+our support inbox (butterandbloom.ca.shop@gmail.com) by email; we keep the conversation
 only as long as needed to serve you.
 
 Orders and checkout. We take orders through our Wix store. To fulfil an order
@@ -90,7 +90,7 @@ secure.
 Under Canada's Personal Information Protection and Electronic Documents Act
 (PIPEDA) you may access the personal information we hold about you, ask us to
 correct it, and withdraw your consent to our use of it. Email
-privacy@butterbloom.ca with the subject "Privacy request". We verify identity
+butterandbloom.ca.shop@gmail.com with the subject "Privacy request". We verify identity
 and respond within 30 days. If unsatisfied, you may complain to the Office of
 the Privacy Commissioner of Canada.
 
@@ -116,6 +116,6 @@ the latest revision; significant changes are flagged on the site.
 ------------------------------------------------------------------------------
 CONTACT
 ------------------------------------------------------------------------------
-Questions, requests, removals: privacy@butterbloom.ca
-General enquiries: hello@butterbloom.ca
+Questions, requests, removals: butterandbloom.ca.shop@gmail.com
+General enquiries: butterandbloom.ca.shop@gmail.com
 Butter & Bloom, Cornwall, Ontario, Canada

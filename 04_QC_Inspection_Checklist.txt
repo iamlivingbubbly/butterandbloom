@@ -1,0 +1,391 @@
+BUTTER & BLOOM — QC INSPECTION CHECKLIST
+===============================================================================
+
+Standard Operating Procedure: QC-INSPECT-001
+Effective Date: ____________  Version: 1.0
+Inspector: ____________
+
+Use one checklist per batch. Complete at the indicated stage.
+Batch Code: ______________________  Product: ______________________
+Production Date: __________  Inspector: __________
+
+===============================================================================
+STAGE 1: INCOMING INGREDIENT QC
+===============================================================================
+
+Complete upon receipt of all ingredients for this batch.
+
+| Check | Pass | Fail | N/A | Notes |
+|-------|------|------|-----|-------|
+| Packing slip matches order | | | | |
+| Quantities match (count + weight) | | | | |
+| Containers intact (no leaks, dents) | | | | |
+| Seals unbroken | | | | |
+| Lot numbers present on all containers | | | | |
+| Expiry dates present | | | | |
+| No visible contamination (mold, debris) | | | | |
+| Correct product supplied (label vs. contents) | | | | |
+| SDS available for each chemical | | | | |
+| Storage conditions met (temp, humidity) | | | | |
+
+Ingredient-Specific Checks:
+
+Oils & Butters:
+  [ ] No rancid/off smell
+  [ ] Correct color (not darkened or cloudy)
+  [ ] Consistency appropriate for type
+
+Lye (NaOH):
+  [ ] Pellet/flake form (not clumped or powdered)
+  [ ] Stored in sealed, labeled container
+  [ ] Kept away from moisture
+
+Fragrance/Essential Oils:
+  [ ] Scent matches expected profile
+  [ ] No discoloration
+  [ ] Cap seals tight
+
+Dry Ingredients (Baking Soda, Citric Acid, Cornstarch):
+  [ ] No clumping
+  [ ] Free-flowing
+  [ ] No off-odor
+
+Colorants (Micas, Oxides):
+  [ ] Color matches expected shade
+  [ ] No clumps or hard chunks
+
+Result: ○ Pass  ○ Fail  ○ Hold — Review Required
+Fail Reason: ________________________________
+Disposition: ________________________________
+
+Signed: ____________  Date: ____________
+
+===============================================================================
+STAGE 2: PRODUCTION IN-PROCESS QC
+===============================================================================
+
+Complete during production at indicated steps.
+
+--- COLD-PROCESS / HOT-PROCESS SOAP ---
+
+| Check | Pass | Fail | Target | Actual | Notes |
+|-------|------|------|--------|--------|-------|
+| Lye dissolves fully (no granules) | | | | | |
+| Lye solution temp | | | 35–45°C | | |
+| Oil temperature | | | 35–45°C | | |
+| Temps matched within 10°C | | | | | |
+| Trace achieved | | | Light-medium | | |
+| No separation of oils | | | | | |
+| Fragrance added at correct trace | | | | | |
+| No seizing or false trace | | | | | |
+| Color even throughout | | | | | |
+| Pour into mold: no air bubbles | | | | | |
+| Mold filled evenly | | | | | |
+| Mold tapped to release bubbles | | | | | |
+| Batch code on mold | | | | | |
+
+--- BATH BOMBS / SHOWER STEAMERS ---
+
+| Check | Pass | Fail | Target | Actual | Notes |
+|-------|------|------|--------|--------|-------|
+| Dry ingredients sifted (no clumps) | | | | | |
+| Wet added to dry (not reverse) | | | | | |
+| No excessive fizzing during mixing | | | | | |
+| Squeeze test: holds shape | | | | | |
+| Not too dry (crumbles) or too wet (fizzes) | | | | | |
+| Packed firmly into molds | | | | | |
+| Leveled cleanly | | | | | |
+| Mold filled completely | | | | | |
+
+--- SUGAR SCRUB ---
+
+| Check | Pass | Fail | Target | Actual | Notes |
+|-------|------|------|--------|--------|-------|
+| Sugar weighed accurately | | | | | |
+| Oil/sugar ratio correct | | | | | |
+| Consistency: not too runny, not too dry | | | | | |
+| Fragrance evenly distributed | | | | | |
+| Color evenly distributed (if applicable) | | | | | |
+| No separation after stirring | | | | | |
+
+--- LIP BALM ---
+
+| Check | Pass | Fail | Target | Actual | Notes |
+|-------|------|------|--------|--------|-------|
+| Candelilla wax fully melted | | | | | |
+| Butter melted through | | | | | |
+| No separation in liquid | | | | | |
+| EO added off heat | | | | | |
+| Poured before solidifying | | | | | |
+| Tubes/tins filled to correct level | | | | | |
+| No bubbles on surface | | | | | |
+
+--- WHIPPED BODY BUTTER ---
+
+| Check | Pass | Fail | Target | Actual | Notes |
+|-------|------|------|--------|--------|-------|
+| Butters melted completely | | | | | |
+| Cooled to room temp before whipping | | | | | |
+| Refrigerated until opaque | | | | | |
+| Whipped to fluffy consistency | | | | | |
+| EO added during whipping | | | | | |
+| Final texture: soft-serve | | | | | |
+| No graininess | | | | | |
+| No separation | | | | | |
+
+In-Process Result: ○ Pass  ○ Fail  ○ Hold
+Fail Reason: ________________________________
+Corrective Action: ________________________________
+
+Signed: ____________  Date: ____________
+
+===============================================================================
+STAGE 3: POST-PRODUCTION QC (CURE/DRY COMPLETE)
+===============================================================================
+
+--- COLD-PROCESS SOAP ---
+
+| Check | Pass | Fail | Target | Actual | Notes |
+|-------|------|------|--------|--------|-------|
+| Cure complete (4–6 weeks) | | | | | |
+| Bar hardness appropriate | | | | | |
+| Bar does not dent with fingernail | | | | | |
+| No lye pockets (surface or interior) | | | | | |
+| No DOS (Dreaded Orange Spots) | | | | | |
+| No soda ash (white powder) | | | | | |
+| No glycerin rivers | | | | | |
+| Fragrance present | | | | | |
+| Color stable | | | | | |
+| Bar shape uniform | | | | | |
+| Cut edges clean | | | | | |
+| Weight within tolerance (±10%) | | | | | |
+| pH test: acceptable range | | | | | |
+| No cracks or crumbling | | | | | |
+
+pH Test: pH ________  Acceptable: 8–10  ○ Pass  ○ Fail
+
+--- HOT-PROCESS SOAP ---
+
+| Check | Pass | Fail | Target | Actual | Notes |
+|-------|------|------|--------|--------|-------|
+| Cure complete (1–2 weeks) | | | | | |
+| Bar hardness appropriate | | | | | |
+| No lye pockets | | | | | |
+| Fragrance present | | | | | |
+| Color stable | | | | | |
+| Weight within tolerance | | | | | |
+| pH test: acceptable range | | | | | |
+
+pH Test: pH ________  Acceptable: 8–10  ○ Pass  ○ Fail
+
+--- BATH BOMBS ---
+
+| Check | Pass | Fail | Target | Actual | Notes |
+|-------|------|------|--------|--------|-------|
+| Fully dry (24–48 hrs) | | | | | |
+| Hard and solid | | | | | |
+| No cracks | | | | | |
+| No crumbling when handled | | | | | |
+| Smooth surface | | | | | |
+| Fragrance present | | | | | |
+| Color stable | | | | | |
+| Weight within tolerance (±5%) | | | | | |
+| Scent throw test (snap near nose): fizz release | | | | | |
+| No moisture visible on surface | | | | | |
+
+Moisture Test: Place bomb on paper towel for 1 hour — no dampness ○ Pass  ○ Fail
+
+--- SHOWER STEAMERS ---
+
+| Check | Pass | Fail | Target | Actual | Notes |
+|-------|------|------|--------|--------|-------|
+| Fully dry (24–48 hrs) | | | | | |
+| Hard and solid | | | | | |
+| No cracks | | | | | |
+| No crumbling | | | | | |
+| Fragrance present | | | | | |
+| Weight within tolerance (±5%) | | | | | |
+| No moisture visible on surface | | | | | |
+
+--- SUGAR SCRUB ---
+
+| Check | Pass | Fail | Target | Actual | Notes |
+|-------|------|------|--------|--------|-------|
+| Consistency uniform (no separation) | | | | | |
+| Sugar granules intact (not dissolved) | | | | | |
+| Fragrance present | | | | | |
+| Color even | | | | | |
+| No graininess beyond sugar | | | | | |
+| Weight within tolerance (±5%) | | | | | |
+| No mold or off-odor | | | | | |
+
+--- LIP BALM ---
+
+| Check | Pass | Fail | Target | Actual | Notes |
+|-------|------|------|--------|--------|-------|
+| Fully set (30 min–1 hr) | | | | | |
+| Smooth surface | | | | | |
+| No air bubbles | | | | | |
+| No separation | | | | | |
+| Fragrance present | | | | | |
+| Color even | | | | | |
+| Caps/tins seal properly | | | | | |
+| Weight within tolerance (±5%) | | | | | |
+| No cracking when twisted (tube) | | | | | |
+
+--- WHIPPED BODY BUTTER ---
+
+| Check | Pass | Fail | Target | Actual | Notes |
+|-------|------|------|--------|--------|-------|
+| Whipped consistency maintained | | | | | |
+| No graininess | | | | | |
+| No separation or oil pooling | | | | | |
+| Fragrance present | | | | | |
+| Color even | | | | | |
+| Jars filled evenly | | | | | |
+| Weight within tolerance (±5%) | | | | | |
+| No mold or off-odor | | | | | |
+
+Post-Production Result: ○ Pass  ○ Fail  ○ Hold
+Fail Reason: ________________________________
+Corrective Action: ________________________________
+
+Signed: ____________  Date: ____________
+
+===============================================================================
+STAGE 4: FINAL QC — PACKAGING & LABELING
+===============================================================================
+
+Complete after packaging and labeling are finished.
+
+| Check | Pass | Fail | Notes |
+|-------|------|------|-------|
+| Correct product in package | | | |
+| Correct batch code on label | | | |
+| Batch code matches batch record | | | |
+| Product name legible | | | |
+| Ingredient list complete and accurate | | | |
+| Weight/volume stated correctly | | | |
+| Directions for use present | | | |
+| Warnings present (where applicable) | | | |
+| Expiry date present | | | |
+| Expiry date correct (mfg date + shelf life) | | | |
+| Barcode/UPC present (if applicable) | | | |
+| Barcode scans correctly (if applicable) | | | |
+| Label straight and centered | | | |
+| No wrinkles, bubbles, or peeling | | | |
+| Package sealed properly | | | |
+| Tamper-evident seal intact | | | |
+| No damage to product during packaging | | | |
+| Product clean (no fingerprints, smudges) | | | |
+| Correct number per package/box | | | |
+
+Packaging Spec Check:
+| Item | Spec | Actual | Pass/Fail |
+|------|------|--------|-----------|
+| Jar/tube style | | | |
+| Lid type | | | |
+| Label size | | | |
+| Label material | | | |
+| Box/carton style | | | |
+| Insert/pamphlet included | | | |
+
+Final Result: ○ Pass  ○ Fail  ○ Hold  ○ Rework Required
+
+Rework Description: ________________________________
+Rework Completed By: ____________  Date: ____________
+
+===============================================================================
+STAGE 5: SENSORY PANEL (Optional but Recommended)
+===============================================================================
+
+Have 2–3 people independently evaluate each product.
+
+Product: ____________  Batch: ____________
+
+| Attribute | Panelist 1 | Panelist 2 | Panelist 3 | Notes |
+|-----------|------------|------------|------------|-------|
+| Appearance (1–5) | | | | |
+| Color (1–5) | | | | |
+| Fragrance strength (1–5) | | | | |
+| Fragrance pleasantness (1–5) | | | | |
+| Texture/hand-feel (1–5) | | | | |
+| Lather/foam (soap only) (1–5) | | | | |
+| Overall impression (1–5) | | | | |
+
+1 = Poor, 2 = Fair, 3 = Good, 4 = Very Good, 5 = Excellent
+Minimum passing average: 3.0
+
+Panel Results: ○ Pass  ○ Fail  ○ Re-formulate Required
+
+Notes: ________________________________
+
+Signed: ____________  Date: ____________
+
+===============================================================================
+STAGE 6: STABILITY TEST (For First Batch of Each Product)
+===============================================================================
+
+Record baseline measurements, then re-check at intervals.
+
+Product: ____________  Batch: ____________  Date Packed: ____________
+
+| Test | Baseline | 1 Week | 2 Weeks | 1 Month | 3 Months | 6 Months |
+|------|----------|--------|---------|---------|----------|----------|
+| Appearance | | | | | | |
+| Color | | | | | | |
+| Fragrance strength | | | | | | |
+| Texture | | | | | | |
+| Separation (Y/N) | | | | | | |
+| Odor (off-odor?) | | | | | | |
+| pH (soap) | | | | | | |
+| Weight loss (evaporation?) | | | | | | |
+
+Test Conditions:
+Temperature: ____________  Humidity: ____________
+Location: ____________
+
+Result at each interval: ○ Stable  ○ Degraded — Notes: ____________
+
+===============================================================================
+QC HOLD / REJECT LOG
+===============================================================================
+
+| Date | Batch Code | Issue Found | Stage | Disposition | Action Taken | Resolved By | Date Resolved |
+|------|------------|-------------|-------|-------------|--------------|-------------|---------------|
+| | | | | | | | |
+| | | | | | | | |
+| | | | | | | | |
+| | | | | | | | |
+
+Disposition Options:
+- REWORK: Correctable issue (re-pour, re-label, re-package)
+- REJECT: Unsafe, contaminated, or fundamentally defective — destroy
+- HOLD: Awaiting further testing or review
+- SALE AS-IS: Minor cosmetic issue, product safe for use
+
+===============================================================================
+QC SUMMARY — BATCH RELEASE AUTHORIZATION
+===============================================================================
+
+Batch Code: ______________________  Product: ______________________
+Total Units Produced: ____________  Total Units Passed: ____________
+
+| QC Stage | Result | Inspector | Date |
+|----------|--------|-----------|------|
+| Incoming Ingredient QC | ○ Pass  ○ Fail | | |
+| In-Process QC | ○ Pass  ○ Fail | | |
+| Post-Production QC | ○ Pass  ○ Fail | | |
+| Packaging & Labeling QC | ○ Pass  ○ Fail | | |
+| Sensory Panel (if done) | ○ Pass  ○ Fail  ○ N/A | | |
+| Stability Test (baseline) | ○ Pass  ○ N/A | | |
+
+FINAL BATCH DISPOSITION: ○ RELEASE  ○ HOLD  ○ REJECT
+
+Release Authorization:
+Inspector: ____________  Signature: ____________  Date: ____________
+Quality Manager: ____________  Signature: ____________  Date: ____________
+
+===============================================================================
+END OF QC INSPECTION CHECKLIST
+===============================================================================

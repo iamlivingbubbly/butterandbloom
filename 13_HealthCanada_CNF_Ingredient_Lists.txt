@@ -1,0 +1,149 @@
+HEALTH CANADA — COSMETIC NOTIFICATION FORM (CNF) INGREDIENT LISTS
+Butter & Bloom · Cornwall, Ontario
+=====================================================================
+
+How to use this file:
+- File ONE CNF per product within 10 days of first sale. Free, online:
+  https://www.canada.ca/en/health-canada/services/consumer-product-safety/cosmetics/notification-cosmetics.html
+- Enter ingredients by INCI name using the form's "Find INCI Name"
+  button, and the concentration (exact % shown below is accepted, or use
+  the range-code column).
+- Check every ingredient against the Cosmetic Ingredient Hotlist.
+- Tick "Fragrance Allergen" for flagged allergens (see end of file).
+- Calculations below: based on the batch sizes in 03_Formulation_Sheets.
+  Percentages are working estimates — adjust to your exact weighed batch.
+
+OFFICIAL CONCENTRATION RANGE CODES (Cosmetic Regulations, s.30(2)(d)):
+  1  >80–100%          6  >30–40%         11  >1–5%
+  2  >70–80%           7  >20–30%         12  >0.5–1%
+  3  >60–70%           8  >15–20%         13  >0.1–0.5%
+  4  >50–60%           9  >10–15%         14  >0.01–0.1%
+  5  >40–50%          10  >5–10%          15  ≤0.01%
+
+=====================================================================
+1. COLD-PROCESS SOAP  (1,000 g oil batch → ~1,200 g cured bar)
+=====================================================================
+Note: NaOH is fully consumed during saponification and is NOT an
+ingredient of the finished bar. Report the saponified oils by their INCI
+names (the sodium salts of their fatty acids). If your label copy makes
+NO claims beyond cleansing, Health Canada may classify it outside
+cosmetics — but "gentle/nourishing" wording makes it a cosmetic → CNF.
+
+INGREDIENTS (INCI)                          Approx %   Range
+-----------------------------------------------------------------
+Sodium Olivate (from Olive Oil)               38        6
+Sodium Cocoate (from Coconut Oil)             25        7
+Sodium Palmate (from RSPO Palm Oil)           19        8
+Sodium Shea Butterate (from Shea Butter)       9        10
+Sodium Ricinoleate (from Castor Oil)           5        10
+Glycerin (natural by-product of saponification) 8       10
+Water                                           3        11
+Fragrance / Essential Oil(s)                   2.5      11
+Sodium Lactate (optional)                       1        11
+Colorant (mica/oxide, optional)                 <0.5     13
+Oatmeal / Honey / additives (optional)          <1       13
+
+FRAGRANCE: one CNF per scent formula (Lavender Oat, Tea Tree Charcoal,
+Honey Oat, Rose Clay, Eucalyptus Mint...).
+
+=====================================================================
+2. BATH BOMB  (70 g × 4 batch)
+=====================================================================
+INGREDIENTS (INCI)                          Approx %   Range
+-----------------------------------------------------------------
+Sodium Bicarbonate (Baking Soda)              56        4
+Citric Acid                                   28        7
+Zea Mays (Corn) Starch                        7         10
+Prunus Amygdalus Dulcis (Sweet Almond) Oil    3         11   ← nut allergen
+  — or Simmondsia Chinensis (Jojoba) Seed Oil  3         11   (no-nut swap)
+Polysorbate 80                                2         11
+Fragrance / Essential Oil(s)                  1.5       11
+Hamamelis Virginiana (Witch Hazel) Water      2.5       11
+Colorant (optional)                           <0.5      13
+
+Scent variants: Rose Garden · Lavender Dream · Citrus Sunrise.
+
+=====================================================================
+3. SHOWER STEAMER  (3 tablets ≈ 405 g batch)
+=====================================================================
+INGREDIENTS (INCI)                          Approx %   Range
+-----------------------------------------------------------------
+Sodium Bicarbonate (Baking Soda)              59        4
+Citric Acid                                   30        6
+Kaolin                                        4         11
+Essential Oil(s) — see blend below            5         11
+Hamamelis Virginiana (Witch Hazel) Water      2.5       11
+Colorant (optional)                           <0.5      13
+
+Essential oil blend examples (list EACH oil in the blend as its own
+ingredient line):
+  Eucalyptus Globulus Leaf Oil · Mentha Piperita (Peppermint) Oil
+  Lavandula Angustifolia (Lavender) Oil
+  Citrus Aurantium Dulcis (Orange) Peel Oil · Citrus Limon (Lemon)
+  Peel Oil · Citrus Paradisi (Grapefruit) Peel Oil
+  Rosmarinus Officinalis (Rosemary) Leaf Oil
+
+Scent variants: Eucalyptus Mint · Lavender · Citrus Burst.
+
+=====================================================================
+4. SUGAR SCRUB  (≈525 g batch)
+=====================================================================
+INGREDIENTS (INCI)                          Approx %   Range
+-----------------------------------------------------------------
+Sucrose (Sugar)                               76        2
+Vitis Vinifera (Grape) Seed Oil               21        7
+  — or Prunus Amygdalus Dulcis (Sweet Almond) Oil  21   7  ← nut allergen
+Fragrance / Essential Oil(s)                  2         11
+Tocopherol (Vitamin E)                        0.9       12
+
+Scent variants: Vanilla Bean · Brown Sugar Glow · Coffee.
+
+=====================================================================
+5. LIP BALM  (10 × 10 mL ≈ 58 g batch) — VEGAN
+=====================================================================
+INGREDIENTS (INCI)                          Approx %   Range
+-----------------------------------------------------------------
+Prunus Amygdalus Dulcis (Sweet Almond) Oil    48        5   ← nut allergen
+Candelilla Cera (Candelilla Wax)              26        7
+Theobroma Cacao (Cocoa) Seed Butter           26        7
+  — or Mangifera Indica (Mango) Seed Butter   26        7
+Flavour / Essential Oil                       0.4       13
+
+Scent variants: Peppermint · Honey · Vanilla Bean.
+
+=====================================================================
+6. WHIPPED BODY BUTTER  (≈393 g batch)
+=====================================================================
+INGREDIENTS (INCI)                          Approx %   Range
+-----------------------------------------------------------------
+Butyrospermum Parkii (Shea) Butter            51        5
+Cocos Nucifera (Coconut) Oil                  25        7
+Prunus Amygdalus Dulcis (Sweet Almond) Oil    14        9   ← nut allergen
+Maranta Arundinacea Root Powder (Arrowroot)   6         10
+Fragrance / Essential Oil(s)                  4         11
+
+Scent variants: Lavender Dream · Vanilla Bean · Citrus Sunrise.
+
+=====================================================================
+FRAGRANCE ALLERGEN CHECK (tick "Fragrance Allergen" on the CNF)
+=====================================================================
+Flag on the form — and list on the product label — any of these present
+above the threshold (leave-on >0.001% / rinse-off >0.01%) in your
+fragrance or essential oils:
+  Limonene · Linalool · Citral · Geraniol · Citronellol · Eugenol ·
+  Cinnamal (cinnamon) · Cinnamyl Alcohol · Coumarin · Benzyl Alcohol
+Common in your formulas: Limonene + Linalool (lavender, citrus, rose),
+Citral (citrus), Eucalyptus oil (1,8-cineole, not a listed allergen but
+follow IFRA usage rates).
+
+====== NUT ALLERGEN REMINDER ======
+Sweet Almond Oil (Prunus Amygdalus Dulcis) is a tree-nut allergen —
+tell Health Canada via the notification and show it clearly on the label
+(bath bombs, sugar scrub, lip balm, body butter). Use Jojoba where listed
+for a nut-free version.
+
+LABEL REQUIREMENTS (quick):
+- Ingredients in INCI, in descending order of concentration
+- Net quantity + your contact info (identity + principal place of
+  business under CPLA) + primary brand and product name
+- Batch code/date on every unit (you already do this)

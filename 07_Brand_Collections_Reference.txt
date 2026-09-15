@@ -1,0 +1,131 @@
+BUTTER & BLOOM — BRAND COLLECTIONS REFERENCE
+===============================================================================
+
+Standard Operating Procedure: BRAND-COL-001
+Effective Date: ____________  Version: 1.0
+
+The store catalog organizes every product into one or more of three branded
+collections. Each collection has its own aesthetic tone, which should guide
+label design, scent selection, packaging, and product photography.
+
+===============================================================================
+COLLECTION 1: SOFT GLOW
+===============================================================================
+
+Keywords: Gentle · Soft · Natural
+Feels like: Calming, nurturing, skin-first, botanical
+
+Design Direction:
+| Element | Guidance |
+|---------|----------|
+| Color palette | Warm neutrals, cream, soft blush, sage, muted rose |
+| Typography | Organic, rounded serif or handwritten script |
+| Label stock | Natural kraft, matte finish |
+| Imagery | Botanicals, flowers, soft-focus textures |
+| Accents | Gold or warm bronze detail |
+
+Scent Direction: Lavender, chamomile, rose, oatmilk & honey, vanilla, calendula
+
+Suggested Products for this Collection:
+- Lavender Oat Milk Soap
+- Rose Clay Soap
+- Vanilla Bean Sugar Scrub
+- Lavender Dream Body Butter
+- Rose Garden Bath Bomb
+- Lavender Shower Steamer
+
+===============================================================================
+COLLECTION 2: SWEET PLAYFUL
+===============================================================================
+
+Keywords: Cute · Cheerful · Whimsical
+Feels like: Fun, bright, giftable, joyful
+
+Design Direction:
+| Element | Guidance |
+|----------|----------|
+| Color palette | Pastels, candy pinks, mint, lemon, soft coral |
+| Typography | Playful, rounded, hand-drawn lettering |
+| Label stock | White or light glossy/matte |
+| Imagery | Sprinkles, sparkles, doodle-style illustrations |
+| Accents | Glitter-free but playful foil or colored elements |
+
+Scent Direction: Citrus, berry, bubblegum-style fragrance oils, candy, fruity blends
+
+Suggested Products for this Collection:
+- Citrus Sunrise Bath Bomb
+- Citrus Burst Shower Steamer
+- Citrus Sugar Scrub
+- Berry Lip Balm
+- Sweet scented fragrance-oil soaps
+
+===============================================================================
+COLLECTION 3: RESET MINIMAL
+===============================================================================
+
+Keywords: Clean · Restrained · Modern
+Feels like: Simple, uncluttered, premium, design-forward
+
+Design Direction:
+| Element | Guidance |
+|----------|----------|
+| Color palette | White, black, grey, single accent tone |
+| Typography | Sans-serif, clean, generous whitespace |
+| Label stock | Matte white or uncoated |
+| Imagery | Minimal, geometric, empty space |
+| Accents | None or single-color details only |
+
+Scent Direction: Eucalyptus, mint, tea tree, unscented, fresh green, coastal
+
+Suggested Products for this Collection:
+- Eucalyptus Mint Soap
+- Tea Tree Charcoal Soap
+- Eucalyptus Mint Shower Steamer
+- Mint Lip Balm
+- Sinus Relief Shower Steamer
+
+===============================================================================
+PRODUCT-TO-COLLECTION MAPPING (from store catalog)
+===============================================================================
+
+All products carry all three collection tags in the catalog. For merchandising,
+assign each product a primary collection based on its scent and design:
+
+| Product | Scent | Primary Collection |
+|---------|-------|--------------------|
+| Soap — Lavender Oat | Floral/comforting | Soft Glow |
+| Soap — Tea Tree Charcoal | Clean/healing | Reset Minimal |
+| Soap — Honey Oat | Comforting | Soft Glow |
+| Soap — Rose Clay | Floral | Soft Glow |
+| Soap — Eucalyptus Mint | Fresh/clean | Reset Minimal |
+| Bath Bomb — Rose Garden | Floral | Soft Glow |
+| Bath Bomb — Lavender Dream | Floral | Soft Glow |
+| Bath Bomb — Citrus Sunrise | Fruity/cheerful | Sweet Playful |
+| Shower Steamer — Eucalyptus Mint | Fresh | Reset Minimal |
+| Shower Steamer — Lavender | Floral | Soft Glow |
+| Shower Steamer — Citrus Burst | Fruity | Sweet Playful |
+| Sugar Scrub — Vanilla Bean | Warm/comforting | Soft Glow |
+| Sugar Scrub — Brown Sugar Glow | Warm | Soft Glow |
+| Sugar Scrub — Coffee | Earthy/comforting | Reset Minimal |
+| Lip Balm — Peppermint | Fresh | Reset Minimal |
+| Lip Balm — Honey | Sweet | Soft Glow |
+| Lip Balm — Vanilla Bean | Sweet | Soft Glow |
+| Body Butter — Lavender Dream | Calming | Soft Glow |
+| Body Butter — Vanilla Bean | Comforting | Soft Glow |
+| Body Butter — Citrus Sunrise | Cheerful | Sweet Playful |
+
+===============================================================================
+SUPPLIER DIRECTORY
+===============================================================================
+
+| Supplier | Category | Focus |
+|----------|----------|-------|
+| Uline Canada | Drums, containers, packaging, shipping supplies | Jars, boxes, shrink wrap, labels |
+| ClearBags Canada | Bags, pouches, clear packaging | Cello bags, organza, pillow boxes |
+| Voyageur Soap & Candle | Soapmaking & candle supplies | Oils, waxes, tubes, jars, molds |
+| New Directions Aromatics Canada | Oils, butters, essential/fragrance oils, cosmetic ingredients | EOs, FOs, butters, vitamin E |
+| Windy Point Soap Making Supplies | Soapmaking & cosmetic supplies | Lye, micas, additives, equipment |
+
+===============================================================================
+END OF BRAND COLLECTIONS REFERENCE
+===============================================================================

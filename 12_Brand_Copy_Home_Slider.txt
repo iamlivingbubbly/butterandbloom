@@ -1,0 +1,38 @@
+HOME SLIDER COPY — Butter & Bloom
+(Rotating hero headlines for the Wix Home page — already running on shop.html)
+=====================================================================
+
+Slide 1 (signature):
+  Made slowly.
+  Made thoughtfully.
+
+Slide 2:
+  Cured for six weeks,
+  made by hand.
+
+Slide 3:
+  Vegan, traceable,
+  small-batch care.
+
+Slide 4:
+  Ontario-made,
+  with love and truth.
+
+-----
+
+Supporting line (below the headline, stays constant):
+  Butter & Bloom is small-batch bath and body care — soap that cures for six
+  weeks, bombs pressed by hand, and scents that never shout.
+
+Primary CTA:  Shop the collection
+Secondary CTA: Our story / Meet the maker
+
+-----
+
+SEO notes:
+- Headlines rotate every 4.4 seconds with a soft fade; all four carry the
+  brand's core phrases ("made slowly", "small-batch", "vegan", "Ontario").
+- Pair each slide's phrase with a matching image: slide 1 → bar in hand or
+  studio bench; slide 2 → curing shelves; slide 3 → label with batch code;
+  slide 4 → a piece of the Ontario landscape.
+- Keep the supporting line static so the page's meta focus stays stable.

@@ -1,0 +1,340 @@
+BUTTER & BLOOM — PACKAGING & LABELING SPEC SHEETS
+===============================================================================
+
+Standard Operating Procedure: PKG-LABEL-001
+Effective Date: ____________  Version: 1.0
+
+===============================================================================
+LABEL FORMAT REFERENCE
+===============================================================================
+
+Batch Code Format: [Product Abbreviation] – [YYYYMMDD] – [Batch Sequence]
+
+| Product Code | Full Name | Batch Example |
+|-------------|-----------|---------------|
+| CP | Cold-Process Soap | CP-20260807-01 |
+| HP | Hot-Process Soap | HP-20260807-01 |
+| BB | Bath Bomb | BB-20260807-01 |
+| SS | Shower Steamer | SS-20260807-01 |
+| SC | Sugar Scrub | SC-20260807-01 |
+| LB | Lip Balm | LB-20260807-01 |
+| WB | Whipped Body Butter | WB-20260807-01 |
+
+Lot Traceability Label (for ingredients):
+Format: [Ingredient Abbreviation]-[YYYYMMDD]-[Lot#]
+Example: OLI-20260807-001
+
+===============================================================================
+COLD-PROCESS SOAP — PACKAGING SPEC
+===============================================================================
+
+Bar Size: 3–4 oz (85–113 g) standard cut
+
+Primary Packaging Options:
+| Option | Material | Source | Specs |
+|--------|----------|--------|-------|
+| Kraft paper wrap | Recycled kraft paper | Uline Canada | 3.5" x 5" or 4" x 6" |
+| Cling wrap | BPA-free cling wrap | Uline Canada | Food-safe, clear |
+| Shrink wrap | Shrink film bands | Uline Canada | 3.5" bands |
+| Muslin bag | Natural muslin | ClearBags Canada | 4" x 6" drawstring |
+| Kraft pillow box | Recycled kraft | ClearBags Canada | 3.5" x 5" x 1.5" |
+
+Primary Label:
+| Element | Content | Size |
+|---------|---------|------|
+| Product Name | (e.g., "Lavender Oat Milk Bar") | 2" x 3" |
+| Brand Name | "Butter & Bloom" | Top of label |
+| Batch Code | (e.g., CP-20260807-01) | Bottom of label |
+| Net Weight | 3.5 oz / 100 g | Bottom right |
+| Made By | "Handcrafted in [City], AB" | Bottom |
+| Barcode | Optional (UPC or SKU) | Right side |
+
+Secondary Label (back or insert):
+| Element | Required | Notes |
+|---------|----------|-------|
+| Full ingredient list (INCI) | Yes | In descending order |
+| "Free from" claims | If applicable | Paraben-free, SLS-free, etc. |
+| Directions for use | Yes | "Lather with water, rinse" |
+| Warnings | Yes | "For external use only. Avoid eyes." |
+| Expiry / Best By date | Yes | Mfg date + 2 years |
+| Storage instructions | Recommended | "Store in cool, dry place" |
+| Contact information | Yes | Brand name, email or website |
+
+Label Material:
+- Water-resistant paper or matte vinyl recommended (soap gets wet)
+- Ink: black or dark print on kraft/white
+
+Shelf Life: 1–2 years (CP soap)
+Expiry Date: Manufacture Date + 24 months
+
+===============================================================================
+HOT-PROCESS SOAP — PACKAGING SPEC
+===============================================================================
+
+Same as Cold-Process Soap. Shelf life is 1–2 years.
+Label must indicate "Hot Process" if marketed differently from CP.
+
+===============================================================================
+BATH BOMBS — PACKAGING SPEC
+===============================================================================
+
+Standard Size: 3" round (approx. 70 g)
+
+Primary Packaging Options:
+| Option | Material | Source | Notes |
+|--------|----------|--------|-------|
+| Shrink wrap | Shrink film | Uline Canada | Heat-sealed |
+| Clear bag + twist tie | OPP or cello bag | ClearBags Canada | 4" x 4" or 5" x 5" |
+| Kraft box | Recycled kraft | ClearBags Canada | Individual gift box |
+| Organza bag | Polyester organza | Uline Canada | 4" x 6" drawstring |
+| Egg carton (multi-pack) | Recycled cardboard | Uline Canada | 6-pack or 12-pack |
+
+Primary Label (on package or insert card):
+| Element | Content | Size |
+|---------|---------|------|
+| Product Name | (e.g., "Rose Garden Bath Bomb") | 2" x 2" or 2" x 3" |
+| Brand Name | "Butter & Bloom" | Top |
+| Batch Code | BB-YYYYMMDD-## | Bottom |
+| Net Weight | 2.5 oz / 70 g | Bottom |
+| Scent | (e.g., "Rose & Geranium") | Below product name |
+
+Secondary Label / Insert:
+| Element | Required | Notes |
+|---------|----------|-------|
+| Full ingredient list (INCI) | Yes | Baking soda, citric acid, etc. |
+| Directions | Yes | "Drop one bath bomb into warm bath" |
+| Warnings | Yes | "For external use only. May make tub slippery. Use caution when entering/exiting tub." |
+| Expiry date | Yes | Mfg date + 6 months |
+| Allergen info | If applicable | "Contains: essential oils" |
+| "Handmade" claim | Recommended | "Handmade — slight variations are normal" |
+
+Shelf Life: 6 months
+Expiry Date: Manufacture Date + 6 months
+Storage: Keep dry until use. Store in cool, low-humidity area.
+
+===============================================================================
+SHOWER STEAMERS — PACKAGING SPEC
+===============================================================================
+
+Standard Size: 3 tablets x ~113 g each (approx. 340 g per 3-pack)
+
+Primary Packaging:
+Same options as Bath Bombs (shrink wrap, clear bag, kraft box).
+
+Primary Label:
+| Element | Content | Size |
+|---------|---------|------|
+| Product Name | (e.g., "Eucalyptus Shower Steamer") | 2" x 2" |
+| Brand Name | "Butter & Bloom" | Top |
+| Batch Code | SS-YYYYMMDD-## | Bottom |
+| Net Weight | 4 oz / 113 g per tablet | Bottom |
+| Scent / Use | (e.g., "Eucalyptus — Place on shower floor") | Below name |
+
+Secondary Label / Insert:
+| Element | Required | Notes |
+|---------|----------|-------|
+| Full ingredient list | Yes | |
+| Directions | Yes | "Place on shower floor, away from direct water stream. Breathe deeply." |
+| Warnings | Yes | "For external use only. Avoid direct contact with eyes. Not a bath product." |
+| Expiry date | Yes | Mfg date + 6 months |
+
+Shelf Life: 6 months
+Storage: Keep dry until use.
+
+===============================================================================
+SUGAR SCRUB — PACKAGING SPEC
+===============================================================================
+
+Standard Size: 4 oz (120 ml) jar (approx. 113 g)
+
+Primary Packaging:
+| Option | Material | Source | Notes |
+|--------|----------|--------|-------|
+| PET jar with lid | Clear or frosted PET | Uline Canada | 4 oz round |
+| Glass jar with lid | Amber or clear glass | Voyageur Soap & Candle | 4 oz |
+| PP jar with lid | White or black PP | Uline Canada | 4 oz |
+
+Primary Label:
+| Element | Content | Size |
+|---------|---------|------|
+| Product Name | (e.g., "Vanilla Bean Sugar Scrub") | 3" x 2" |
+| Brand Name | "Butter & Bloom" | Top |
+| Batch Code | SC-YYYYMMDD-## | Bottom |
+| Net Weight | 4 oz / 113 g | Bottom |
+| Scent | (e.g., "Vanilla Bean") | Below name |
+
+Secondary Label (back or bottom):
+| Element | Required | Notes |
+|---------|----------|-------|
+| Full ingredient list (INCI) | Yes | Sugar, oils, fragrance, etc. |
+| Directions | Yes | "Scoop small amount, massage onto damp skin, rinse" |
+| Warnings | Yes | "For external use only. Avoid eyes. May make surfaces slippery." |
+| Expiry date | Yes | Mfg date + 12 months |
+| Storage | Yes | "Keep water out of jar. Store in cool place." |
+
+Shelf Life: 6–12 months
+Expiry Date: Manufacture Date + 12 months
+
+===============================================================================
+LIP BALM — PACKAGING SPEC
+===============================================================================
+
+Standard Size: 10 mL twist-up tube (approx. 6 g) — veggie-based tube/tin
+
+Primary Packaging:
+| Option | Material | Source | Notes |
+|--------|----------|--------|-------|
+| Twist-up tube | BPA-free plastic tube | Voyageur Soap & Candle | 10 mL standard |
+| Metal tin | Aluminum tin with screw lid | ClearBags Canada | 10 mL or 15 mL |
+| Glass pot | Small glass jar | Voyageur Soap & Candle | 10 mL |
+
+Primary Label (tube) or lid sticker (tin/pot):
+| Element | Content | Size |
+|---------|---------|------|
+| Product Name | (e.g., "Mint Lip Balm") | 2.5" x 0.5" (tube wrap) |
+| Brand Name | "Butter & Bloom" | On label |
+| Batch Code | LB-YYYYMMDD-## | On label |
+| Net Weight | 10 mL / ~6 g | On label |
+| Scent | (e.g., "Peppermint") | On label |
+
+Secondary Label / Box Insert:
+| Element | Required | Notes |
+|---------|----------|-------|
+| Full ingredient list (INCI) | Yes | Candelilla wax, cocoa/mango butter, sweet almond oil, flavor |
+| Directions | Yes | "Apply to lips as needed" |
+| Warnings | Yes | "For external use only. Discontinue if irritation occurs." |
+| Allergen info | If applicable | "Contains: tree nut (almond oil)" |
+| Expiry date | Yes | Mfg date + 12 months |
+
+Shelf Life: 12 months
+Expiry Date: Manufacture Date + 12 months
+
+===============================================================================
+WHIPPED BODY BUTTER — PACKAGING SPEC
+===============================================================================
+
+Standard Size: 4 oz (120 ml) jar (approx. 100 g)
+
+Primary Packaging:
+| Option | Material | Source | Notes |
+|--------|----------|--------|-------|
+| PP jar with screw lid | White or frosted PP | Uline Canada | 4 oz or 120 ml |
+| PET jar with lid | Clear PET | Voyageur Soap & Candle | 4 oz |
+| Glass jar with lid | Amber glass | Voyageur Soap & Candle | 4 oz |
+
+Primary Label:
+| Element | Content | Size |
+|---------|---------|------|
+| Product Name | (e.g., "Lavender Dream Body Butter") | 3" x 2.5" |
+| Brand Name | "Butter & Bloom" | Top |
+| Batch Code | WB-YYYYMMDD-## | Bottom |
+| Net Weight | 3.5 oz / 100 g | Bottom |
+| Scent | (e.g., "Lavender & Cedarwood") | Below name |
+
+Secondary Label (back or bottom):
+| Element | Required | Notes |
+|---------|----------|-------|
+| Full ingredient list (INCI) | Yes | Shea, cocoa, coconut, almond oil, EO |
+| Directions | Yes | "Scoop and massage into skin. Best applied after shower." |
+| Warnings | Yes | "For external use only. Contains tree nut oils. Avoid eyes." |
+| Expiry date | Yes | Mfg date + 12 months |
+| Storage | Yes | "Store at room temperature. May soften above 25°C." |
+
+Shelf Life: 12 months
+Expiry Date: Manufacture Date + 12 months
+
+===============================================================================
+PRINT LABEL TEMPLATE — STANDARD LAYOUT
+===============================================================================
+
+FRONT OF LABEL:
+┌─────────────────────────────────────┐
+│          BUTTER & BLOOM             │
+│                                     │
+│     [Product Name]                  │
+│     [Scent / Description]           │
+│                                     │
+│     [Net Weight]                    │
+│                                     │
+│  Batch: [Batch Code]                │
+│  Handcrafted in [City], AB         │
+└─────────────────────────────────────┘
+
+BACK OF LABEL:
+┌─────────────────────────────────────┐
+│ INGREDIENTS:                        │
+│ [Full INCI list in descending       │
+│  order by weight]                   │
+│                                     │
+│ DIRECTIONS:                         │
+│ [Usage instructions]                │
+│                                     │
+│ WARNINGS:                           │
+│ [Safety warnings]                   │
+│                                     │
+│ EXPIRES: [MM/YYYY]                  │
+│ Batch: [Batch Code]                 │
+│                                     │
+│ [Contact/website]                   │
+│ Made in Canada 🍁                   │
+└─────────────────────────────────────┘
+
+===============================================================================
+LABEL SUPPLIERS
+===============================================================================
+
+| Supplier | Product | URL |
+|----------|---------|-----|
+| Uline Canada | Blank labels, kraft labels | uline.ca |
+| ClearBags Canada | Clear bags, pillow boxes, cello | clearbags.ca |
+| Voyageur Soap & Candle | Pre-made cosmetic labels, jars, tubes | voyageursoap.com |
+| Avery Canada | Custom label printing | avery.ca |
+| Sticker Mule | Custom die-cut labels | stickermule.com |
+
+===============================================================================
+BARCODE / UPC INFORMATION
+===============================================================================
+
+If selling on Amazon, in retail, or at markets requiring UPC:
+- Obtain GS1 Canada UPC barcode: gs1ca.org
+- One barcode per SKU (not per batch)
+- UPC is 12 digits
+- Print on label or apply as sticker
+
+Internal SKU Format:
+[Product Code]-[Scent Code]-[Size]
+Example: CP-LAV-3OZ, BB-ROSE-3IN, SC-VAN-8OZ
+
+===============================================================================
+MULTI-PACK / GIFT SET PACKAGING
+===============================================================================
+
+| Set | Contents | Packaging |
+|-----|----------|-----------|
+| "Bath Basics" | 1 bath bomb + 1 shower steamer | Kraft box with window, 4" x 6" |
+| "Self-Care Duo" | 1 soap bar + 1 sugar scrub | Kraft box, 6" x 4" x 3" |
+| "Full pamper" | Soap + scrub + body butter + lip balm | Kraft box, 10" x 8" x 4" |
+| Sampler Set | 3 soap minis (1 oz each) | Kraft box with dividers, 6" x 3" x 1.5" |
+
+Gift Set Labels:
+- Include all individual product labels inside
+- Outer box label with set name, contents, total weight
+- Batch code for each individual product included in insert card
+
+===============================================================================
+PRINTING SPECIFICATIONS
+===============================================================================
+
+| Element | Spec |
+|---------|------|
+| Label paper | Matte or semi-gloss, water-resistant |
+| Ink | Laser preferred (smudge-resistant); inkjet OK for short run |
+| Font size (body) | 8–10 pt minimum for readability |
+| Font size (brand) | 16–24 pt |
+| Barcode size | Minimum 80% magnification, quiet zone maintained |
+| Color | Full color or 1-color (black on kraft) |
+| Finish | Matte, gloss, or lamination for water resistance |
+
+===============================================================================
+END OF PACKAGING & LABELING SPEC SHEETS
+===============================================================================

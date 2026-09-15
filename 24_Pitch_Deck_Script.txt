@@ -1,0 +1,131 @@
+PITCH SCRIPT — Butter & Bloom
+13 slides · ~5 minutes + Q&A. Companion to pitch.html.
+
+------------------------------------------------------------------------------
+ELEVATOR PITCH (90 seconds — memorise this)
+------------------------------------------------------------------------------
+"Butter & Bloom is a small-batch, vegan bath and body brand made in Cornwall,
+Ontario. We make soap, bath bombs, steamers, scrubs, butters, and lip balms —
+every one fully vegan, every ingredient printed on the label, and every batch
+codeable, so a customer can write to us and learn exactly what went into her
+jar. The market is growing — handmade soap alone is an 8.3-billion-dollar
+global market compounding near five percent. Our economics are the story:
+one $450 ingredient batch becomes 802 products and $5,688 in retail revenue
+at a 74.4% gross margin. We're asking for $20,000 — $5,000 is already
+grant-matched, so the real ask is a $12,000 Futurpreneur-style loan — to fund
+equipment, our first batches, and 90 days of working capital. Year one we
+project $68,000 in revenue, profitable from the first quarter, doubling each
+year after. This isn't a passion project with a business plan — it's a
+business plan with a passion."
+
+------------------------------------------------------------------------------
+SLIDE-BY-SLIDE SCRIPT
+------------------------------------------------------------------------------
+S1  TITLE
+    "Butter & Bloom — handmade vegan skincare, Ontario-made. Three numbers to
+    start: an 8.3-billion-dollar market, a 74% margin, and a model that turns
+    every $450 of ingredients into $5,688 of retail."
+
+S2  THE PROBLEM
+    "Clean beauty is marketed, not proven. Mass brands hide ingredients. Craft
+    brands either cost Lush prices or are a trust gamble on Etsy. Canada's
+    beauty market grew 6% this year, over three-quarters online — proof that
+    buyers want more than what the aisle offers, and are online to find it."
+
+S3  THE PRODUCT
+    "Six products, one standard: vegan, fully labelled, handcrafted. Soap is
+    our hero — cold-process, cured six weeks. Bath bombs and steamers are the
+    fun. Body butter and scrub are the ritual. Lip balm is the need-averaging
+    entry point. All three scent collections are designed, not accidental."
+
+S4  PROOF
+    "Our differentiator is verifiability. Every batch is coded and dated.
+    Every label shows full ingredients, bilingual, Health-Canada-disclosing
+    fragrance allergens. Written formulas, batch records, and a QC pass before
+    anything sells. 'Vegan' here is a receipt, not a slogan."
+
+S5  THE MARKET
+    "Handmade soap: 8.3 to 12.5 billion by 2034. Canada's natural and organic
+    personal care: 1.75 to 3.03 billion. Canada's bath soap specifically is
+    compounding at 9.2%. Etsy handmade soap sales jumped 68%. Skin care is the
+    largest clean-beauty slice, and body products are the fastest growing."
+
+S6  POSITIONING
+    "Cheap and unproven, premium and unproven, premium and proven — those are
+    taken. We own 'mid-price, maximum proof, made in Ontario' — the masstige
+    lane, which is growing +22% while prestige lags. $8 soap. Lush-level
+    ingredient story."
+
+S7  BUSINESS MODEL
+    "Four channels, ranked by margin. Markets and pickup first — 84% gross.
+    Online in four-item bundles so shipping doesn't eat us. Wholesale to
+    boutiques for shelf reach. Custom and wedding orders at 70%+ project
+    margins. Singles online are bait, never the engine."
+
+S8  UNIT ECONOMICS
+    "Read this like the pitch's heartbeat: $450 of ingredients yields 802
+    pieces across the range, $5,688 retail, $1,457 full cost, 74.4% gross. The
+    $4,231 per batch gross is what buys everything else. Margins don't get
+    thinner with volume — they get thicker."
+
+S9  FORECAST
+    "Twelve batches year one — that's one batch every three weeks, achievable
+    solo — $68,256 revenue, $50,767 gross, $24,767 retained after a $12,000
+    founder draw. Double batch count in year two, and again in year three.
+    Break-even sits at half a batch a month. The base plan runs at twice that."
+
+S10 THE ASK
+    "$20,000 total: $7,015 to start — equipment, first batches, regulation,
+    setup, launch — and $12,985 working capital for the first 90 days. Funded
+    as $2,000 owner cash, a $5,000 Starter Company grant with our $1,250 match,
+    and a $12,000 loan. No equity. Loan is interest-only in year one."
+
+S11 THE FOUNDER
+    "Why me: I didn't start with a dream, I started with a process. Written
+    formulas, QC checklists, batch records, a costing model, and a live site —
+    all built before asking for a dollar. I run a careful home studio, and my
+    draws are structured so the business self-funds while staying
+    ODSP-compliant. Capability plus discipline."
+
+S12 ROADMAP
+    "Oct–Nov: register, Futurpreneur application, first CNFs, photos. December:
+    first holiday markets and revenue. Jan–Mar: Starter Company application and
+    wholesale outreach. June: 12th batch and our break-even review. Twelve
+    months to self-sustaining, on daylight milestones."
+
+S13 THE CLOSE
+    "The tea is steeping and the soap is curing — the work is real and already
+    happening. What we need is the runway to bottle it, sell it, and prove it.
+    Butter & Bloom. Thank you."
+
+Q&A PREP
+  - "Who is the customer?" Mindful women 30-55, market regulars, gifters,
+    bridal/corporate, and SDG tourists. (file 21, profiles P1-P5)
+  - "Why will they buy from you and not Lush?" Price below Lush, traceability
+    Lush can't match batch-for-batch, truly local Ontario, and collections a
+    national brand can't personalise.
+  - "What if you can't sell it all?" Sensitivity file 23 shows we stay cash
+    positive at -25% volume. Q4 is the season: plan front-loads stock there.
+  - "Capacity?" One batch every ~3 weeks solo year one, scaling with a part-
+    time helper at roughly double volume in year two.
+  - "Regulation?" CNF filings budgeted and instructions ready (file 13);
+    bilingual labelling and the expanding allergen list are costed.
+
+------------------------------------------------------------------------------
+ONE-PAGE EXECUTIVE SUMMARY (share with SCP/Futurpreneur/PARO)
+------------------------------------------------------------------------------
+Butter & Bloom — small-batch vegan bath & body, Cornwall ON. Handcrafted soap,
+bombs, steamers, scrub, butter, balm; every batch coded/traceable, full INCI
+labelling, vegan.
+Market: global handmade soap $8.3B→$12.5B (5.2% CAGR); Canada natural/org
+personal care $1.75B→$3.03B (6.3% CAGR); Canada bath soap +9.2% CAGR; beauty
++6% H1-2026, >75% of growth online.
+Model: $450 ingredients → 802 units → $5,688 revenue; 74.4% gross margin;
+~84% at market/pickup. Channels: markets, online bundles, wholesale, custom.
+Forecast: Y1 $68,256 rev / $24,767 retained (12 batches); Y2 $136,512;
+Y3 $204,768. Break-even ~0.5 batches/mo.
+Ask: $20,000 ($2,000 owner + $5,000 SCP grant + $1,250 match + $12,000 loan),
+USED FOR $7,015 startup + $12,985 working capital. No equity dilution.
+Milestone: registering Oct 2026; first revenue Dec 2026; break-even review
+Jun 2027. Docs available: business plan (20), research (21), analysis (22),
+forecast (23), this deck (24 + pitch.html).

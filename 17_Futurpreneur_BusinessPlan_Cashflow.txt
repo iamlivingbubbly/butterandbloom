@@ -1,0 +1,163 @@
+================================================================================
+ 17. FUTURPRENEUR — BUSINESS PLAN + 24-MONTH CASH FLOW  —  Butter & Bloom
+ Prepared: Sep 15, 2026  |  Apply at futurpreneur.ca BEFORE 40th birthday (30 from age 33)
+ This is a working draft - every number is an assumption; adjust to your real data.
+================================================================================
+
+--------------------------------------------------------------------------------
+A. BUSINESS OVERVIEW (paste-ready summary)
+--------------------------------------------------------------------------------
+Business name:  Butter & Bloom
+Location:       Cornwall, Ontario (home-based, accessible production space)
+Founder:        Owner/operator (33, woman, living with a disability)
+Website:        Wix live store + custom "design your own" configurator
+Industry code:  Handcrafted bath & body products (cosmetics/craft manufacturing)
+
+Butter & Bloom is a handcrafted bath and body company making small-batch,
+cold-process soap, bath bombs, shower steamers, sugar scrubs, lip balms and
+body butter. Products are made in an accessible home studio, sold through
+Ontario farmers' markets, the Cornwall region, and an online store with a
+custom fragrance/configurator tool ("Design your own" - customer chooses
+collection > product > scent > size, and the recipe is built around them).
+
+Differentiators:
+- Custom 4-step product configurator (collection, product, scent, size/name)
+- Systematic fragrance architecture (top/middle/base notes per collection)
+- Ingredient-transparent labels, Health Canada CNF-compliant
+- Small batch = no preservative-heavy mass production; made-to-order freshness
+
+--------------------------------------------------------------------------------
+B. PRODUCTS & PRICING (one batch = 802 units, retail totals $5,688)
+--------------------------------------------------------------------------------
+Product            Qty/batch   Retail/unit   Line total   Line % of revenue
+Soap                 200           $8.00       $1,600        28%
+Bath Bomb            145           $6.00         $870        15%
+Shower Steamer       145          $10.00       $1,450        26%
+Sugar Scrub          128           $6.00         $768        14%
+Lip Balm             120           $3.00         $360         6%
+Body Butter           64          $10.00         $640        11%
+TOTAL                802                        $5,688       100%
+
+--------------------------------------------------------------------------------
+C. BATCH ECONOMICS (cost to produce one $5,688 batch)
+--------------------------------------------------------------------------------
+Ingredients ................... $450.00   (~$0.56/unit - the cheap part)
+Packaging ..................... $807.40   (~$1.01/unit - the largest COGS line)
+Production overhead ..........  $50.00    (utilities, cleanup, workspace)
+Shipping (net, blended) ...... $150.00    (conservative; reduce if customer-paid)
+TOTAL COGS / BATCH ........... $1,457.40
+GROSS PROFIT / BATCH ......... $4,230.60  (74.4% gross margin)
+
+KEY INSIGHTS FOR THE PLAN:
+- Ingredients are ~8% of COGS. Profitability is protected by pricing + channel,
+  not by ingredient cost.
+- Packaging is >55% of COGS -> bulk purchasing is the main cost lever.
+- Selling at markets/local pickup (no shipping) raises margin to ~77%.
+
+--------------------------------------------------------------------------------
+D. START-UP / SCALE-UP CAPITAL NEEDED (loan use)
+--------------------------------------------------------------------------------
+Bulk packaging (2 batches) .............. $1,614.80
+Production equipment (molds, scale,
+  thermometer, immersion blender, pumps)   $1,500.00
+Bilingual labels (print run) ............... $900.00
+Market stall kit (table, canopy, display)  $1,200.00
+Website/e-commerce tools .................... $500.00
+Card reader / POS float ..................... $400.00
+Liability insurance (year 1) ................ $400.00
+Contingency ................................. $500.00
+TOTAL ..................................... $7,014.80  (~rounded -> $7,000)
+
+Futurpreneur loan request: $12,000
+  - $7,000 equipment/start-up
+  - $5,000 working capital (ingredients, packaging, marketing for first 2-3 batches)
+Terms sought: 5 years, interest-only year 1, no penalty for early repayment.
+No other debt. No existing loan commitments.
+
+--------------------------------------------------------------------------------
+E. 24-MONTH CASH FLOW (monthly; assumptions clearly marked)
+--------------------------------------------------------------------------------
+ASSUMPTIONS:
+- Sale price = her real prices (file/shop) - NOT raised to 4.5x floor.
+- COGS/batch = $1,457.40 (see Section C).
+- Production ramp (batches/month):
+   M1-M2 : 0.5   M3-M6 : 1.0   M7-M12 : 1.25
+   M13-18: 1.5   M19-24 : 2.0
+- Owner draw: $0 M1-2; $1,500/mo M3-12; $2,500/mo M13-24.
+- Taxes not withdrawn (set-aside separate account; ~20% of gross).
+
+YEAR 1 (per month)
+Mth  Batch  Revenue   COGS     Gross     Draw    Net cash   Cum cash
+M1   0.50   $2,844    $729     $2,115    $0      +$2,115    $2,115
+M2   0.50   $2,844    $729     $2,115    $0      +$2,115    $4,231
+M3   1.00   $5,688    $1,457   $4,231    $1,500  +$2,731    $6,961
+M4   1.00   $5,688    $1,457   $4,231    $1,500  +$2,731    $9,692
+M5   1.00   $5,688    $1,457   $4,231    $1,500  +$2,731    $12,422
+M6   1.00   $5,688    $1,457   $4,231    $1,500  +$2,731    $15,153
+M7   1.25   $7,110    $1,822   $5,288    $1,500  +$3,788    $18,941
+M8   1.25   $7,110    $1,822   $5,288    $1,500  +$3,788    $22,730
+M9   1.25   $7,110    $1,822   $5,288    $1,500  +$3,788    $26,518
+M10  1.25   $7,110    $1,822   $5,288    $1,500  +$3,788    $30,306
+M11  1.25   $7,110    $1,822   $5,288    $1,500  +$3,788    $34,094
+M12  1.25   $7,110    $1,822   $5,288    $1,500  +$3,788    $37,883
+
+YEAR 1 TOTALS: 12.5 batches | Revenue $71,100 | Gross $52,883 | Owner draw $15,000
+Cash at year-end (pre-tax set-aside): ~$37,883
+
+YEAR 2 (quarterly summary)
+Qtr   Batch  Revenue   Gross    Draw      Net cash  Cum cash
+Q1   4.50   $25,596   $19,037  $7,500    +$11,537  $49,420
+Q2   4.50   $25,596   $19,037  $7,500    +$11,537  $60,957
+Q3   5.25   $29,862   $22,211  $7,500    +$14,711  $75,668
+Q4   6.00   $34,128   $25,384  $7,500    +$17,884  $93,552
+
+YEAR 2 TOTALS: 21 batches | Revenue $119,448 | Gross $88,843 | Owner draw $30,000
+Cash at year-end: ~$93,552 (pre-tax set-aside)
+
+TWO-YEAR FORMULA: 33.5 batches | Revenue $190,548 | Gross $141,725
+Owner draw $45,000 over 2 years - business is self-sustaining by Month 3.
+
+--------------------------------------------------------------------------------
+F. BREAK-EVEN
+--------------------------------------------------------------------------------
+Monthly fixed (overhead $50 + owner draw target $1,500 + insurance ~$33) ~ $1,583
+Gross margin 74.4%  ->  break-even revenue ~$2,130/month
+                       = ~0.37 batch/month = ~300 units/month
+Consequence: the business is above break-even from Month 1 at the assumed ramp.
+
+--------------------------------------------------------------------------------
+G. MARKETING & SALES CHANNELS
+--------------------------------------------------------------------------------
+1. Local markets (Cornwall + SDG) - zero shipping cost, cash + card, brand building
+2. Wix online store - product pages, collections, fragrance story
+3. Custom configurator ("Design your own") - premium-priced, differentiator
+4. Gift/wholesale to local boutiques (SDG + Ottawa corridor)
+5. Social (short-form video of soap-making = strong for craft brands)
+Marketing budget: ~5% of revenue after Month 6.
+
+--------------------------------------------------------------------------------
+H. REGULATORY & COMPLIANCE (shows maturity to the lender)
+--------------------------------------------------------------------------------
+- Health Canada Cosmetic Notification Form (CNF): mandatory, free, INCI ingredient
+  lists already prepared (file 13), to be submitted before first sale
+- Familiar + bilingual (EN/FR) labels with fragrance-relevant ingredient disclosure
+- Business registration: Ontario Business Registry (sole proprietorship)
+- GST/HST registration once revenue threshold met; small-business deduction
+- Product liability insurance
+
+--------------------------------------------------------------------------------
+I. APPLICATION CHECKLIST (what Futurpreneur needs - have ready)
+--------------------------------------------------------------------------------
+[ ] Full business plan (this document, formatted to their plan template)
+[ ] 24-month cash flow (Section E)
+[ ] Financial projections for 3 years (can be derived from Section E)
+[ ] Personal credit check authorization (they run a hard inquiry)
+[ ] Copy of government ID (PR/Citizen)
+[ ] Evidence of a legal, registered business (register ON
+    first - ontario.ca Business Registry)
+[ ] Applicant age verification (18-39 AT TIME OF APPLICATION)
+[ ] Confirm business is < 24 months of significant sales (under threshold)
+One line to include: the business is/ will be the applicant's full-time employment.
+
+NEXT: register the business name, draft bank-ready financials, submit BEFORE 40.
+================================================================================

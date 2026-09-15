@@ -1,0 +1,260 @@
+BUTTER & BLOOM — INVENTORY TRACKING SPREADSHEET
+===============================================================================
+
+Standard Operating Procedure: INV-TRACK-001
+Effective Date: ____________  Version: 1.0
+
+This file is designed to be opened in Excel or Google Sheets.
+Copy each section into a separate worksheet/tab.
+
+===============================================================================
+TAB 1: INGREDIENT INVENTORY
+===============================================================================
+
+Batch Code,Ingredient,Supplier,Lot Number,Date Received,Expiry Date,Quantity Received,Unit,Quantity Used,Quantity Remaining,Location,Reorder Level,Reorder Qty,Status
+Olive Oil (Pomace),Uline Canada,,2026-08-07,,5.0,kg,,,B5,1.0,2.0,In Stock
+Coconut Oil (76°F),Uline Canada,,2026-08-07,,5.0,kg,,,B5,1.0,2.0,In Stock
+Palm Oil (RSPO),Uline Canada,,2026-08-07,,5.0,kg,,,B5,1.0,2.0,In Stock
+Shea Butter,Voyageur Soap & Candle,,2026-08-07,,5.0,kg,,,B6,0.5,2.0,In Stock
+Castor Oil,Voyageur Soap & Candle,,2026-08-07,,2.0,L,,,B6,0.5,1.0,In Stock
+Sodium Hydroxide (NaOH),Windy Point Soap,,2026-08-07,,5.0,kg,,,B7 (locked),0.5,2.0,In Stock
+Distilled Water,Uline Canada,,2026-08-07,,20.0,L,,,B7,2.0,5.0,In Stock
+Baking Soda,Uline Canada,,2026-08-07,,5.0,kg,,,B4,1.0,2.0,In Stock
+Citric Acid,Windy Point Soap,,2026-08-07,,5.0,kg,,,B4,0.5,2.0,In Stock
+Cornstarch,Uline Canada,,2026-08-07,,2.0,kg,,,B4,0.5,1.0,In Stock
+Kaolin Clay,Windy Point Soap,,2026-08-07,,1.0,kg,,,B4,0.25,1.0,In Stock
+Granulated Sugar,Uline Canada,,2026-08-07,,5.0,kg,,,B4,1.0,2.0,In Stock
+Candelilla Wax,Voyageur Soap & Candle,,2026-08-07,,1.0,kg,,,B6,0.1,0.5,In Stock
+Cocoa Butter,Voyageur Soap & Candle,,2026-08-07,,1.0,kg,,,B6,0.1,0.5,In Stock
+Mango Butter,Voyageur Soap & Candle,,2026-08-07,,1.0,kg,,,B6,0.1,0.5,In Stock
+Sweet Almond Oil,Voyageur Soap & Candle,,2026-08-07,,2.0,L,,,B6,0.25,1.0,In Stock
+Grapeseed Oil,Voyageur Soap & Candle,,2026-08-07,,1.0,L,,,B6,0.1,0.5,In Stock
+Vitamin E Oil,New Directions Aromatics,,2026-08-07,,500,ml,,,B6,0.05,0.25,In Stock
+Arrowroot Powder,Uline Canada,,2026-08-07,,1.0,kg,,,B4,0.1,0.5,In Stock
+Fragrance/Essential Oils,New Directions Aromatics,,2026-08-07,,500,ml,,,B8,0.05,0.25,In Stock
+Polysorbate 80,Voyageur Soap & Candle,,2026-08-07,,500,ml,,,B6,0.025,0.25,In Stock
+Sodium Lactate,Voyageur Soap & Candle,,2026-08-07,,250,ml,,,B6,0.01,0.1,In Stock
+Mica Colorants,Windy Point Soap,,2026-08-07,,100,g,,,B8,10,50,In Stock
+Oxide Colorants,Windy Point Soap,,2026-08-07,,100,g,,,B8,10,50,In Stock
+
+===============================================================================
+TAB 2: PACKAGING INVENTORY
+===============================================================================
+
+Item,Supplier,Date Received,SKU/Part Number,Quantity Received,Unit,Quantity Used,Quantity Remaining,Location,Reorder Level,Reorder Qty,Status
+Kraft Paper Wraps (3.5x5),Uline Canada,,PS-01,500,ea,,,P1,50,200,In Stock
+Kraft Paper Wraps (4x6),Uline Canada,,PS-02,500,ea,,,P1,50,200,In Stock
+Shrink Wrap Bands,Uline Canada,,PS-03,1000,ea,,,P1,100,500,In Stock
+Muslin Drawstring Bags (4x6),ClearBags Canada,,PS-04,200,ea,,,P1,25,100,In Stock
+Kraft Pillow Boxes,ClearBags Canada,,PS-05,200,ea,,,P1,25,100,In Stock
+OPP Clear Bags (4x4),ClearBags Canada,,PS-06,500,ea,,,P2,50,200,In Stock
+OPP Clear Bags (5x5),ClearBags Canada,,PS-07,500,ea,,,P2,50,200,In Stock
+Kraft Gift Boxes (4x6),ClearBags Canada,,PS-08,100,ea,,,P2,10,50,In Stock
+Kraft Gift Boxes (6x4x3),ClearBags Canada,,PS-09,100,ea,,,P2,10,50,In Stock
+Kraft Gift Boxes (10x8x4),ClearBags Canada,,PS-10,50,ea,,,P2,5,25,In Stock
+Organza Bags (4x6),Uline Canada,,PS-11,200,ea,,,P2,25,100,In Stock
+Twist Ties,Uline Canada,,PS-12,1000,ea,,,P2,100,500,In Stock
+PET Jars 4 oz with Lid,Uline Canada,,PS-13,200,ea,,,P3,25,100,In Stock
+Glass Jars 4 oz (Amber),Voyageur Soap & Candle,,PS-14,100,ea,,,P3,10,50,In Stock
+PP Jars 4 oz with Lid,Uline Canada,,PS-15,200,ea,,,P3,25,100,In Stock
+Lip Balm Tubes (0.15 oz),Voyageur Soap & Candle,,PS-16,500,ea,,,P3,50,200,In Stock
+Lip Balm Tins (0.25 oz),ClearBags Canada,,PS-100,200,ea,,,P3,25,100,In Stock
+Lip Balm Tins (0.5 oz),ClearBags Canada,,PS-101,100,ea,,,P3,10,50,In Stock
+Small Glass Pots (0.25 oz),Voyageur Soap & Candle,,PS-102,100,ea,,,P3,10,50,In Stock
+Screw Lids for 4oz Jars,Uline Canada,,PS-17,200,ea,,,P3,25,100,In Stock
+Screw Lids for Lip Balm Tubes,Voyageur Soap & Candle,,PS-18,500,ea,,,P3,50,200,In Stock
+Kraft Labels (2x3),Uline Canada,,PS-19,1000,ea,,,P4,100,500,In Stock
+Kraft Labels (3x2),Uline Canada,,PS-20,1000,ea,,,P4,100,500,In Stock
+White Labels (2.5x0.5 tube wrap),Uline Canada,,PS-21,1000,ea,,,P4,100,500,In Stock
+Matte Vinyl Labels (2x2),Uline Canada,,PS-22,500,ea,,,P4,50,200,In Stock
+Matte Vinyl Labels (3x2.5),Uline Canada,,PS-23,500,ea,,,P4,50,200,In Stock
+Expiry Date Stickers,Uline Canada,,PS-24,2000,ea,,,P4,200,1000,In Stock
+UPC Barcode Stickers (if using),Uline Canada,,PS-25,1000,ea,,,P4,100,500,In Stock
+Insert Cards / Pamphlets,Custom Print,,PS-26,500,ea,,,P4,50,200,In Stock
+
+===============================================================================
+TAB 3: FINISHED GOODS INVENTORY
+===============================================================================
+
+Batch Code,Product Name,SKU,Production Date,Expiry Date,Quantity Produced,Quantity Sold,Quantity Remaining,Location,Status,Notes
+CP-20260807-01,Lavender Oat Milk Soap,CP-LAV-OAT-3OZ,2026-08-07,2028-08-07,10,,,,,In Stock
+CP-20260807-02,Tea Tree Charcoal Soap,CP-TTC-CHA-3OZ,2026-08-07,2028-08-07,10,,,,,In Stock
+CP-20260807-03,Honey Oat Soap,CP-HON-OAT-3OZ,2026-08-07,2028-08-07,10,,,,,In Stock
+CP-20260807-04,Rose Clay Soap,CP-ROS-CLA-3OZ,2026-08-07,2028-08-07,10,,,,,In Stock
+CP-20260807-05,Eucalyptus Mint Soap,CP-EUC-MIN-3OZ,2026-08-07,2028-08-07,10,,,,,In Stock
+BB-20260807-01,Rose Garden Bath Bomb,BB-ROSE-3IN,2026-08-07,2027-02-07,12,,,,,In Stock
+BB-20260807-02,Lavender Dream Bath Bomb,BB-LAV-3IN,2026-08-07,2027-02-07,12,,,,,In Stock
+BB-20260807-03,Citrus Sunrise Bath Bomb,BB-CIT-3IN,2026-08-07,2027-02-07,12,,,,,In Stock
+SS-20260807-01,Eucalyptus Mint Shower Steamer,SS-EUC-MIN-2IN,2026-08-07,2027-02-07,12,,,,,In Stock
+SS-20260807-02,Lavender Shower Steamer,SS-LAV-2IN,2026-08-07,2027-02-07,12,,,,,In Stock
+SS-20260807-03,Citrus Burst Shower Steamer,SS-CIT-2IN,2026-08-07,2027-02-07,12,,,,,In Stock
+SC-20260807-01,Vanilla Bean Sugar Scrub,SC-VAN-4OZ,2026-08-07,2027-08-07,10,,,,,In Stock
+SC-20260807-02,Brown Sugar Glow Scrub,SC-BRN-4OZ,2026-08-07,2027-08-07,10,,,,,In Stock
+SC-20260807-03,Coffee Scrub,SC-COF-4OZ,2026-08-07,2027-08-07,10,,,,,In Stock
+LB-20260807-01,Peppermint Lip Balm,LB-PEP-TUBE,2026-08-07,2027-08-07,10,,,,,In Stock
+LB-20260807-02,Honey Lip Balm,LB-HON-TUBE,2026-08-07,2027-08-07,10,,,,,In Stock
+LB-20260807-03,Vanilla Bean Lip Balm,LB-VAN-TUBE,2026-08-07,2027-08-07,10,,,,,In Stock
+WB-20260807-01,Lavender Dream Body Butter,WB-LAV-4OZ,2026-08-07,2027-08-07,5,,,,,In Stock
+WB-20260807-02,Vanilla Bean Body Butter,WB-VAN-4OZ,2026-08-07,2027-08-07,5,,,,,In Stock
+WB-20260807-03,Citrus Sunrise Body Butter,WB-CIT-4OZ,2026-08-07,2027-08-07,5,,,,,In Stock
+
+===============================================================================
+TAB 4: PRODUCTION SCHEDULE
+===============================================================================
+
+Week,Day,Date,Product,Batch Code,Batch Goal Target,Quantity to Produce,Status,Assigned To,Notes
+Week 1,Day 1,2026-08-07,Cold-Process Soap (Lavender Oat),CP-20260807-01,10 bars,10,,,,"Oils weighed, lye solution, mold pour"
+Week 1,Day 1,2026-08-07,Cold-Process Soap (Tea Tree Charcoal),CP-20260807-02,10 bars,10,,,,,"Same day, second batch"
+Week 1,Day 2,2026-08-08,Cold-Process Soap (Honey Oat),CP-20260807-03,10 bars,10,,,,,"Day 2: unmold Day 1, pour new"
+Week 1,Day 2,2026-08-08,Cold-Process Soap (Rose Clay),CP-20260807-04,10 bars,10,,,,
+Week 1,Day 3,2026-08-09,Cold-Process Soap (Eucalyptus Mint),CP-20260807-05,10 bars,10,,,,
+Week 1,Day 3,2026-08-09,Bath Bombs (Rose Garden),BB-20260807-01,12,12,,,,
+Week 1,Day 3,2026-08-09,Bath Bombs (Lavender Dream),BB-20260807-02,12,12,,,,
+Week 1,Day 4,2026-08-10,Bath Bombs (Citrus Sunrise),BB-20260807-03,12,12,,,,
+Week 1,Day 4,2026-08-10,Shower Steamers (Eucalyptus Mint),SS-20260807-01,12,12,,,,
+Week 1,Day 4,2026-08-10,Shower Steamers (Lavender),SS-20260807-02,12,12,,,,
+Week 1,Day 5,2026-08-11,Shower Steamers (Citrus Burst),SS-20260807-03,12,12,,,,
+Week 1,Day 5,2026-08-11,Sugar Scrubs (Vanilla Bean),SC-20260807-01,10,10,,,,
+Week 1,Day 5,2026-08-11,Sugar Scrubs (Brown Sugar Glow),SC-20260807-02,10,10,,,,
+Week 1,Day 6,2026-08-12,Sugar Scrubs (Coffee),SC-20260807-03,10,10,,,,
+Week 1,Day 6,2026-08-12,Lip Balm (Peppermint),LB-20260807-01,10,10,,,,
+Week 1,Day 6,2026-08-12,Lip Balm (Honey),LB-20260807-02,10,10,,,,
+Week 1,Day 7,2026-08-13,Lip Balm (Vanilla Bean),LB-20260807-03,10,10,,,,
+Week 2,Day 8,2026-08-14,Whipped Body Butter (Lavender),WB-20260807-01,5,5,,,,
+Week 2,Day 8,2026-08-14,Whipped Body Butter (Vanilla),WB-20260807-02,5,5,,,,
+Week 2,Day 9,2026-08-15,Whipped Body Butter (Citrus),WB-20260807-03,5,5,,,,
+Week 2,Day 9,2026-08-15,Package — Bath Bombs & Steamers,,,,,,,
+Week 2,Day 10,2026-08-16,Package — Sugar Scrubs & Lip Balms,,,,,,,
+Week 2,Day 10,2026-08-16,Package — Body Butters,,,,,,,
+Week 2,Day 11,2026-08-17,Label — All Products,,,,,,,
+Week 2,Day 12,2026-08-18,QC Final Inspection — All Products,,,,,,,
+Week 2,Day 13,2026-08-19,Inventory Reconciliation,,,,,,,
+Week 2,Day 14,2026-08-20,Release / Ready for Sale,,,,,,,
+
+===============================================================================
+TAB 5: SALES TRACKING
+===============================================================================
+
+Date,Channel,Customer/Order#,Product,SKU,Batch Code,Quantity,Unit Price,Total,Cost of Goods,Profit,Notes
+,,,,,,,,$0.00,$0.00,$0.00,$0.00,
+,,,,,,,,$0.00,$0.00,$0.00,$0.00,
+,,,,,,,,$0.00,$0.00,$0.00,$0.00,
+,,,,,,,,$0.00,$0.00,$0.00,$0.00,
+,,,,,,,,$0.00,$0.00,$0.00,$0.00,
+
+Channel Options: Market, Online (Etsy/Shopify), Wholesale, Pop-up, Direct
+All prices in CAD ($).
+Unit Price Reference (from store catalog):
+| Product | Suggested Retail (CAD) | Wholesale (50%) |
+|---------|------------------|-----------------|
+| Soap (3.5 oz bar) | $5.00 | $2.50 |
+| Bath Bomb (70 g) | $5.00 | $2.50 |
+| Shower Steamer (tablet) | $8.00 | $4.00 |
+| Sugar Scrub (4 oz jar) | $5.00 | $2.50 |
+| Lip Balm (10 mL tube) | $2.00 | $1.00 |
+| Whipped Body Butter (4 oz jar) | $7.00 | $3.50 |
+
+===============================================================================
+TAB 6: COST OF GOODS SOLD (COGS) CALCULATOR
+===============================================================================
+
+Product,Batch Code,Oils Cost,Lye Cost,Water Cost,Fragrance Cost,Packaging Cost,Label Cost,Labor (hrs x Rate),Total COGS,Quantity Produced,COGS Per Unit,Retail Price (CAD),Margin %
+CP Soap (Lavender Oat),CP-20260807-01,,$0.00,,,$0.00,$0.00,$0.00,,0,,$5.00,%
+CP Soap (Tea Tree),CP-20260807-02,,$0.00,,,$0.00,$0.00,$0.00,,0,,$5.00,%
+CP Soap (Honey Oat),CP-20260807-03,,$0.00,,,$0.00,$0.00,$0.00,,0,,$5.00,%
+CP Soap (Rose Clay),CP-20260807-04,,$0.00,,,$0.00,$0.00,$0.00,,0,,$5.00,%
+CP Soap (Eucalyptus),CP-20260807-05,,$0.00,,,$0.00,$0.00,$0.00,,0,,$5.00,%
+Bath Bomb (Rose),BB-20260807-01,,,$0.00,,,$0.00,$0.00,$0.00,,0,,$5.00,%
+Bath Bomb (Lavender),BB-20260807-02,,,$0.00,,,$0.00,$0.00,$0.00,,0,,$5.00,%
+Bath Bomb (Citrus),BB-20260807-03,,,$0.00,,,$0.00,$0.00,$0.00,,0,,$5.00,%
+Shower Steamer (Euc),SS-20260807-01,,,$0.00,,,$0.00,$0.00,$0.00,,0,,$8.00,%
+Shower Steamer (Lav),SS-20260807-02,,,$0.00,,,$0.00,$0.00,$0.00,,0,,$8.00,%
+Shower Steamer (Citrus),SS-20260807-03,,,$0.00,,,$0.00,$0.00,$0.00,,0,,$8.00,%
+Sugar Scrub (Vanilla),SC-20260807-01,,,,$0.00,$0.00,$0.00,$0.00,,0,,$5.00,%
+Sugar Scrub (Brown Sugar),SC-20260807-02,,,,$0.00,$0.00,$0.00,$0.00,,0,,$5.00,%
+Sugar Scrub (Coffee),SC-20260807-03,,,,$0.00,$0.00,$0.00,$0.00,,0,,$5.00,%
+Lip Balm (Peppermint),LB-20260807-01,,,,$0.00,$0.00,$0.00,$0.00,,0,,$2.00,%
+Lip Balm (Honey),LB-20260807-02,,,,$0.00,$0.00,$0.00,$0.00,,0,,$2.00,%
+Lip Balm (Vanilla),LB-20260807-03,,,,$0.00,$0.00,$0.00,$0.00,,0,,$2.00,%
+Body Butter (Lavender),WB-20260807-01,,,,$0.00,$0.00,$0.00,$0.00,,0,,$7.00,%
+Body Butter (Vanilla),WB-20260807-02,,,,$0.00,$0.00,$0.00,$0.00,,0,,$7.00,%
+Body Butter (Citrus),WB-20260807-03,,,,$0.00,$0.00,$0.00,$0.00,,0,,$7.00,%
+
+===============================================================================
+TAB 7: REORDER TRACKING
+===============================================================================
+
+Item,Category,Current Stock,Unit,Reorder Level,Reorder Qty,Supplier,Lead Time (days),Last Order Date,Status,Action Needed
+Olive Oil,Ingredient,,kg,1.0,2.0,Uline Canada,3,,In Stock,Monitor
+Coconut Oil,Ingredient,,kg,1.0,2.0,Uline Canada,3,,In Stock,Monitor
+Palm Oil,Ingredient,,kg,1.0,2.0,Uline Canada,3,,In Stock,Monitor
+Shea Butter,Ingredient,,kg,0.5,2.0,Voyageur Soap & Candle,5,,In Stock,Monitor
+Castor Oil,Ingredient,,L,0.5,1.0,Voyageur Soap & Candle,5,,In Stock,Monitor
+NaOH,Ingredient,,kg,0.5,2.0,Windy Point Soap,3,,In Stock,Monitor
+Distilled Water,Ingredient,,L,2.0,5.0,Uline Canada,2,,In Stock,Monitor
+Baking Soda,Ingredient,,kg,1.0,2.0,Uline Canada,2,,In Stock,Monitor
+Citric Acid,Ingredient,,kg,0.5,2.0,Windy Point Soap,3,,In Stock,Monitor
+Cornstarch,Ingredient,,kg,0.5,1.0,Uline Canada,2,,In Stock,Monitor
+Kaolin Clay,Ingredient,,kg,0.25,1.0,Windy Point Soap,3,,In Stock,Monitor
+Granulated Sugar,Ingredient,,kg,1.0,2.0,Uline Canada,2,,In Stock,Monitor
+Candelilla Wax,Ingredient,,kg,0.1,0.5,Voyageur Soap & Candle,5,,In Stock,Monitor
+Cocoa Butter,Ingredient,,kg,0.1,0.5,Voyageur Soap & Candle,5,,In Stock,Monitor
+Sweet Almond Oil,Ingredient,,L,0.25,1.0,Voyageur Soap & Candle,5,,In Stock,Monitor
+Vitamin E Oil,Ingredient,,ml,0.05,0.25,New Directions Aromatics,5,,In Stock,Monitor
+Essential/Fragrance Oils,Ingredient,,ml,0.05,0.25,New Directions Aromatics,5,,In Stock,Monitor
+Polysorbate 80,Ingredient,,ml,0.025,0.25,Voyageur Soap & Candle,5,,In Stock,Monitor
+Kraft Paper Wraps,Packaging,,ea,50,200,Uline Canada,3,,In Stock,Monitor
+Shrink Wrap Bands,Packaging,,ea,100,500,Uline Canada,3,,In Stock,Monitor
+Muslin Bags,Packaging,,ea,25,100,ClearBags Canada,5,,In Stock,Monitor
+Kraft Boxes,Packaging,,ea,10,50,ClearBags Canada,5,,In Stock,Monitor
+OPP Clear Bags,Packaging,,ea,50,200,ClearBags Canada,5,,In Stock,Monitor
+PET Jars 4oz,Packaging,,ea,25,100,Uline Canada,3,,In Stock,Monitor
+Lip Balm Tubes,Packaging,,ea,50,200,Voyageur Soap & Candle,5,,In Stock,Monitor
+Kraft Labels,Packaging,,ea,100,500,Uline Canada,3,,In Stock,Monitor
+White Labels,Packaging,,ea,100,500,Uline Canada,3,,In Stock,Monitor
+Expiry Date Stickers,Packaging,,ea,200,1000,Uline Canada,3,,In Stock,Monitor
+
+===============================================================================
+INSTRUCTIONS FOR USE
+===============================================================================
+
+1. INGREDIENT INVENTORY (Tab 1):
+   - Update when ingredients are received, used, or reordered
+   - Check against production needs weekly
+   - Reorder when Quantity Remaining hits Reorder Level
+
+2. PACKAGING INVENTORY (Tab 2):
+   - Update when packaging is received or used
+   - Check before production runs
+   - Reorder when Quantity Remaining hits Reorder Level
+
+3. FINISHED GOODS INVENTORY (Tab 3):
+   - Update after each production run (enter Quantity Produced)
+   - Update when products are sold (enter Quantity Sold)
+   - Track batch codes against expiry dates
+   - Flag any product within 1 month of expiry for priority sale
+
+4. PRODUCTION SCHEDULE (Tab 4):
+   - Fill in actual dates and batch codes as production occurs
+   - Update Status column as work progresses
+   - Track progress against batch goal targets
+
+5. SALES TRACKING (Tab 5):
+   - Enter each sale with date, channel, customer, product, quantity, price
+   - Calculate profit after COGS
+   - Review weekly for sales trends
+
+6. COGS CALCULATOR (Tab 6):
+   - Fill in actual costs per batch after ingredients are purchased
+   - Calculate COGS per unit and margin %
+   - Review quarterly to adjust pricing
+
+7. REORDER TRACKING (Tab 7):
+   - Review weekly
+   - Place reorder when stock hits Reorder Level
+   - Update Last Order Date and Status when order placed
+   - Track lead time for planning
+
+===============================================================================
+END OF INVENTORY TRACKING SPREADSHEET
+===============================================================================

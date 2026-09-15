@@ -1,0 +1,119 @@
+MARKET ANALYSIS — Butter & Bloom
+(Companion to file 21 Market Research; read together)
+
+------------------------------------------------------------------------------
+1. TAM / SAM / SOM
+------------------------------------------------------------------------------
+  TAM  Canada natural & organic personal care
+       ~USD 1.75B (2025) -> 3.03B (2034)   [approx CAD 2.4B in 2026 at 1.36]
+       Source: Deep Market Insights, Jun 2026 (file 21).
+
+  SAM  Ontario bath & body (mass-to-prestige, clean/vegan-attracted).
+       Canada natural/org personal care ~USD 1.8B 2026 ---> Ontario is
+       the largest province (~39% of Canada's population and ~40% of its
+       cosmetics consumption). Conservative SAM ~ CAD 550-750M in 2026.
+
+  SOM  Realistic 3-year capture.
+       B&B sells at local markets, online, and wholesale/near-lines.
+       Base case revenue: $68k (Y1) -> $137k (Y2) -> $205k (Y3).
+       That is <0.03% of SAM; the constraint is production capacity and
+       distribution, NOT addressable demand. Even a "tough" 75% case still
+       yields a profitable, cash-positive small business.
+
+------------------------------------------------------------------------------
+2. MARKET SEGMENTATION & POSITIONING MAP
+------------------------------------------------------------------------------
+  Two axes: (a) price/position, (b) ethics/proof.
+
+  Quadrant map (price x ethics-proven *top row = higher*):
+    Mass, weak proof     Dove, Bath & Body Works, Life brand
+    Mass, strong proof   Dr. Bronner's, some Rocky Mountain lines
+    Premium, weak proof  many "clean" boutique lines with vague claims
+    Premium, strong proof Lush, Rocky Mountain Soap Co, Pure Anada, B&B
+
+  B&B lane = PREMIUM-ISH PRICE + MAXIMUM PROOF (full labelling, batch codes,
+  INCI lists, vegan) at a price BELOW Lush. Our $8 soap vs Lush ~$8.50-14;
+  our $10 body butter vs boutique $12-20. Verifiable craft at accessible
+  premium = "masstige" — the segment Circana says is growing +22%.
+
+  Collection architecture defends this map: scent story + palette = a
+  designed brand, not commodity bars.
+
+------------------------------------------------------------------------------
+3. COMPETITOR ANALYSIS
+------------------------------------------------------------------------------
+  Direct (artisan vegan, Canada/online):
+    Rocky Mountain Soap Co (Canmore AB) - strong brand/pricing, retail stores;
+      proof-led. Threat: premium bench; gap: not coastal Ontario/local.
+    Pure Anada (Manitoba) - clean/certified, wholesale friendly; boutique
+      shelf-share competitor in Ontario.
+    Bodylore, Agha Studio, Dip in Nature, Yahoo Soap & Candle Co - direct
+      handmade peers; mostly small, mostly regional. Proof quality varies.
+    Lush - the proof bar (ingredient stories, bath bomb hero), but premium
+      price + less "authentic Ontario craft" story.
+  Indirect:
+    Mass brands with "natural" SKUs (attract price-first buyers we don't
+    chase); drugstore bath bombs ($3-5); Chinese/AliExpress "handmade" soap
+    (cheap, zero trust - educated buyers avoid).
+  Substitute: nothing replaces the physical hand-made + batch-code proof
+  bundle we ship.
+
+  SWOT vs. competitive set:
+    Our moat: (1) full CNF-ready formulations, (2) batch traceability + QC
+    checklist system, (3) integrated site + costing discipline, (4) Ontario
+    local-first loyalty, (5) founder's hands-on maker credibility.
+    Their strength to answer: Lush-scale discovery budgets -> we win on
+    proof + local + price; boutique shelf reach -> we win on margin
+    + storytelling for retailers.
+
+------------------------------------------------------------------------------
+4. PESTLE — CANADA
+------------------------------------------------------------------------------
+  Political/Legal: Ontario Business Registry simulation; Federal beauty retail
+    rules (Health Canada label/allergen guidance tightening through 2026).
+    Grants ecosystem active (SCP, Futurpreneur, PARO, CFDC, digital grants).
+  Economic: beauty is counter-cyclical (+6% H1 2026); consumers cautious but
+    spending shifts to value-craft; our price is an accessible treat.
+  Social: clean/vegan/cruelty-free mainstream; gifting culture strong in
+    Eastern Ontario; "Made in Ontario" premium; veteran-free space but crowded
+    with small atomic brands -> need scent-design differentiation.
+  Technological: social e-commerce + video is the discovery engine for
+    craft; CNF e-filing now standard; e-commerce >75% of beauty growth.
+  Environmental: minimal/refillable packaging trend; B&B kraft/glass story
+    converts Eco buyers; compostable labels where practical.
+  Legal note: allergen list grows 24 -> 81 (Aug 2026); cost it.
+
+------------------------------------------------------------------------------
+5. CUSTOMER & CHANNEL ANALYSIS
+------------------------------------------------------------------------------
+  Revenue mix target (Y3): 45% markets/local, 35% online, 15% wholesale,
+  5% custom/corporate. Channels ranked by margin (see file 23):
+    1. Markets/pickup            ~84% gross (no shipping)
+    2. Custom/wedding            ~70%+ project margin
+    3. Online bundles            ~74% net incl. shipping at 4 items
+    4. Online singles            ~55-65%  -> de-prioritise, use as bait
+    5. Wholesale to boutique     ~65% margin below retail (retailer marks up)
+
+  Churn/retention: bathrooms run out of soap every ~4-6 weeks for regulars;
+  subscription/refill + loyalty punch-cards at markets are low-cost retention
+  levers.
+
+------------------------------------------------------------------------------
+6. COMPETITIVE PRICING VERDICT
+------------------------------------------------------------------------------
+  "Your prices" tier mostly wins vs. lane benchmarks except:
+    Lip Balm $3 vs. premium vegan $4-6 -> raise to $4.
+    Sugar Scrub $6 (450 g) is generous-value; fine as a volume hero.
+    Body Butter $10 vs. $12-20 -> room to $12.
+  Recommended tier [9/7/11/7/4/12] aligns products to their quality lane
+  without leaving the accessible-premium band.
+
+------------------------------------------------------------------------------
+7. RISK-ADJUSTED VIEW
+------------------------------------------------------------------------------
+  What could make us hit only 60% of plan: slower market calendar (seasonal
+  gaps), shipping drag online, producer capacity. Mitigations baked into
+  forecasts (file 23): cash-flow reserved for fallow months, bundle-first
+  online, batch schedule that front-loads Q4.
+  What could 2x the plan: one wholesale pickup (5+ boutiques), one tourism
+  contract, holiday bundle breakout. All are upside options, not assumptions.

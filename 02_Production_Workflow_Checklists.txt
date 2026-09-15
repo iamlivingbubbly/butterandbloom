@@ -1,0 +1,263 @@
+BUTTER & BLOOM — MASTER PRODUCTION WORKFLOW & STEP-BY-STEP CHECKLISTS
+===============================================================================
+
+Standard Operating Procedure: PRO-WORKFLOW-001
+Effective Date: ____________  Version: 1.0
+Approved By: ____________
+
+===============================================================================
+MASTER WORKFLOW — PRODUCTION SEQUENCE
+===============================================================================
+
+PHASE 1: PLAN
+  1. Review production schedule and batch goals
+  2. Select products for this production cycle
+  3. Pull formulation sheets for selected products
+  4. Calculate ingredient quantities for batch size
+  5. Create Ingredient Need List (INL)
+  6. Pull batch record templates and label templates
+  7. Assign batch codes (format: [Product]-[YYYYMMDD]-[Sequence])
+
+PHASE 2: SOURCE
+  8. Check current inventory of all needed ingredients
+  9. Identify gaps vs. INL
+  10. Place orders for missing ingredients
+  11. Confirm delivery timeline before production date
+
+PHASE 3: RECEIVE
+  12. Receive and unpack all orders
+  13. Compare packing slips vs. orders (verify quantities)
+  14. Record lot numbers and expiry dates
+  15. Inspect for damage (packaging leaks, broken seals)
+  16. File receipts and create lot records
+
+PHASE 4: LOT-CODE & STORE
+  17. Affix internal lot barcode label to each container
+      Label format: [Ingredient Abbreviation]-[YYYYMMDD]-[Lot#]
+      Example: OLI-20260807-001 (Olive oil, Aug 7 2026, Lot 001)
+  18. Record lot code in lot tracking log (see Lot Tracking Log)
+  19. Store ingredients in designated location per storage map
+  20. Confirm all ingredients accounted for
+
+PHASE 5: PRODUCE
+  21. Sanitize workspace (see Sanitization Checklist)
+  22. Set up equipment per product requirements
+  23. Don PPE (gloves, goggles, long sleeves, apron)
+  24. Verify scale calibration (last cal date within range)
+  25. Pull ingredients from storage, verify lot codes
+  26. Weigh all ingredients, verify by second person
+  27. Execute product-specific production steps (see Product SOPs)
+  28. Record all observations in Batch Production Record
+  29. Complete batch record as you go (do not wait until end)
+
+PHASE 6: RECORD
+  30. Transfer raw data from Batch Production Record to tracking spreadsheet
+  31. Record start/end times for each process step
+  32. Record temperatures at key points
+  33. Record actual vs. target weights
+  34. Note any deviations from standard
+
+PHASE 7: CURE / DRY
+  35. Move products to designated cure/dry station
+  36. Label each curing rack with batch code and date
+  37. Set curing timer (product-specific, see Cure Times below)
+  38. Log cure start time in Batch Record
+  39. Monitor curing environment (temperature, humidity)
+  40. Log cure end time when complete
+
+PHASE 8: QC
+  41. Perform QC inspection (see QC Inspection Checklist)
+  42. Record pass/fail for each check
+  43. If fail: document issue and rework plan
+  44. If pass: release for packaging
+  45. Sign off on Batch Record QC section
+
+PHASE 9: PACKAGE
+  46. Sanitize packaging area
+  47. Pull approved packaging materials
+  48. Verify label matches batch code
+  49. Package product per Packaging Spec Sheet
+  50. Record packaging details in Batch Record
+
+PHASE 10: LABEL
+  51. Affix primary label (product name, batch code, weight)
+  52. Affix secondary label (ingredients, warnings, usage)
+  53. Affix expiry date label (manufacture date + shelf life)
+  54. Verify all labels are legible, straight, no bubbles
+  55. Sign off on Label Verification in Batch Record
+
+PHASE 11: INVENTORY
+  56. Enter finished goods into inventory system
+  57. Record batch code, product, quantity, manufacture date, expiry
+  58. Assign location in finished goods storage
+  59. Update inventory spreadsheet
+  60. Confirm ready for release or sale
+
+===============================================================================
+SANITIZATION CHECKLIST
+===============================================================================
+
+Before Each Production Run:
+  [ ] All work surfaces wiped with food-grade sanitizer
+  [ ] Cutting boards sanitized
+  [ ] Mixing tools cleaned and dried
+  [ ] Scales wiped down
+  [ ] Storage containers inspected and clean
+  [ ] Gloves changed (fresh pair)
+  [ ] Apron clean
+  [ ] Hands washed for 20+ seconds
+  [ ] Hair tied back, no loose jewelry
+  [ ] Floor area clear of debris
+  [ ] Trash emptied if full
+
+Verified By: ________________  Time: ________  Date: ____________
+
+===============================================================================
+CURE TIMES BY PRODUCT
+===============================================================================
+
+| Product | Cure Type | Duration | Notes |
+|---------|-----------|----------|-------|
+| Cold-Process Soap | Cure (air dry) | 4–6 weeks | Unmold at 24–48 hrs; cut at 24–48 hrs |
+| Hot-Process Soap | Cure (air dry) | 1–2 weeks | Can use sooner; improves with cure |
+| Bath Bombs | Dry (air) | 24–48 hrs | Handle with gloves to avoid fingerprints |
+| Shower Steamers | Dry (air) | 24–48 hrs | Keep in low-humidity area |
+| Sugar Scrub | N/A | None | Ready after cooling to room temp |
+| Lip Balm | Set | 30 min–1 hr | Pour, cool, cap |
+| Whipped Body Butter | Set | 1–2 hrs | Cool to room temp before jarring |
+
+===============================================================================
+PRODUCT-SPECIFIC CHECKLISTS
+===============================================================================
+
+--- COLD-PROCESS SOAP ---
+
+  [ ] Scale verified calibrated
+  [ ] All oils weighed
+  [ ] Lye (NaOH) weighed in sealed container
+  [ ] Water weighed
+  [ ] Lye solution prepared (lye into water, NOT water into lye)
+  [ ] Lye solution cooled to 35–45°C
+  [ ] Oils warmed to 35–45°C
+  [ ] Lye solution poured into oils
+  [ ] Stick blended to trace (light to medium)
+  [ ] Fragrance/essential oil added at light trace
+  [ ] Colors added (if applicable)
+  [ ] Poured into mold
+  [ ] Tap mold to remove air bubbles
+  [ ] Insulate mold if gel phase desired
+  [ ] Mold covered and labeled with batch code
+  [ ] Unmolded after 24–48 hours
+  [ ] Cut into bars
+  [ ] Bars placed on curing rack with airflow
+  [ ] Batch code written on each bar or batch label on rack
+  [ ] Cure 4–6 weeks, rotating bars weekly
+
+--- HOT-PROCESS SOAP ---
+
+  [ ] Scale verified calibrated
+  [ ] All oils weighed
+  [ ] Lye (NaOH) weighed in sealed container
+  [ ] Water weighed
+  [ ] Lye solution prepared (lye into water)
+  [ ] Oils warmed in slow cooker/crockpot
+  [ ] Lye solution added to oils
+  [ ] Stick blended to trace
+  [ ] Cook on low, stirring every 10–15 minutes
+  [ ] Monitor for gel phase → paste → applesauce → Vaseline stage
+  [ ] Soap reaches 95°C+ internally (ensures saponification complete)
+  [ ] Cooled slightly, then add fragrance/essential oil
+  [ ] Add colorants if desired
+  [ ] Spoon into mold, press firmly
+  [ ] Cool 24 hours
+  [ ] Unmold and cut
+  [ ] Cure 1–2 weeks (longer = harder bar)
+
+--- BATH BOMBS ---
+
+  [ ] Dry ingredients weighed (baking soda, citric acid, cornstarch)
+  [ ] Wet ingredients measured (oil, fragrance, color)
+  [ ] Dry ingredients sifted (no clumps)
+  [ ] Wet poured slowly into dry, stirring constantly
+  [ ] Mixture holds shape when squeezed (the "squeeze test")
+  [ ] Mixture packed firmly into molds
+  [ ] Excess scraped level with mold
+  [ ] Mold tops placed, pressed
+  [ ] Inverted and tapped to release
+  [ ] Left undisturbed for 24–48 hours
+  [ ] Removed from molds carefully
+  [ ] Inspected for cracks or crumbles
+  [ ] Wrapped promptly (moisture-sensitive)
+
+--- SHOWER STEAMERS ---
+
+  [ ] Dry ingredients weighed (baking soda, citric acid, cornstarch, Kaolin clay)
+  [ ] Wet ingredients measured (water, fragrance/EO, color)
+  [ ] Dry sifted
+  [ ] Wet poured slowly into dry, minimal stirring (avoid fizzing)
+  [ ] Mixture packed firmly into molds
+  [ ] Leveled off, tapped
+  [ ] Dried 24–48 hours
+  [ ] Unmolded carefully
+  [ ] Wrapped promptly (moisture-sensitive)
+
+--- SUGAR SCRUB ---
+
+  [ ] Sugar weighed (white, brown, or mix)
+  [ ] Carrier oil(s) measured
+  [ ] Fragrance/EO measured
+  [ ] Oil gently warmed if solid (shea, coconut)
+  [ ] Oil combined with sugar, stirred to even consistency
+  [ ] Fragrance added, stirred well
+  [ ] Color added (if desired)
+  [ ] Transferred to jars while still slightly warm
+  [ ] Jars sealed and labeled
+  [ ] Jars cooled to room temp before final capping
+  [ ] Weight verified per jar
+
+--- LIP BALM ---
+
+  [ ] Candelilla wax weighed
+  [ ] Cocoa or mango butter weighed
+  [ ] Carrier oil measured
+  [ ] Candelilla wax melted in double boiler (low heat)
+  [ ] Butter added, melted through
+  [ ] Oil added, stirred to combine
+  [ ] Fragrance/essential oil added off heat
+  [ ] Poured into tubes or tins immediately
+  [ ] Left undisturbed until set (30 min–1 hr)
+  [ ] Capped, labeled, and stored
+
+--- WHIPPED BODY BUTTER ---
+
+  [ ] Shea butter weighed
+  [ ] Cocoa butter weighed
+  [ ] Coconut oil measured
+  [ ] Carrier oil(s) measured
+  [ ] Butters melted together (low heat)
+  [ ] Oils added, stirred
+  [ ] Cooled to room temp, then refrigerated until opaque/solid
+  [ ] Whip with hand mixer until fluffy
+  [ ] Fragrance/EO added during whipping
+  [ ] Whipped to soft-serve consistency
+  [ ] Spooned into jars
+  [ ] Capped and labeled
+  [ ] Jars cooled fully before shipping/labeling
+
+===============================================================================
+PRODUCTION LOG (Daily)
+===============================================================================
+
+Date: ____________  Day: ____________
+
+| Product | Batch Code | Start Time | End Time | Yield | Status | Notes |
+|---------|------------|------------|----------|-------|--------|-------|
+|         |            |            |          |       |        |       |
+|         |            |            |          |       |        |       |
+|         |            |            |          |       |        |       |
+|         |            |            |          |       |        |       |
+|         |            |            |          |       |        |       |
+
+===============================================================================
+END OF PRODUCTION WORKFLOW DOCUMENT
+===============================================================================

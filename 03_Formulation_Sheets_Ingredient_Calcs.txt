@@ -1,0 +1,356 @@
+BUTTER & BLOOM — FORMULATION SHEETS & INGREDIENT CALCULATIONS
+===============================================================================
+
+Master Formulation Reference — Version 1.0
+Effective Date: ____________
+
+All formulations are based on standard batch sizes. Scale quantities proportionally for different batch sizes.
+Always use a digital scale accurate to 0.1 g for small batches and 1 g for large batches.
+
+===============================================================================
+COLD-PROCESS SOAP — MASTER FORMULA (1,000 g Oil Batch)
+===============================================================================
+
+Oil Phase:
+| Ingredient        | Percentage | Weight (g) | Weight (oz) |
+|-------------------|------------|------------|-------------|
+| Olive Oil (Pomace)| 40%        | 400.0      | 14.11       |
+| Coconut Oil (76°F) | 25%       | 250.0      | 8.82        |
+| Palm Oil (RSPO)   | 20%        | 200.0      | 7.05        |
+| Shea Butter       | 10%        | 100.0      | 3.53        |
+| Castor Oil        | 5%         | 50.0       | 1.76        |
+| TOTAL OIL         | 100%       | 1,000.0    | 35.27       |
+
+Lye & Water (5% Superfat):
+| Ingredient        | Weight (g) | Weight (oz) | Notes |
+|-------------------|------------|-------------|-------|
+| Sodium Hydroxide (NaOH) | ~140.0 | ~4.94      | Use SoapCalc for precise amount |
+| Distilled Water   | ~300.0     | ~10.58      | 2.14:1 water-to-lye ratio |
+| TOTAL BATCH WEIGHT | ~1,440.0  | ~50.80      |       |
+
+IMPORTANT — LYE CALCULATION:
+Treat the lye quantity (~140 g) as the source's formulation specification,
+NOT a universal amount. Any change to the oils, quantities, purity, or
+superfat requires recalculation using a lye calculator (SoapCalc, Soapmaking
+Friend, SoapMaker 3, or Soaply).
+
+Additives (Optional — add at trace):
+| Additive | Amount | Timing |
+|----------|--------|--------|
+| Essential Oil/Fragrance | 25–30 g (1 oz) per 1,000 g oil | At light trace |
+| Essential Oil (EO) Blend | 20–25 g per 1,000 g oil | At light trace |
+| Sodium Lactate | 1 tsp per 1,000 g oil | Into cooled lye solution |
+| Colorant (mica) | 1 tsp per 1,000 g oil | At trace |
+| Colorant (oxide) | 0.5 tsp per 1,000 g oil | At trace |
+| Oatmeal (colloidal) | 1 Tbsp per 1,000 g oil | At trace |
+| Honey | 1 tsp per 1,000 g oil | At trace (wider water discount) |
+| Goat Milk | Replace water 1:1 | Freeze first, add lye slowly |
+
+Batch Scaling Quick Reference:
+| Oil Batch Size | NaOH (5% superfat) | Water | Fragrance (30 g/1,000 g oil) |
+|----------------|---------------------|-------|-------------------------------|
+| 500 g          | ~70 g               | ~150 g | ~15 g                        |
+| 1,000 g        | ~140 g              | ~300 g | ~30 g                        |
+| 1,500 g        | ~210 g              | ~450 g | ~45 g                        |
+| 2,000 g        | ~280 g              | ~600 g | ~60 g                        |
+
+SAP Values (for SoapCalc verification):
+| Oil             | NaOH SAP Value | KOH SAP Value |
+|-----------------|----------------|---------------|
+| Olive Oil       | 0.1353         | 0.1900        |
+| Coconut Oil     | 0.1767         | 0.2480        |
+| Palm Oil        | 0.1410         | 0.1990        |
+| Shea Butter     | 0.1280         | 0.1800        |
+| Castor Oil      | 0.1286         | 0.1807        |
+
+===============================================================================
+HOT-PROCESS SOAP — MASTER FORMULA
+===============================================================================
+
+Uses same oil/lye/water ratios as Cold-Process.
+Additional step: Cook in slow cooker on LOW until internal temp reaches 95°C+.
+
+Cook Stages (approximate timing on LOW):
+| Stage | Internal Temp | Time (approx) | Appearance |
+|-------|---------------|---------------|------------|
+| Trace | ~40°C         | 10–20 min     | Pudding-like |
+| Gel   | ~70–80°C      | 30–45 min     | Translucent, waxy |
+| Applesauce | ~85–90°C | 45–60 min    | Lumpy, wet |
+| Vaseline | ~95–100°C   | 60–90 min    | Glossy, smooth |
+
+Add fragrance at "Vaseline" stage, stir in, then spoon into mold.
+
+===============================================================================
+BATH BOMBS — MASTER FORMULA (70 g x 4 Bombs = 280 g Batch)
+===============================================================================
+
+Dry Phase:
+| Ingredient              | Weight (g) | Per Bomb (g) |
+|-------------------------|------------|--------------|
+| Baking Soda (NaHCO3)    | 120.0      | 30.0         |
+| Citric Acid             | 60.0       | 15.0         |
+| Cornstarch              | 15.0       | 3.75         |
+| TOTAL DRY (excl. oil)   | 195.0      | 48.75        |
+
+Wet Phase:
+| Ingredient              | Amount |
+|-------------------------|--------|
+| Sweet Almond or Jojoba Oil | 7.5 mL |
+| Fragrance/Essential Oil  | 2.5–3.75 mL |
+| Polysorbate 80           | 3.75 mL |
+| Witch Hazel (spray bottle)| As needed |
+| Colorant (mica or liquid) | As desired |
+
+Citric Acid to Baking Soda Ratio = 1:2 (by weight)
+Finished weight per bomb with wet phase = ~70 g
+
+Wet-to-Dry Squeeze Test:
+Pinch mixture, squeeze — if it holds shape without crumbling, it's ready.
+If crumbles → mist with witch hazel (1–2 sprays at a time)
+If fizzing → too wet, add more dry mix
+
+Batch Scaling (per 4-bomb batch):
+| Bombs | Baking Soda | Citric Acid | Cornstarch | Oil (mL) | EO/FO (mL) | Poly 80 (mL) |
+|-------|-------------|-------------|------------|----------|------------|--------------|
+| 4     | 120 g       | 60 g        | 15 g       | 7.5      | 2.5–3.75   | 3.75         |
+| 12    | 360 g       | 180 g       | 45 g       | 22.5     | 7.5–11.25  | 11.25        |
+| 20    | 600 g       | 300 g       | 75 g       | 37.5     | 12.5–18.75 | 18.75        |
+
+===============================================================================
+SHOWER STEAMERS — MASTER FORMULA (3 Tablets ≈ 340 g Total)
+===============================================================================
+
+Dry Phase:
+| Ingredient              | Weight (g) | Per Tablet (g) |
+|-------------------------|------------|----------------|
+| Baking Soda (NaHCO3)    | 240.0      | ~80.0          |
+| Citric Acid             | 120.0      | ~40.0          |
+| Kaolin Clay             | 15.0       | ~5.0           |
+| TOTAL DRY               | 375.0      | ~125.0         |
+
+Wet Phase:
+| Ingredient              | Amount |
+|-------------------------|--------|
+| Essential Oils          | 15–25 mL |
+| Witch Hazel (spray)     | Light mist as binder |
+| Colorant                | As desired |
+
+Essential Oil Recommendations (per 3-tablet batch, ~15–25 mL total):
+| Scent Profile | EO Blend |
+|---------------|----------|
+| Eucalyptus-Mint | Eucalyptus 12 mL + Peppermint 5 mL |
+| Lavender | Lavender 18 mL |
+| Citrus Burst | Sweet Orange 10 mL + Lemon 5 mL + Grapefruit 5 mL |
+| Sinus Relief | Eucalyptus 10 mL + Peppermint 5 mL + Rosemary 5 mL |
+
+Mixing Tip: Stir wet into dry gently — do NOT over-mix or press too hard.
+Add witch hazel spray if needed to bind. Press firmly into molds and dry thoroughly.
+
+===============================================================================
+SUGAR SCRUB — MASTER FORMULA (≈450 g Batch)
+===============================================================================
+
+| Ingredient                 | Amount  | Notes |
+|----------------------------|---------|-------|
+| Sugar (granulated/brown)   | 400 g   | 45–60 g per 65 ml jar |
+| Grapeseed or Sweet Almond Oil | 120 mL | Can also use coconut/jojoba oil |
+| Fragrance/Essential Oil    | 10–15 mL | As desired |
+| Vitamin E Oil              | 5 mL    | Preservative/antioxidant |
+| TOTAL                      | ≈450 g  | ~4 x 4 oz (120 ml) jars |
+
+Direction: Combine sugar with oil, stir to even consistency. Add fragrance and
+vitamin E, stir well. Transfer to jars while slightly warm, seal, label.
+
+Sugar Scrub Variations:
+| Variation | Sugar Type | Oil Swap | EO Add-In |
+|-----------|------------|----------|-----------|
+| Vanilla Bean | White sugar | Add 1 tsp vanilla bean paste | Vanilla oleoresin |
+| Coffee | White + 1 Tbsp ground coffee | Keep grapeseed/almond | None |
+| Brown Sugar Glow | Brown sugar | Replace with shea | Sweet Orange EO |
+| Honey Oat | White sugar + 1 Tbsp oatmeal | Add 1 tsp honey | Lavender EO |
+| Citrus Sugar | White sugar + lemon zest | Add 1 tsp lemon zest | Lemon EO |
+
+===============================================================================
+LIP BALM — MASTER FORMULA (10 x 10 mL Tubes) — VEGAN
+===============================================================================
+
+| Ingredient              | Amount    | Notes |
+|-------------------------|-----------|-------|
+| Candelilla Wax          | 15 g      | Vegan wax (replaces beeswax) |
+| Cocoa or Mango Butter   | 15 g      | Mango = vegan alternative |
+| Sweet Almond Oil        | 30 mL     | Carrier oil |
+| Cosmetic Flavor/EO      | 5–10 drops | Suitable cosmetic flavor or selected EO |
+| TOTAL                   | ≈60 g     | ~10 x 10 mL tubes (6 g each) |
+
+Note: Candelilla wax is plant-based (from the candelilla shrub), making this
+formulation fully vegan when mango butter is used.
+
+Variations:
+| Variation | Butter Swap | Flavor / EO Add-In |
+|-----------|-------------|--------------------|
+| Vanilla | Cocoa butter | Vanilla flavor |
+| Mint    | Cocoa butter | Peppermint EO (2–3 drops) |
+| Berry   | Mango butter | Berry flavor |
+| Citrus  | Mango butter | Sweet orange flavor/EO |
+| Rose    | Cocoa butter | Rose flavor, rose petal powder |
+
+Pouring Notes:
+- Melt wax first, then add butter, then oil
+- Remove from heat before adding flavor/EO (EOs are volatile)
+- Pour immediately into tubes — wax sets fast
+- Fill to just above the rim (slight dome as it cools)
+
+===============================================================================
+WHIPPED BODY BUTTER — MASTER FORMULA (4 x 4 oz Jars)
+===============================================================================
+
+| Ingredient              | Amount   | Notes |
+|-------------------------|----------|-------|
+| Shea Butter             | 200 g    | Base butter |
+| Coconut Oil             | 100 g    | Softens texture |
+| Sweet Almond Oil        | 60 mL    | Carrier oil |
+| Fragrance Oil           | 15–20 mL | Or essential oils |
+| Arrowroot Powder        | 15–30 g  | Sets consistency, reduces greasiness |
+| TOTAL                   | ≈400 g   | ~4 x 4 oz (113 g) jars |
+
+Method:
+1. Melt shea and coconut together (low heat, double boiler)
+2. Add sweet almond oil, stir
+3. Cool to room temp → refrigerate until opaque and semi-solid
+4. Whip with hand mixer (3–5 min) until fluffy
+5. Add fragrance + arrowroot powder during whipping
+6. Whip to soft-serve consistency
+7. Spoon into jars, cap, label
+
+Body Butter Variations:
+| Variation | Swap/Add-In | EO Blend |
+|-----------|-------------|----------|
+| Lavender Dream | Same | Lavender 8 mL + Cedarwood 4 mL |
+| Citrus Sunrise | Same | Sweet Orange 10 mL + Lemon 5 mL |
+| Vanilla Bean | Add 1 tsp vanilla bean paste | Vanilla fragrance 15 mL |
+| Fresh Garden | Same | Rosemary 5 mL + Peppermint 3 mL + Tea Tree 3 mL |
+| Baby Soft | Replace coconut with jojoba oil | Chamomile (or unscented) |
+
+===============================================================================
+INVENTORY NEEDED FOR FULL PRODUCTION RUN (WEEK 1)
+===============================================================================
+
+Production Goal: 5 Soap Batches (50 bars) + 36 Bath Bombs + 36 Shower Steamers
++ 32 Sugar Scrubs (4 oz) + 30 Lip Balms (10 mL) + 16 Body Butters (4 oz)
+
+--- COLD-PROCESS SOAP (5 x 1,000 g batches) ---
+| Oil             | 5 Batches (g) | Purchase Size | Qty to Buy |
+|-----------------|---------------|-----------------|------------|
+| Olive Oil       | 2,000         | 1 L / 1 kg      | 2          |
+| Coconut Oil     | 1,250         | 1 kg            | 2          |
+| Palm Oil        | 1,000         | 1 kg            | 1          |
+| Shea Butter     | 500           | 1 kg            | 1          |
+| Castor Oil      | 250           | 500 ml          | 1          |
+| NaOH            | ~700          | 1 kg            | 1          |
+| Distilled Water | ~1,500        | 5 L             | 1          |
+| Fragrance/EO    | ~150          | 500 ml          | 1          |
+
+--- BATH BOMBS (36 bombs = 9 batches of 4) ---
+| Ingredient        | Needed       | Purchase Size | Qty |
+|-------------------|--------------|---------------|-----|
+| Baking Soda       | 1,080 g      | 1 kg          | 2   |
+| Citric Acid       | 540 g        | 1 kg          | 1   |
+| Cornstarch        | 135 g        | 500 g         | 1   |
+| Sweet Almond/Jojoba Oil | 67.5 ml | (shared below) | — |
+| Polysorbate 80    | 33.75 ml     | 500 ml        | 1   |
+| Fragrance/EO      | 22.5–33.75 ml | (shared)      | —   |
+
+--- SHOWER STEAMERS (36 tablets = 12 batches of 3) ---
+| Ingredient        | Needed       | Purchase Size | Qty |
+|-------------------|--------------|---------------|-----|
+| Baking Soda       | 2,880 g      | (shared below) | —   |
+| Citric Acid       | 1,440 g      | (shared below) | —   |
+| Kaolin Clay       | 180 g        | 250 g         | 1   |
+| Essential Oils    | 180–300 ml   | (shared)      | —   |
+
+--- SUGAR SCRUBS (32 jars = 8 batches of 4 x 4 oz jars) ---
+| Ingredient          | Needed (8 batches) | Purchase Size | Qty |
+|---------------------|--------------------|---------------|-----|
+| Sugar               | 3,200 g            | 1 kg          | 4   |
+| Grapeseed/Almond Oil| 960 ml             | (shared below) | —  |
+| Fragrance/EO        | 80–120 ml          | (shared)      | —   |
+| Vitamin E Oil       | 40 ml              | 500 ml        | 1   |
+
+--- LIP BALM (30 tubes = 3 batches of 10) ---
+| Ingredient          | Needed (3 batches) | Purchase Size | Qty |
+|---------------------|--------------------|---------------|-----|
+| Candelilla Wax      | 45 g               | 250 g         | 1   |
+| Cocoa or Mango Butter | 45 g            | (shared)      | —   |
+| Sweet Almond Oil    | 90 ml              | (shared below) | —  |
+| Cosmetic Flavor/EO  | 15–30 drops        | (shared)      | —   |
+
+--- WHIPPED BODY BUTTER (16 jars = 4 batches of 4 x 4 oz) ---
+| Ingredient          | Needed (4 batches) | Purchase Size | Qty |
+|---------------------|--------------------|---------------|-----|
+| Shea Butter         | 800 g              | (shared below) | —  |
+| Coconut Oil         | 400 g              | (shared below) | —  |
+| Sweet Almond Oil    | 240 ml             | (shared below) | —  |
+| Fragrance Oil       | 60–80 ml           | (shared)      | —   |
+| Arrowroot Powder    | 60–120 g           | 500 g         | 1   |
+
+--- COMBINED SHARED INGREDIENTS (total to purchase) ---
+| Ingredient          | Total Needed | Purchase Size | Qty to Buy |
+|---------------------|--------------|-----------------|------------|
+| Baking Soda         | 3,960 g      | 1 kg            | 4          |
+| Citric Acid         | 1,980 g      | 1 kg            | 2          |
+| Cornstarch          | 135 g        | 500 g           | 1          |
+| Kaolin Clay         | 180 g        | 250 g           | 1          |
+| Sugar               | 3,200 g      | 1 kg            | 4          |
+| Candelilla Wax      | 45 g         | 250 g           | 1          |
+| Arrowroot Powder    | 60–120 g     | 500 g           | 1          |
+| Sweet Almond Oil    | ~1,297 ml    | 1 L             | 2          |
+| (bombs 67.5 + scrub 960 + lip 90 + butter 240) | | | |
+| Coconut Oil         | 1,650 g      | 1 kg            | 2          |
+| (soap 1,250 + butter 400) |                        |             |            |
+| Shea Butter         | 1,300 g      | 1 kg            | 2          |
+| (soap 500 + butter 800) |                          |             |            |
+| Cocoa/Mango Butter  | 45 g         | 250 g           | 1          |
+| Polysorbate 80      | 33.75 ml     | 500 ml          | 1          |
+| Vitamin E Oil       | 40 ml        | 500 ml          | 1          |
+| Essential/Fragrance Oils | ~430 ml total | 500 ml      | 1 (of each scent) |
+
+===============================================================================
+WEIGHT MEASUREMENT QUICK REFERENCE
+===============================================================================
+
+| Measurement | Grams | Ounces |
+|-------------|-------|--------|
+| 1 Tbsp (sugar) | ~12 g | ~0.42 oz |
+| 1 tsp | ~4 g | ~0.14 oz |
+| 1 oz (weight) | 28.35 g | 1 oz |
+| 1 lb | 453.6 g | 16 oz |
+| 1 cup (sugar) | ~200 g | ~7.05 oz |
+| 1 cup (liquid) | ~240 ml / g | ~8.47 fl oz |
+
+===============================================================================
+SAFETY NOTES
+===============================================================================
+
+LYE (Sodium Hydroxide):
+- Always add lye TO water, never water to lye
+- Work in well-ventilated area
+- Wear goggles, gloves, long sleeves
+- Lye solution heats to ~90°C — keep away from children
+- Store in sealed, labeled container away from moisture
+- Have white vinegar accessible (neutralizes lye burns)
+
+CITRIC ACID:
+- Avoid inhaling dust — work in ventilated area
+- Can irritate eyes and skin
+- Wear mask when mixing bath bomb dry ingredients
+
+ESSENTIAL OILS:
+- Never apply undiluted to skin
+- Keep away from eyes
+- Check for photo-sensitivity (citrus EOs)
+- Store in cool, dark place
+- Keep out of reach of children
+
+===============================================================================
+END OF FORMULATION SHEETS
+===============================================================================

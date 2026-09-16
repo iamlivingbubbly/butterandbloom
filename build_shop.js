@@ -366,7 +366,7 @@ function home() {
       <h1 class="hero-line" aria-live="polite">Made slowly.<br>Made thoughtfully.</h1>
       <p class="hero-sub">Artisanal skincare made by hand, vegan and traceable, Ontario-made.</p>
       <div class="hero-cta">
-        <a class="btn btn-pine" href="#shop" data-nav="shop">Shop the collection</a>
+        <a class="btn btn-pine" href="#build" data-nav="shop">Shop the collection</a>
         <a class="btn btn-ghost" href="#scent-guide" data-nav="scent-guide">How to read a scent</a>
       </div>
       <div class="trust-row">
@@ -398,29 +398,29 @@ function home() {
         <div class="f-tile" style="background:linear-gradient(150deg,#efe7dc,#ead9d6)">${productSVG('bar', '#C9A39B')}</div>
         <div class="f-meta"><span>Soap</span><b>Lavender Oat</b></div>
         <div class="f-price">$9.00</div>
-        <a class="f-shop" href="#shop" data-nav="shop">Shop</a>
+        <a class="f-shop" href="#build" data-nav="shop">Shop</a>
       </div>
       <div class="feature">
         <div class="f-tile" style="background:linear-gradient(150deg,#f8f0da,#f4d9a6)">${productSVG('jar', '#D9A441')}</div>
         <div class="f-meta"><span>Sugar Scrub</span><b>Vanilla Bean</b></div>
         <div class="f-price">$7.00</div>
-        <a class="f-shop" href="#shop" data-nav="shop">Shop</a>
+        <a class="f-shop" href="#build" data-nav="shop">Shop</a>
       </div>
       <div class="feature">
         <div class="f-tile" style="background:linear-gradient(150deg,#f3efe4,#e7e0cf)">${productSVG('tube', '#B9805F')}</div>
         <div class="f-meta"><span>Lip Balm</span><b>Vanilla Bean</b></div>
         <div class="f-price">$4.00</div>
-        <a class="f-shop" href="#shop" data-nav="shop">Shop</a>
+        <a class="f-shop" href="#build" data-nav="shop">Shop</a>
       </div>
       <div class="feature">
         <div class="f-tile" style="background:linear-gradient(150deg,#efe7dc,#e3d5c4)">${productSVG('jar', '#B9805F')}</div>
         <div class="f-meta"><span>Body Butter</span><b>Lavender Dream</b></div>
         <div class="f-price">$12.00</div>
-        <a class="f-shop" href="#shop" data-nav="shop">Shop</a>
+        <a class="f-shop" href="#build" data-nav="shop">Shop</a>
       </div>
     </div>
     <div style="text-align:center;margin-top:1.6rem">
-      <a class="btn btn-ghost" href="#shop" data-nav="shop">Shop all</a>
+      <a class="btn btn-ghost" href="#build" data-nav="shop">Shop all</a>
     </div>
   </section>
 
@@ -463,7 +463,7 @@ function home() {
         <h2>Shop the collection</h2>
         <p class="about-p" style="margin-top:.4rem">Everything batched by hand, labelled with its code and date. Prices in CAD.</p>
       </div>
-      <a class="btn btn-pine" href="#shop" data-nav="shop">Shop all products</a>
+      <a class="btn btn-pine" href="#build" data-nav="shop">Design your own</a>
     </div>
   </section>`;
 }
@@ -477,17 +477,7 @@ function shop() {
     </div>
     <div class="coll-grid">${collections.map(collectionCard).join('')}</div>
   </section>
-  ${configurator()}
-  <section class="block" id="shop">
-    <div class="block-head">
-      <h2>Shop</h2>
-      <p class="sub">Everything batched by hand, labelled with its code and date. Prices in CAD, handmade to order.</p>
-    </div>
-    <div class="cat-filters" id="catFilters">
-      ${categories.map((c, i) => `<button class="cat-chip ${i === 0 ? 'active' : ''}" data-cat="${c.id}">${c.label}</button>`).join('')}
-    </div>
-    <div class="shop-grid" id="shopGrid">${products.map(productCard).join('')}</div>
-  </section>`;
+  ${configurator()}`;
 }
 
 function designerStage(shape, accent, t1, t2) {
@@ -886,7 +876,7 @@ function policies() {
 
     <div class="pol-card" id="pol-order">
       <h3 class="g-h3">How to order</h3>
-      <p class="about-p">Add products to your cart from the <a href="#shop" data-nav="shop">Shop</a>, enter your name and email, and request the order. We reply by email to confirm the details and the total before anything is made. Want it your way? Use the Design-your-own builder for a custom collection, product, size, and scent.</p>
+      <p class="about-p">Add products to your cart from the <a href="#build" data-nav="shop">Design-your-own builder</a>, enter your name and email, and request the order. We reply by email to confirm the details and the total before anything is made. Collection, product, size, and scent are all yours to choose.</p>
     </div>
 
     <div class="pol-card" id="pol-shipping">
@@ -922,7 +912,7 @@ function policies() {
 
 const nav = [
   ['home', '#home', 'Home'],
-  ['shop', '#shop', 'Shop'],
+  ['shop', '#build', 'Shop'],
   ['scent-guide', '#scent-guide', 'Scent Guide'],
   ['about', '#about', 'About'],
   ['guide', '#guide', 'Care Guide'],
@@ -1364,7 +1354,7 @@ const html = `<!DOCTYPE html>
       <p>Handcrafted skincare, made slowly and made thoughtfully in small batches.</p>
     </div>
     <div class="foot-col"><div class="fc-title">Explore</div>
-      <a href="#shop" data-nav="shop">Shop</a><a href="#collections" data-nav="collections">Collections</a><a href="#about" data-nav="about">About</a>
+      <a href="#build" data-nav="shop">Shop</a><a href="#collections" data-nav="collections">Collections</a><a href="#about" data-nav="about">About</a>
     </div>
     <div class="foot-col"><div class="fc-title">Learn</div>
       <a href="#guide" data-nav="guide">Care Guide</a><a href="#scent-guide" data-nav="scent-guide">How to read a scent</a><a href="#guide" data-nav="guide">Shelf Life</a><a href="#contact" data-nav="contact">Ingredients &amp; allergens</a>
@@ -1417,16 +1407,6 @@ const html = `<!DOCTYPE html>
     });
   });
 
-  // catalog filter
-  const chips = document.querySelectorAll('.cat-chip');
-  const cards = document.querySelectorAll('.product-card');
-  chips.forEach(ch => ch.addEventListener('click', () => {
-    chips.forEach(c => c.classList.remove('active'));
-    ch.classList.add('active');
-    const cat = ch.dataset.cat;
-    cards.forEach(c => c.style.display = (cat === 'all' || c.dataset.cat === cat) ? '' : 'none');
-  }));
-
   // hero rotating taglines
   const heroSlides = [
     'Made slowly.<br>Made thoughtfully.',
@@ -1451,6 +1431,8 @@ const html = `<!DOCTYPE html>
   var cartKey = 'bb_cart_v1', orderKey = 'bb_orders_v1';
   var cart = JSON.parse(localStorage.getItem(cartKey) || '[]');
   function escH(s){ return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  const CATALOG = ${JSON.stringify(products)};
+  const productSVGjs = ${productSVG.toString()};
 
   function cartCount() { return cart.reduce(function (s, i) { return s + i.qty; }, 0); }
   function cartTotal() { return cart.reduce(function (s, i) { return s + i.price * i.qty; }, 0); }
@@ -1591,7 +1573,6 @@ const html = `<!DOCTYPE html>
     }
     var ranked = Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; }).slice(0, 4);
     if (!ranked.length) return;
-    var cards = document.querySelectorAll('.product-card');
     var html = '';
     for (var r = 0; r < ranked.length; r++) {
       var label = ranked[r], scent = '', prodName = ranked[r];
@@ -1600,22 +1581,16 @@ const html = `<!DOCTYPE html>
         prodName = parts[1]; scent = parts[2];
       }
       var found = null;
-      for (var c = 0; c < cards.length; c++) {
-        var pn = cards[c].querySelector('.pc-name');
-        if (pn && pn.textContent === prodName) { found = cards[c]; break; }
+      for (var c = 0; c < CATALOG.length; c++) {
+        if (CATALOG[c].name === prodName) { found = CATALOG[c]; break; }
       }
       if (found) {
-        var tile = found.querySelector('.pc-tile');
-        var art = tile ? tile.innerHTML : '';
-        var bg = tile ? (tile.getAttribute('style') || '') : '';
-        var price = found.querySelector('.pc-price') ? found.querySelector('.pc-price').textContent : '';
-        if (!scent) {
-          var sc = found.querySelector('.pc-scent span');
-          scent = sc ? sc.textContent.split(' · ')[0] : '';
-        }
-        html += '<div class="feature"><div class="f-tile" style="' + bg + '">' + art + '</div>' +
+        var art = found.img ? '<img class="prod-photo" src="' + escH(found.img) + '" alt="' + escH(found.name) + '">' : productSVGjs(found.icon, '#B9805F');
+        var price = '$' + found.price.toFixed(2);
+        if (!scent) scent = found.scents.split(' · ')[0];
+        html += '<div class="feature"><div class="f-tile" style="background:linear-gradient(135deg,var(--paper),var(--cream))">' + art + '</div>' +
           '<div class="f-meta"><span>' + escH(label) + '</span><b>' + escH(scent) + '</b></div>' +
-          '<div class="f-price">' + price + '</div><a class="f-shop" href="#shop" data-nav="shop">Shop</a></div>';
+          '<div class="f-price">' + price + '</div><a class="f-shop" href="#build" data-nav="shop">Shop</a></div>';
       }
     }
     if (html) g.innerHTML = html;
@@ -1723,9 +1698,19 @@ const html = `<!DOCTYPE html>
     });
   });
 
-  const init = (location.hash || '').replace('#', '');
+  const initRaw = (location.hash || '').replace('#', '');
+  const init = initRaw === 'build' ? 'shop' : initRaw;
   show(document.getElementById(init) && init !== 'home' ? init : 'home', true);
-  window.addEventListener('hashchange', () => { const h = (location.hash || 'home').replace('#', ''); show(h, false); });
+  if (initRaw === 'build') setTimeout(() => { const t = document.getElementById('build'); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80);
+  window.addEventListener('hashchange', () => {
+    let h = (location.hash || 'home').replace('#', '');
+    if (h === 'build') {
+      show('shop', false);
+      setTimeout(() => { const t = document.getElementById('build'); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80);
+    } else {
+      show(h, false);
+    }
+  });
 </script>
 </body>
 </html>`;

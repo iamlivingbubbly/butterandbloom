@@ -569,11 +569,16 @@ function configurator() {
       </div>
     </div>
 
+    <div class="cfg-contact">
+      <input class="cfg-input" id="cfgName" placeholder="Your name" autocomplete="name">
+      <input class="cfg-input" id="cfgEmail" type="email" placeholder="Your email, for a confirmation reply" autocomplete="email">
+    </div>
+
     <div class="cfg-bar">
       <div class="cfg-summary"><span>Your order</span><b id="cfgSummary">Soft Glow · Soap · Lavender · Standard (4 oz)</b></div>
       <button type="button" class="btn btn-pine" id="cfgRequest">Create Your Skincare</button>
     </div>
-    <p class="cfg-note" id="cfgStatus">Configurations are handmade to order, estimated price above. Travel 1 oz · Standard 4 oz · Luxury 8 oz.</p>
+    <p class="cfg-note" id="cfgStatus">Configurations are handmade to order, estimated price above. Add your name and email so we can confirm before we make anything. Travel 1 oz · Standard 4 oz · Luxury 8 oz.</p>
   </section>`;
 }
 
@@ -1119,6 +1124,9 @@ const html = `<!DOCTYPE html>
   .cfg-details { display:grid; grid-template-columns:auto 1fr; gap:.4rem 1.1rem; font-size:.84rem; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:.9rem 1.05rem; max-width:360px; }
   .cfg-details span { color:var(--ink-soft); }
   .cfg-details b { color:var(--pine-deep); font-weight:600; }
+  .cfg-contact { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1.1rem; }
+  .cfg-input { flex:1 1 220px; font-family:inherit; font-size:.88rem; border:1px solid var(--line); border-radius:10px; padding:.68rem .9rem; background:var(--panel); color:var(--ink); }
+  .cfg-input:focus { outline:2px solid rgba(95,116,90,.3); border-color:var(--pine); }
   .cfg-preview { position:sticky; top:1rem; display:flex; flex-direction:column; gap:.9rem; }
   .cfg-preview-head { font-family:'DM Serif Display',Georgia,serif; font-size:1.06rem; color:var(--pine-deep); }
   .cfg-pv-stage { background:linear-gradient(160deg,#faf7f0,#efe7dc); border:1px solid var(--line); border-radius:18px; padding:1.4rem 1.4rem 1rem; text-align:center; box-shadow:var(--shadow); }
@@ -1614,6 +1622,8 @@ const html = `<!DOCTYPE html>
   const cfgCardMeta = $q('#cfgCardMeta');
   const cfgStage = $q('#cfgStage');
   const cfgPriceEl = $q('#cfgPrice');
+  const cfgNameInput = $q('#cfgName');
+  const cfgEmailInput = $q('#cfgEmail');
   const cfgDcoll = $q('#cfgDcoll');
   const cfgDprod = $q('#cfgDprod');
   const cfgDscent = $q('#cfgDscent');
@@ -1683,17 +1693,22 @@ const html = `<!DOCTYPE html>
 
   const cfgRequest = document.getElementById('cfgRequest');
   if (cfgRequest) cfgRequest.addEventListener('click', function () {
+    var st = document.getElementById('cfgStatus');
+    var cname = (cfgNameInput.value || '').trim();
+    var cemail = (cfgEmailInput.value || '').trim();
+    if (!cname) { if (st) st.textContent = 'Please add your name so we can confirm your order.'; cfgNameInput.focus(); return; }
+    if (!cemail) { if (st) st.textContent = 'Please add your email so we can send a confirmation.'; cfgEmailInput.focus(); return; }
+    if (cfgEmailInput.type && cfgEmailInput.checkValidity && !cfgEmailInput.checkValidity()) { if (st) st.textContent = 'That email address doesn’t look right, mind double-checking it?'; cfgEmailInput.focus(); return; }
     var num = 'BB-C-' + new Date().toISOString().slice(2, 10).replace(/-/g, '') + '-' + Math.floor(100 + Math.random() * 900);
     var price = cfgPrice();
     var items = [{ name: sel.coll + ' · ' + sel.prod + ' · ' + sel.scent, price: price, qty: 1, format: sel.size }];
-    var lines = 'Custom order ' + num + '\\n\\nCollection: ' + sel.coll + ' (' + sel.tag + ')\\nProduct: ' + sel.prod + '\\nScent: ' + sel.scent + '\\nSize: ' + sel.size + '\\nEstimated price: $' + price.toFixed(2) + ' CAD (plus GST/HST)\\n\\nChosen with the Design-your-own designer.';
-    var st = document.getElementById('cfgStatus');
+    var lines = 'Custom order ' + num + '\\n\\nCollection: ' + sel.coll + ' (' + sel.tag + ')\\nProduct: ' + sel.prod + '\\nScent: ' + sel.scent + '\\nSize: ' + sel.size + '\\nName: ' + cname + '\\nEmail: ' + cemail + '\\nEstimated price: $' + price.toFixed(2) + ' CAD (plus GST/HST)\\n\\nChosen with the Design-your-own designer.';
     cfgRequest.disabled = true;
     if (st) st.textContent = 'Sending your request…';
-    sendOrder('Custom order request ' + num, 'Design-your-own', '', lines, function (ok) {
+    sendOrder('Custom order request ' + num, cname, cemail, lines, function (ok) {
       if (ok) {
-        pushOrder(num, 'Design-your-own', 'not given', items);
-        if (st) st.textContent = 'Sent! It’s logged as ' + num + '. We’ll email you about price and lead time.';
+        pushOrder(num, cname, cemail, items);
+        if (st) st.textContent = 'Sent! It’s logged as ' + num + '. We’ll email ' + cname + ' at ' + cemail + ' to confirm price and lead time.';
       } else {
         if (st) st.textContent = 'Sending hiccuped. Please email butterandbloom.ca.shop@gmail.com with your selections.';
       }

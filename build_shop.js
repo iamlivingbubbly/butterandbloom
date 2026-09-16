@@ -115,11 +115,8 @@ const configData = {
   products: ['Soap', 'Bath Bomb', 'Shower Steamer', 'Sugar Scrub', 'Lip Balm', 'Body Butter'],
   productHints: ['Bar of cold-process soap', 'Fizz, colour & soak', 'Steam, no bath required', 'Gentle exfoliation', 'Silky vegan moisture', 'Whipped deep care'],
   shapes: ['bar', 'bomb', 'steamer', 'jar', 'tube', 'jar'],
-  sizes: [
-    ['Travel', '1 oz'], ['Standard', '4 oz'], ['Luxury', '8 oz'],
-  ],
+  formats: ['70 g (2.5 oz) bar', '70 g (2.5 oz) bath bomb', '340 g (12 oz) pack of 3', '450 g (15.9 oz) jar', '10 g (0.35 oz) tube', '450 g (15.9 oz) jar'],
   productPrices: { Soap: 9.00, 'Bath Bomb': 7.00, 'Shower Steamer': 11.00, 'Sugar Scrub': 7.00, 'Lip Balm': 4.00, 'Body Butter': 12.00 },
-  sizeMult: { 'Travel (1 oz)': 0.6, 'Standard (4 oz)': 1, 'Luxury (8 oz)': 1.8 },
 };
 
 // Photo spec (when product photos arrive): shoot all SKUs in one session with the same
@@ -128,7 +125,7 @@ const configData = {
 // texture shot (imgClose), and optionally one in-use shot (imgUse, product in a hand).
 // The shop + featured cards inherit whatever is set; until then the SVG art is the fallback.
 const products = [
-  { cat: 'butters', name: 'Whipped Body Butter', format: '450 g', price: 12.00, icon: 'jar', out: false,
+  { cat: 'butters', name: 'Whipped Body Butter', format: '450 g (15.9 oz)', price: 12.00, icon: 'jar', out: false,
     scents: 'Lavender Dream · Vanilla Bean · Citrus Sunrise', coll: 'Soft Glow',
     note: 'Whipped shea & coconut. Softens above 25°C. That’s normal, just give it a stir.',
     desc: [
@@ -145,7 +142,7 @@ const products = [
       ['Is it gluten-free?', 'Yes, shea, coconut oil, sweet almond oil, arrowroot, and fragrance. Nothing in the formula contains gluten.'],
       ['How much should I use?', 'A little goes a long way. Start with a fingertip-sized scoop, massage into warm just-showered skin, and build from there.'],
     ] },
-  { cat: 'balms', name: 'Lip Balm', format: '10 g', price: 4.00, icon: 'tube', out: false,
+  { cat: 'balms', name: 'Lip Balm', format: '10 g (0.35 oz)', price: 4.00, icon: 'tube', out: false,
     scents: 'Peppermint · Honey · Vanilla Bean', coll: 'Sweet Playful',
     note: 'Fully vegan, candelilla wax, cocoa or mango butter.',
     desc: [
@@ -162,7 +159,7 @@ const products = [
       ['Will it melt in my pocket?', 'Candelilla wax has a higher melt point than beeswax, so it holds its shape in warm pockets far better than most natural balms.'],
       ['How much should I use?', 'One light pass is plenty, it’s rich enough to last between applications without constant reapplying.'],
     ] },
-  { cat: 'scrubs', name: 'Sugar Scrub', format: '450 g', price: 7.00, icon: 'jar', out: false,
+  { cat: 'scrubs', name: 'Sugar Scrub', format: '450 g (15.9 oz)', price: 7.00, icon: 'jar', out: false,
     scents: 'Vanilla Bean · Brown Sugar Glow · Coffee', coll: 'Sweet Playful',
     note: 'Scoop with dry hands and keep water out of the jar.',
     desc: [
@@ -179,7 +176,7 @@ const products = [
       ['How do I stop it from spoiling?', 'Keep water out of the jar above all else, scoop with completely dry hands. Sealed and dry, it keeps for about a year.'],
       ['Which scent should I try first?', 'Vanilla Bean is our most-loved. Coffee is the morning pick, and Brown Sugar Glow is the gentle sweet spot between the two.'],
     ] },
-  { cat: 'soaps', name: 'Soap', format: '70 g', price: 9.00, icon: 'bar', out: false,
+  { cat: 'soaps', name: 'Soap', format: '70 g (2.5 oz)', price: 9.00, icon: 'bar', out: false,
     scents: 'Lavender Oat · Tea Tree Charcoal · Honey Oat · Rose Clay · Eucalyptus Mint', coll: 'Soft Glow',
     note: 'Slow-cured at least six weeks for a hard, gentle bar.',
     desc: [
@@ -197,7 +194,7 @@ const products = [
       ['How should I store it?', 'Between washes, keep the bar somewhere it can drain and dry. A dry bar genuinely lasts months longer.'],
       ['How long does one bar last?', 'With basic care, a single 70 g bar typically lasts four to six weeks of daily body use.'],
     ] },
-  { cat: 'steamers', name: 'Shower Steamer', format: '340 g', price: 11.00, icon: 'steamer', out: true,
+  { cat: 'steamers', name: 'Shower Steamer', format: '340 g (12 oz)', price: 11.00, icon: 'steamer', out: true,
     scents: 'Eucalyptus Mint · Lavender · Citrus Burst', coll: 'Reset Minimal',
     note: 'Aromatherapy for breathing rooms, not baths.',
     desc: [
@@ -214,7 +211,7 @@ const products = [
       ['Is it safe for kids?', 'Yes, with adult supervision, with the tablet placed out of a child’s reach. Essential-oil products should never be eaten, so keep them up and away from little hands.'],
       ['What are they good for?', 'Winter congestion, a heavy head, or simply turning a rushed morning shower into a mindful two minutes. Eucalyptus Mint is the classic pick.'],
     ] },
-  { cat: 'bombs', name: 'Bath Bomb', format: '70 g', price: 7.00, icon: 'bomb', out: true,
+  { cat: 'bombs', name: 'Bath Bomb', format: '70 g (2.5 oz)', price: 7.00, icon: 'bomb', out: true,
     scents: 'Rose Garden · Lavender Dream · Citrus Sunrise', coll: 'Sweet Playful',
     note: 'Hand-pressed in small batches. Use caution getting out. The tub gets slippery.',
     desc: [
@@ -522,29 +519,27 @@ function configurator() {
     </div>`;
 
   const collBtns = configData.collections.map(c => `<button type="button" class="cfg-opt cfg-coll" data-group="coll" data-value="${c.name}" data-tag="${c.tag}" data-dot="${c.dot}" data-t1="${c.t1}" data-t2="${c.t2}"><i style="background:${c.dot}"></i><b>${c.name}</b><span>${c.frag}</span></button>`).join('');
-  const prodBtns = configData.products.map((p, i) => `<button type="button" class="cfg-opt cfg-prod" data-group="prod" data-shape="${configData.shapes[i]}" data-value="${p}"><span class="cfg-prod-thumb">${productSVG(configData.shapes[i], '#B9805F')}</span><span class="cfg-prod-text"><b>${p}</b><span>${configData.productHints[i]}</span></span></button>`).join('');
+  const prodBtns = configData.products.map((p, i) => `<button type="button" class="cfg-opt cfg-prod" data-group="prod" data-shape="${configData.shapes[i]}" data-format="${configData.formats[i]}" data-value="${p}"><span class="cfg-prod-thumb">${productSVG(configData.shapes[i], '#B9805F')}</span><span class="cfg-prod-text"><b>${p}</b><span>${configData.productHints[i]}</span></span></button>`).join('');
   const scentBtns = configData.collections.map(c => c.scents.map(s => `
     <button type="button" class="cfg-opt cfg-scent" data-group="scent" data-coll="${c.name}" data-value="${s.name}">
       <b>${s.name}</b><span>${s.hint}</span>
       ${s.notes ? `<span class="cfg-pyr">${s.notes.map(n => `<span class="pyr-tier"><i>${n[0]}</i><b>${n[1]}</b>${n[2]}</span>`).join('')}</span>` : '<span class="cfg-pyr unscented">No fragrance, the stage is empty on purpose.</span>'}
     </button>`).join('')).join('');
-  const sizeBtns = configData.sizes.map(s => `<button type="button" class="cfg-opt cfg-size" data-group="size" data-value="${s[0]} (${s[1]})"><b>${s[0]}</b><span>${s[1]}</span></button>`).join('');
 
   return `
   <section class="block sand" id="build">
     <div class="block-head">
       <p class="eyebrow">Custom order</p>
       <h2>Design your own</h2>
-      <p class="sub">Choose a collection, a product, a size, and a scent. We price it on the spot, confirm by email, and make it by hand.</p>
+      <p class="sub">Choose a collection, a product, and a scent. We price it on the spot, confirm by email, and make it by hand.</p>
     </div>
 
     <div class="cfg-layout">
       <div class="cfg-steps">
         ${step('01', 'Collection &amp; fragrance', 'Three moods, three scent homes', collBtns)}
         ${step('02', 'Product', 'Whatever your ritual needs', `<div class="cfg-opts cfg-prods">${prodBtns}</div>`)}
-        ${step('03', 'Size', 'Travel, standard, or luxury', `<div class="cfg-opts cfg-sizes">${sizeBtns}</div>`)}
-        ${step('04', 'Scent', 'Collection-specific, tap one to read its pyramid', `<div class="cfg-opts">${scentBtns}</div>`)}
-        ${step('05', 'Price &amp; details', 'Your total, your recipe, your lead time', `
+        ${step('03', 'Scent', 'Collection-specific, tap one to read its pyramid', `<div class="cfg-opts">${scentBtns}</div>`)}
+        ${step('04', 'Price &amp; details', 'Your total, your recipe, your lead time', `
           <div class="cfg-price" id="cfgPriceBlock">
             <span class="cfg-price-label">Estimated total (CAD)</span>
             <span class="cfg-price-value" id="cfgPrice">$9.00</span>
@@ -554,7 +549,7 @@ function configurator() {
             <span>Collection</span><b id="cfgDcoll">Soft Glow</b>
             <span>Product</span><b id="cfgDprod">Soap</b>
             <span>Scent</span><b id="cfgDscent">Lavender</b>
-            <span>Size</span><b id="cfgDsize">Standard (4 oz)</b>
+            <span>Format</span><b id="cfgDsize">70 g (2.5 oz) bar</b>
           </div>`)}
         <div class="cfg-legend">
           <b>Note guide</b>
@@ -571,7 +566,7 @@ function configurator() {
           <div class="cfg-card-brand">Butter &amp; Bloom</div>
           <div class="cfg-card-name" id="cfgCardName">Soap</div>
           <div class="cfg-card-line" id="cfgCardLine">Soft Glow · Lavender</div>
-          <div class="cfg-card-meta" id="cfgCardMeta">Standard (4 oz)</div>
+          <div class="cfg-card-meta" id="cfgCardMeta">70 g (2.5 oz) bar</div>
           <div class="cfg-card-foot">Handmade in Ontario · batch-dated</div>
         </div>
       </div>
@@ -583,10 +578,10 @@ function configurator() {
     </div>
 
     <div class="cfg-bar">
-      <div class="cfg-summary"><span>Your order</span><b id="cfgSummary">Soft Glow · Soap · Lavender · Standard (4 oz)</b></div>
+      <div class="cfg-summary"><span>Your order</span><b id="cfgSummary">Soft Glow · Soap · Lavender · 70 g (2.5 oz) bar</b></div>
       <button type="button" class="btn btn-pine" id="cfgRequest">Create Your Skincare</button>
     </div>
-    <p class="cfg-note" id="cfgStatus">Configurations are handmade to order, estimated price above. Add your name and email so we can confirm before we make anything. Travel 1 oz · Standard 4 oz · Luxury 8 oz.</p>
+    <p class="cfg-note" id="cfgStatus">Configurations are handmade to order, estimated price above. Add your name and email so we can confirm before we make anything. Sizes match the shop: soap 70 g bar, bath bombs 70 g, a 340 g pack of three steamers, 450 g jars of scrub and butter, and a 10 g lip balm tube.</p>
   </section>`;
 }
 
@@ -1636,7 +1631,6 @@ const html = `<!DOCTYPE html>
   // design-your-own configurator
   const designerStage = ${designerStage.toString()};
   const cfgProductPrices = ${JSON.stringify(configData.productPrices)};
-  const cfgSizeMult = ${JSON.stringify(configData.sizeMult)};
   const $q = s => document.querySelector(s);
   const cfgAll = document.querySelectorAll('.cfg-opt');
   const cfgSummary = $q('#cfgSummary');
@@ -1654,15 +1648,14 @@ const html = `<!DOCTYPE html>
   const collBtns = document.querySelectorAll('.cfg-coll');
   const prodBtns = document.querySelectorAll('.cfg-prod');
   const scentBtns = document.querySelectorAll('.cfg-scent');
-  const sizeBtns = document.querySelectorAll('.cfg-size');
 
   const sel = {
     coll: 'Soft Glow', tag: 'Gentle · soft · natural', dot: '#C9A39B', t1: '#F1EAE0', t2: '#A9B894',
-    prod: 'Soap', shape: 'bar', scent: 'Lavender', size: 'Standard (4 oz)',
+    prod: 'Soap', shape: 'bar', scent: 'Lavender', format: '70 g (2.5 oz) bar',
   };
 
   function cfgPrice() {
-    return cfgProductPrices[sel.prod] * cfgSizeMult[sel.size];
+    return cfgProductPrices[sel.prod];
   }
 
   function refreshCfg() {
@@ -1671,13 +1664,13 @@ const html = `<!DOCTYPE html>
       '<div class="cfg-stage-name">' + sel.prod + ' · ' + sel.coll + '</div>';
     cfgCardName.textContent = sel.prod;
     cfgCardLine.textContent = sel.coll + ' · ' + sel.scent;
-    cfgCardMeta.textContent = sel.size + (sel.scent === 'Unscented' ? ' · fragrance-free' : '');
+    cfgCardMeta.textContent = sel.format + (sel.scent === 'Unscented' ? ' · fragrance-free' : '');
     cfgPriceEl.textContent = '$' + p.toFixed(2);
-    cfgSummary.textContent = sel.coll + ' · ' + sel.prod + ' · ' + sel.scent + ' · ' + sel.size + ' · $' + p.toFixed(2);
+    cfgSummary.textContent = sel.coll + ' · ' + sel.prod + ' · ' + sel.scent + ' · ' + sel.format + ' · $' + p.toFixed(2);
     cfgDcoll.textContent = sel.coll;
     cfgDprod.textContent = sel.prod;
     cfgDscent.textContent = sel.scent;
-    cfgDsize.textContent = sel.size;
+    cfgDsize.textContent = sel.format;
   }
 
   collBtns.forEach(b => b.addEventListener('click', () => {
@@ -1691,7 +1684,7 @@ const html = `<!DOCTYPE html>
 
   prodBtns.forEach(b => b.addEventListener('click', () => {
     prodBtns.forEach(x => x.classList.toggle('active', x === b));
-    sel.prod = b.dataset.value; sel.shape = b.dataset.shape;
+    sel.prod = b.dataset.value; sel.shape = b.dataset.shape; sel.format = b.dataset.format;
     refreshCfg();
   }));
 
@@ -1702,16 +1695,9 @@ const html = `<!DOCTYPE html>
     refreshCfg();
   }));
 
-  sizeBtns.forEach(b => b.addEventListener('click', () => {
-    sizeBtns.forEach(x => x.classList.toggle('active', x === b));
-    sel.size = b.dataset.value;
-    refreshCfg();
-  }));
-
   collBtns.forEach(x => x.classList.toggle('active', x.dataset.value === sel.coll));
   prodBtns.forEach(x => x.classList.toggle('active', x.dataset.value === sel.prod));
   scentBtns.forEach(s => { const on = s.dataset.coll === sel.coll; s.style.display = on ? '' : 'none'; s.classList.toggle('active', on && s.dataset.value === sel.scent); });
-  sizeBtns.forEach(x => x.classList.toggle('active', x.dataset.value === sel.size));
   refreshCfg();
 
   const cfgRequest = document.getElementById('cfgRequest');
@@ -1724,8 +1710,8 @@ const html = `<!DOCTYPE html>
     if (cfgEmailInput.type && cfgEmailInput.checkValidity && !cfgEmailInput.checkValidity()) { if (st) st.textContent = 'That email address doesn’t look right, mind double-checking it?'; cfgEmailInput.focus(); return; }
     var num = 'BB-C-' + new Date().toISOString().slice(2, 10).replace(/-/g, '') + '-' + Math.floor(100 + Math.random() * 900);
     var price = cfgPrice();
-    var items = [{ name: sel.coll + ' · ' + sel.prod + ' · ' + sel.scent, price: price, qty: 1, format: sel.size }];
-    var lines = 'Custom order ' + num + '\\n\\nCollection: ' + sel.coll + ' (' + sel.tag + ')\\nProduct: ' + sel.prod + '\\nScent: ' + sel.scent + '\\nSize: ' + sel.size + '\\nName: ' + cname + '\\nEmail: ' + cemail + '\\nEstimated price: $' + price.toFixed(2) + ' CAD (plus GST/HST)\\n\\nChosen with the Design-your-own designer.';
+    var items = [{ name: sel.coll + ' · ' + sel.prod + ' · ' + sel.scent, price: price, qty: 1, format: sel.format }];
+    var lines = 'Custom order ' + num + '\\n\\nCollection: ' + sel.coll + ' (' + sel.tag + ')\\nProduct: ' + sel.prod + '\\nScent: ' + sel.scent + '\\nFormat: ' + sel.format + '\\nName: ' + cname + '\\nEmail: ' + cemail + '\\nEstimated price: $' + price.toFixed(2) + ' CAD (plus GST/HST)\\n\\nChosen with the Design-your-own designer.';
     cfgRequest.disabled = true;
     if (st) st.textContent = 'Sending your request…';
     sendOrder('Custom order request ' + num, cname, cemail, lines, function (ok) {

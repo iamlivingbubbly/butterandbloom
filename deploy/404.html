@@ -1580,8 +1580,7 @@
       rows.push([o.num, o.date, o.name, o.email, items, o.total.toFixed(2)]);
     }
     var csv = '';
-    for (var r = 0; r < rows.length; r++) { csv += (r ? '
-' : '') + rows[r].map(function (v) { return '"' + String(v).replace(/"/g, '""') + '"'; }).join(','); }
+    for (var r = 0; r < rows.length; r++) { csv += (r ? '\r\n' : '') + rows[r].map(function (v) { return '"' + String(v).replace(/"/g, '""') + '"'; }).join(','); }
     var blob = new Blob([csv], { type: 'text/csv' });
     var a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
@@ -1615,14 +1614,8 @@
     if (cart.length === 0) return;
     var num = 'BB-' + new Date().toISOString().slice(2, 10).replace(/-/g, '') + '-' + Math.floor(100 + Math.random() * 900);
     var itemLines = '';
-    for (var i = 0; i < cart.length; i++) { itemLines += (itemLines ? '
-' : '') + (i + 1) + '. ' + cart[i].name + ' ×' + cart[i].qty + ' (' + cart[i].format + ') @ $' + cart[i].price.toFixed(2) + ' = $' + (cart[i].price * cart[i].qty).toFixed(2); }
-    var lines = 'Web order ' + num + '
-
-' + itemLines + '
-
-Total: $' + cartTotal().toFixed(2) + ' CAD (plus GST/HST)' + (notes ? '
-Notes: ' + notes : '');
+    for (var i = 0; i < cart.length; i++) { itemLines += (itemLines ? '\n' : '') + (i + 1) + '. ' + cart[i].name + ' ×' + cart[i].qty + ' (' + cart[i].format + ') @ $' + cart[i].price.toFixed(2) + ' = $' + (cart[i].price * cart[i].qty).toFixed(2); }
+    var lines = 'Web order ' + num + '\n\n' + itemLines + '\n\nTotal: $' + cartTotal().toFixed(2) + ' CAD (plus GST/HST)' + (notes ? '\nNotes: ' + notes : '');
     var status = document.getElementById('cdStatus');
     status.textContent = 'Sending your request…';
     cdCheckout.disabled = true;
@@ -1787,15 +1780,7 @@ Notes: ' + notes : '');
     var num = 'BB-C-' + new Date().toISOString().slice(2, 10).replace(/-/g, '') + '-' + Math.floor(100 + Math.random() * 900);
     var price = cfgPrice();
     var items = [{ name: sel.coll + ' · ' + sel.prod + ' · ' + sel.scent, price: price, qty: 1, format: sel.size }];
-    var lines = 'Custom order ' + num + '
-
-Collection: ' + sel.coll + ' (' + sel.tag + ')
-Product: ' + sel.prod + '
-Scent: ' + sel.scent + '
-Size: ' + sel.size + '
-Estimated price: $' + price.toFixed(2) + ' CAD (plus GST/HST)
-
-Chosen with the Design-your-own designer.';
+    var lines = 'Custom order ' + num + '\n\nCollection: ' + sel.coll + ' (' + sel.tag + ')\nProduct: ' + sel.prod + '\nScent: ' + sel.scent + '\nSize: ' + sel.size + '\nEstimated price: $' + price.toFixed(2) + ' CAD (plus GST/HST)\n\nChosen with the Design-your-own designer.';
     var st = document.getElementById('cfgStatus');
     cfgRequest.disabled = true;
     if (st) st.textContent = 'Sending your request…';

@@ -473,6 +473,15 @@ function home() {
 
 function shop() {
   return `
+  <section class="block" id="shop-colls">
+    <div class="block-head">
+      <p class="eyebrow">Three ways to feel</p>
+      <h2>Shop the collections</h2>
+      <p class="sub">Three scented collections to start from, or design your own below.</p>
+    </div>
+    <div class="coll-grid">${collections.map(collectionCard).join('')}</div>
+  </section>
+  ${configurator()}
   <section class="block" id="shop">
     <div class="block-head">
       <p class="eyebrow">The range</p>
@@ -483,8 +492,7 @@ function shop() {
       ${categories.map((c, i) => `<button class="cat-chip ${i === 0 ? 'active' : ''}" data-cat="${c.id}">${c.label}</button>`).join('')}
     </div>
     <div class="shop-grid" id="shopGrid">${products.map(productCard).join('')}</div>
-  </section>
-  ${configurator()}`;
+  </section>`;
 }
 
 function designerStage(shape, accent, t1, t2) {

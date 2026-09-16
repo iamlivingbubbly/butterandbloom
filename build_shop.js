@@ -472,7 +472,6 @@ function shop() {
   return `
   <section class="block" id="shop-colls">
     <div class="block-head">
-      <p class="eyebrow">Three ways to feel</p>
       <h2>Shop the collections</h2>
       <p class="sub">Three scented collections to start from, or design your own below.</p>
     </div>

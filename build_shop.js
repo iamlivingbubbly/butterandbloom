@@ -570,8 +570,8 @@ function configurator() {
     </div>
 
     <div class="cfg-contact">
-      <input class="cfg-input" id="cfgName" placeholder="Your name" autocomplete="name">
-      <input class="cfg-input" id="cfgEmail" type="email" placeholder="Your email, for a confirmation reply" autocomplete="email">
+      <input class="cfg-input" id="cfgName" placeholder="Your name" autocomplete="name" aria-label="Your name">
+      <input class="cfg-input" id="cfgEmail" type="email" placeholder="Your email, for a confirmation reply" autocomplete="email" aria-label="Your email">
     </div>
 
     <div class="cfg-bar">
@@ -827,32 +827,31 @@ function privacy() {
       <h2>Privacy Policy</h2>
       <p class="about-p" style="margin-top:.6rem">Last updated: September 15, 2026.</p>
     </div>
-    <p class="about-p">Butter &amp; Bloom ("we", "us") respects your privacy. This policy explains what information we collect through this site, our contact and custom-order form, our mailing list, and our online store, and how we use, protect, and share it. It applies to butterbloom.com and to purchases made through our Wix-hosted store.</p>
+    <p class="about-p">Butter &amp; Bloom ("we", "us") respects your privacy. This policy explains what information we collect through this site, our contact and custom-order form, our mailing list, and our order requests, and how we use, protect, and share it. It applies to this site (iamlivingbubbly.github.io/butterandbloom) and to orders placed through it.</p>
 
     <h3 class="g-h3">1. What we collect and why</h3>
     <p class="about-p"><strong>Contact and custom-order form.</strong> The contact form collects your name, your email address, and your message. Messages may include custom-order details you share with us (collection, product, size, scent, occasion). We use this information only to reply to you and to prepare custom orders. Form messages are delivered to our support inbox (butterandbloom.ca.shop@gmail.com) by email; we keep the conversation only for as long as needed to serve you.</p>
-    <p class="about-p"><strong>Orders and checkout.</strong> We take orders through our Wix store. To fulfil an order we receive your name, email, shipping address, and the products you ordered. Payments are processed by Wix and its payment providers, we never see or store your card number. Order details are kept on file to make your products, arrange shipment, and meet our record-keeping and product-safety obligations.</p>
-    <p class="about-p"><strong>Shipping.</strong> To deliver your order we share your name and shipping address with the courier (such as Canada Post) you select at checkout.</p>
+    <p class="about-p"><strong>Order requests.</strong> This site does not process payments. When you confirm an order, the site emails your name, email address, and the products you selected to us so we can arrange your items and reply to your order address. Order details are kept on file to make your products and meet our record-keeping and product-safety obligations. We never ask for or store your card number.</p>
+    <p class="about-p"><strong>Shipping.</strong> To deliver your order we share your name and shipping address with the courier (such as Canada Post) you select.</p>
     <p class="about-p"><strong>Mailing list.</strong> If we ever offer a newsletter or mailing list, we will only add you with your express consent, in line with Canada's Anti-Spam Legislation (CASL). You can unsubscribe with one click, in every email, at any time.</p>
-    <p class="about-p"><strong>Analytics.</strong> We use website analytics (such as Google Analytics and Meta pixels) to understand how people use our site and what they enjoy. These tools collect technical information such as your device type, browser, IP address, and pages visited. This helps us improve the site and, where enabled, measure advertising. You can see our cookie options in section 2.</p>
-    <p class="about-p"><strong>Cookies and similar technologies.</strong> This site uses Google Fonts, a third-party service that may log requests from your browser and set cookies when loading fonts. Our store platform (Wix) sets cookies to keep a shopping experience working, remember your preferences, and support analytics. See section 2 for the full picture.</p>
+    <p class="about-p"><strong>Analytics.</strong> We do not currently run website analytics, advertising, or tracking pixels on this site. This policy will be updated before any such tools are added.</p>
+    <p class="about-p"><strong>Storage on your device.</strong> To keep the shop working, this site stores a small amount of information in your browser's local storage: the contents of your shopping cart and the page you last viewed. This data stays on your device and is never shared with us.</p>
 
-    <h3 class="g-h3">2. Cookies</h3>
-    <p class="about-p">Cookies are small files stored on your device. We treat them as follows:</p>
-    <p class="about-p">• <strong>Essential cookies</strong> keep the site and store working (for example, keeping your cart together). These cannot be turned off.<br>
-    • <strong>Analytics cookies</strong> tell us how the site is used, in aggregate. You can opt out of Google Analytics and Meta tracking using their opt-out tools or your browser settings.<br>
-    • <strong>Marketing cookies</strong> may help us show you relevant offers across the web when you have agreed to receive them. You can manage these through your browser and through the advertising settings offered by Google and Meta.<br>
-    • <strong>Third-party cookies</strong> may be set by services we use (fonts, analytics, social platforms). We do not control cookies set by those providers.</p>
-    <p class="about-p">Most browsers let you block or delete cookies in their settings, and you can "Do Not Track" where supported. Blocking cookies may limit some site features.</p>
+    <h3 class="g-h3">2. Cookies and similar technologies</h3>
+    <p class="about-p">Cookies are small files stored on your device. This site keeps its working state in local storage rather than cookies, and it loads Google Fonts, a third-party service that may log requests from your browser when a font is fetched. We treat the devices we rely on as follows:</p>
+    <p class="about-p">• <strong>Local storage</strong> keeps your cart and last-viewed page on your device so your selection survives a refresh. It cannot be seen by us and is not shared with anyone.<br>
+    • <strong>Google Fonts</strong> is loaded from a third-party service that may log requests from your browser and follows its own privacy policy.<br>
+    • <strong>Analytics and marketing cookies</strong> are not in use on this site today, so there is nothing for you to opt out of here. If that changes, you will be able to manage the new options in this section.</p>
+    <p class="about-p">Most browsers let you block or delete cookies and clear local storage in their settings, and you can "Do Not Track" where supported. Clearing local storage will empty your cart; blocking Google Fonts will simply show the site's fallback typefaces.</p>
 
     <h3 class="g-h3">3. How we share information</h3>
-    <p class="about-p">We never sell or rent your information. We share it only with the limited service providers needed to run the business, payment processors, shipping carriers, our email service, and analytics tools, and only what each needs to do their job. These providers are bound to keep your data confidential. We may also disclose information where the law requires it (for example, to regulators or in response to lawful requests).</p>
+    <p class="about-p">We never sell or rent your information. We share it only with the limited service providers needed to run the business: the email service that delivers your form messages and order requests to us, and shipping carriers for delivery. Each receives only what it needs to do its job. These providers are bound to keep your data confidential. We may also disclose information where the law requires it (for example, to regulators or in response to lawful requests).</p>
 
     <h3 class="g-h3">4. Children</h3>
     <p class="about-p">Our products and website are intended for people aged 13 and older. We do not knowingly collect personal information from children under 13. If you believe a child has shared personal information with us, contact us and we will delete it.</p>
 
     <h3 class="g-h3">5. Retention</h3>
-    <p class="about-p">We keep order and correspondence records only as long as needed to serve you and to meet legal, tax, and product-safety obligations in Canada. Analytics data is kept in aggregate form. When information is no longer needed, we delete or anonymise it.</p>
+    <p class="about-p">We keep order and correspondence records only as long as needed to serve you and to meet legal, tax, and product-safety obligations in Canada. When information is no longer needed, we delete or anonymise it.</p>
 
     <h3 class="g-h3">6. Security</h3>
     <p class="about-p">This site is served over HTTPS, we limit who can access personal information, and we treat your data with care. No method of transmission over the internet is 100% secure, so we cannot guarantee absolute security, but we use reasonable safeguards.</p>
@@ -861,10 +860,10 @@ function privacy() {
     <p class="about-p">Under Canada's Personal Information Protection and Electronic Documents Act (PIPEDA) you have the right to access the personal information we hold about you, to ask us to correct it, and to withdraw your consent to our use of it. To make a request, email butterandbloom.ca.shop@gmail.com with the subject line "Privacy request". We will verify your identity and respond within 30 days. If you are not satisfied, you may complain to the Office of the Privacy Commissioner of Canada.</p>
 
     <h3 class="g-h3">8. International transfers</h3>
-    <p class="about-p">Some of the services we rely on (such as email, analytics, and payment processing) may store or process information outside Canada. We use providers with appropriate safeguards and only for the purposes in this policy.</p>
+    <p class="about-p">Some of the services we rely on (such as the email service that delivers our forms and the font service that loads this site's typefaces) may store or process information outside Canada. We use providers with appropriate safeguards and only for the purposes in this policy.</p>
 
     <h3 class="g-h3">9. Third-party websites</h3>
-    <p class="about-p">This site links to services such as Instagram, Pinterest, TikTok, and our Wix store. Those sites have their own privacy policies and their use of your data is governed by them, not by this policy.</p>
+    <p class="about-p">This site links to services such as Instagram, Pinterest, and TikTok. Those sites have their own privacy policies and their use of your data is governed by them, not by this policy.</p>
 
     <h3 class="g-h3">10. Changes</h3>
     <p class="about-p">We may update this policy from time to time. The date at the top of this page always shows the latest revision, and significant changes will be flagged on the site.</p>
@@ -939,15 +938,24 @@ const html = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
 <title>Butter &amp; Bloom | Made slowly. Made thoughtfully. | Handmade vegan skincare, Ontario</title>
 <meta name="description" content="Butter &amp; Bloom is a small-batch, vegan handcrafted skincare brand based in Ontario, Canada. Slow-cured cold-process soap, bath bombs, shower steamers, sugar scrubs, lip balm, and whipped body butter, made slowly, made thoughtfully. Every batch traceable, every ingredient named.">
+<link rel="canonical" href="https://iamlivingbubbly.github.io/butterandbloom/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Butter & Bloom">
+<meta property="og:title" content="Butter & Bloom | Handmade vegan skincare, Ontario">
+<meta property="og:description" content="Small-batch, vegan, traceable skincare made slowly in Ontario, Canada: cold-process soap, bath bombs, shower steamers, sugar scrubs, lip balm, and whipped body butter.">
+<meta property="og:url" content="https://iamlivingbubbly.github.io/butterandbloom/">
+<meta property="og:image" content="https://iamlivingbubbly.github.io/butterandbloom/logo-web.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="${logoDataUri}">
 <style>
   :root {
     --paper:#FBF9F4; --panel:#FFFFFF; --cream:#F4EFE6; --sand:#F4EFE6;
     --ink:#2E2C27; --ink-soft:#6E6A60; --line:#E7E1D4;
-    --pine:#3F5A3E; --pine-deep:#2E4230; --sage:#7C916F; --moss:#A9B894;
-    --clay:#B9805F; --blush:#C9A39B; --gold:#D9A441;
+    --pine:#3F5A3E; --pine-deep:#2E4230; --sage:#5F7253; --moss:#A9B894;
+    --clay:#965B35; --blush:#C9A39B; --gold:#D9A441;
     --shadow:0 1px 2px rgba(40,38,30,.05),0 8px 28px rgba(40,38,30,.06);
   }
   * { box-sizing:border-box; margin:0; padding:0; }
@@ -956,6 +964,10 @@ const html = `<!DOCTYPE html>
   h1,h2,h3,.serif { font-family:Georgia, 'Iowan Old Style', 'Times New Roman', serif; font-weight:500; }
   a { color:inherit; }
   img, svg { display:block; }
+  :where(a,button,summary,input,textarea,select,[tabindex]):focus-visible { outline:2px solid var(--pine); outline-offset:2px; }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important; }
+  }
 
   .nav {
     position:sticky; top:0; z-index:60; display:flex; align-items:center; gap:2rem;
@@ -1218,7 +1230,7 @@ const html = `<!DOCTYPE html>
   .contact-form { display:flex; flex-direction:column; gap:1rem; background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:1.8rem; box-shadow:var(--shadow); }
   .contact-form label { display:flex; flex-direction:column; gap:.35rem; font-size:.82rem; color:var(--ink-soft); }
   .contact-form input, .contact-form textarea { border:1px solid var(--line); border-radius:10px; padding:.7rem .9rem; font-size:.9rem; font-family:inherit; background:var(--paper); color:var(--ink); outline:none; transition:border-color .15s; }
-  .contact-form input:focus, .contact-form textarea:focus { border-color:var(--sage); box-shadow:0 0 0 3px rgba(124,145,111,.15); }
+  .contact-form input:focus, .contact-form textarea:focus { border-color:var(--sage); box-shadow:0 0 0 3px rgba(95,114,83,.2); }
   .contact-form .btn { align-self:flex-start; }
   .sent { font-size:.82rem; color:var(--pine); }
   .contact-aside { display:flex; flex-direction:column; gap:1.6rem; }
@@ -1329,9 +1341,9 @@ const html = `<!DOCTYPE html>
   <div class="cd-items" id="cdItems"></div>
   <div class="cd-total"><span>Total</span><b id="cdTotal">$0.00</b></div>
   <div class="cd-fields">
-    <input id="cdName" placeholder="Your name" autocomplete="name">
-    <input id="cdEmail" type="email" placeholder="Your email, for a confirmation reply" autocomplete="email">
-    <textarea id="cdNotes" rows="2" placeholder="Scent, colour, occasion, pickup or delivery…"></textarea>
+    <input id="cdName" placeholder="Your name" autocomplete="name" aria-label="Your name">
+    <input id="cdEmail" type="email" placeholder="Your email, for a confirmation reply" autocomplete="email" aria-label="Your email">
+    <textarea id="cdNotes" rows="2" placeholder="Scent, colour, occasion, pickup or delivery…" aria-label="Order notes"></textarea>
   </div>
   <button class="btn btn-pine cd-checkout" id="cdCheckout">Request this order</button>
   <p class="cd-status" id="cdStatus"></p>
@@ -1423,7 +1435,8 @@ const html = `<!DOCTYPE html>
   const heroLine = document.querySelector('.hero-line');
   if (heroLine) {
     let h = 0;
-    setInterval(() => {
+    const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduceMotion) setInterval(() => {
       h = (h + 1) % heroSlides.length;
       heroLine.classList.add('switching');
       setTimeout(() => {
@@ -1458,9 +1471,9 @@ const html = `<!DOCTYPE html>
           var it = cart[i];
           h += '<div class="cd-item"><div><b>' + escH(it.name) + '</b><div class="cd-meta">' + escH(it.format) + ' · $' + it.price.toFixed(2) + ' each</div></div>' +
                '<div class="cd-line-total">$' + (it.price * it.qty).toFixed(2) + '</div>' +
-               '<div class="cd-qty"><button type="button" class="cd-q" data-i="' + i + '" data-d="1">−</button><span>' + it.qty + '</span>' +
-               '<button type="button" class="cd-q" data-i="' + i + '" data-a="1">+</button>' +
-               '<button type="button" class="cd-x" data-i="' + i + '">remove</button></div></div>';
+               '<div class="cd-qty"><button type="button" class="cd-q" data-i="' + i + '" data-d="1" aria-label="Decrease quantity">−</button><span>' + it.qty + '</span>' +
+               '<button type="button" class="cd-q" data-i="' + i + '" data-a="1" aria-label="Increase quantity">+</button>' +
+               '<button type="button" class="cd-x" data-i="' + i + '" aria-label="Remove item from order">remove</button></div></div>';
         }
       } else { h = '<p class="cd-empty">Your cart is empty. Add something from the Shop.</p>'; }
       list.innerHTML = h;
@@ -1539,24 +1552,26 @@ const html = `<!DOCTYPE html>
 
   var cdCheckout = document.getElementById('cdCheckout');
   if (cdCheckout) cdCheckout.addEventListener('click', function () {
+    var status = document.getElementById('cdStatus');
+    if (cart.length === 0) return;
     var name = (document.getElementById('cdName').value || '').trim();
     var email = (document.getElementById('cdEmail').value || '').trim();
     var notes = (document.getElementById('cdNotes').value || '').trim();
-    if (cart.length === 0) return;
+    if (!name) { status.textContent = 'Please add your name so we can confirm your order.'; document.getElementById('cdName').focus(); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { status.textContent = 'Please add a valid email so we can mail your confirmation.'; document.getElementById('cdEmail').focus(); return; }
     var num = 'BB-' + new Date().toISOString().slice(2, 10).replace(/-/g, '') + '-' + Math.floor(100 + Math.random() * 900);
     var itemLines = '';
     for (var i = 0; i < cart.length; i++) { itemLines += (itemLines ? '\\n' : '') + (i + 1) + '. ' + cart[i].name + ' ×' + cart[i].qty + ' (' + cart[i].format + ') @ $' + cart[i].price.toFixed(2) + ' = $' + (cart[i].price * cart[i].qty).toFixed(2); }
-    var lines = 'Web order ' + num + '\\n\\n' + itemLines + '\\n\\nTotal: $' + cartTotal().toFixed(2) + ' CAD (plus GST/HST)' + (notes ? '\\nNotes: ' + notes : '');
-    var status = document.getElementById('cdStatus');
+    var lines = 'Web order ' + num + '\\n\\n' + itemLines + '\\n\\nName: ' + name + '\\nEmail: ' + email + '\\n\\nTotal: $' + cartTotal().toFixed(2) + ' CAD (plus GST/HST)' + (notes ? '\\nNotes: ' + notes : '');
     status.textContent = 'Sending your request…';
     cdCheckout.disabled = true;
-    sendOrder('New web order ' + num, name || 'Guest', email, lines, function (ok) {
+    sendOrder('New web order ' + num, name, email, lines, function (ok) {
       if (ok) {
-        pushOrder(num, name || 'Guest', email || 'not given', cart.slice());
+        pushOrder(num, name, email, cart.slice());
         cart = [];
         localStorage.setItem(cartKey, JSON.stringify(cart));
         renderCart();
-        status.textContent = 'Request sent! We’ll reply at ' + (email || 'your email') + ' to confirm. Logged as ' + num + '.';
+        status.textContent = 'Request sent! We’ll reply at ' + email + ' to confirm. Logged as ' + num + '.';
       } else {
         status.textContent = 'Sending hiccuped. Please email butterandbloom.ca.shop@gmail.com with your list.';
       }

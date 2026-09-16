@@ -321,7 +321,7 @@ function productCard(p) {
   <div class="product-card" data-cat="${p.cat}">
     ${p.out ? '<span class="pc-soldout">Out of stock</span>' : ''}
     <div class="pc-tile" style="background:linear-gradient(135deg,var(--paper),var(--cream))">
-      ${productSVG(p.icon, '#B9805F')}
+      ${p.img ? `<img class="prod-photo" src="${esc(p.img)}" alt="${esc(p.name)}">` : productSVG(p.icon, '#B9805F')}
       <span class="pc-cat">${esc(p.cat.replace(/s$/, ''))}</span>
     </div>
     <div class="pc-body">
@@ -340,7 +340,7 @@ function productCard(p) {
           ${p.faq.map(f => `<div class="qa"><div class="q">${esc(f[0])}</div><div class="a">${esc(f[1])}</div></div>`).join('')}
         </div>
       </details>
-      <div class="pc-foot"><span class="pc-coll">${esc(p.coll)}</span></div>
+      <div class="pc-foot"><span class="pc-coll">${esc(p.coll)}</span>${p.out ? '' : `<button type="button" class="pc-add" data-name="${esc(p.name)}" data-price="${p.price.toFixed(2)}" data-format="${esc(p.format)}">Add to cart</button>`}</div>
     </div>
   </div>`;
 }
@@ -354,7 +354,7 @@ function home() {
   <section class="hero">
     <div class="hero-inner">
       <h1 class="hero-line" aria-live="polite">Made slowly.<br>Made thoughtfully.</h1>
-      <p class="hero-sub">Skincare proudly handmade in Ontario, Canada. From a passion project to a dream come true, we make simple, useful, and thoughtful products with care that you can feel.</p>
+      <p class="hero-sub">Artisanal skincare made by hand, vegan and traceable, Ontario-made.</p>
       <div class="hero-cta">
         <a class="btn btn-pine" href="#shop" data-nav="shop">Shop the collection</a>
         <a class="btn btn-ghost" href="#scent-guide" data-nav="scent-guide">How to read a scent</a>
@@ -465,7 +465,7 @@ function configurator() {
     <div class="block-head">
       <p class="eyebrow">Custom order</p>
       <h2>Design your own</h2>
-      <p class="sub">Four steps to your own bar, collection, product, scent, finish. The preview beside you updates as you go.</p>
+      <p class="sub">Four steps to your own bar. Pick a collection, then the product, then the size, then the scent.</p>
     </div>
 
     <div class="cfg-layout">
@@ -473,16 +473,16 @@ function configurator() {
         ${step('01', 'Collection &amp; fragrance', 'Three moods, three scent homes', collBtns)}
         ${step('02', 'Product', 'Whatever your ritual needs', prodBtns)}
 
-        ${step('03', 'Scent', 'Collection-specific, tap one to read its pyramid', scentBtns)}
+        ${step('03', 'Size', 'Travel, standard, or luxury', `<div class="cfg-opts cfg-sizes">${sizeBtns}</div>`)}
+
+        ${step('04', 'Scent &amp; name', 'Collection-specific, tap one to read its pyramid',
+          `<div class="cfg-name-row"><input class="cfg-name" id="cfgName" maxlength="40" placeholder="Name your creation…" value="My Butter &amp; Bloom"></div>${scentBtns}`)}
         <div class="cfg-legend">
           <b>Note guide</b>
           <span><i class="lg-top"></i>Top <b>20–30%</b> · bright, immediate, fastest fading</span>
           <span><i class="lg-mid"></i>Middle <b>40–50%</b> · main body &amp; heart, lingers longest</span>
           <span><i class="lg-base"></i>Base <b>20–30%</b> · depth &amp; longevity, stays on the skin</span>
         </div>
-
-        ${step('04', 'Finish', 'Name it, pick a size',
-          `<div class="cfg-name-row"><input class="cfg-name" id="cfgName" maxlength="40" placeholder="Name your creation…" value="My Butter &amp; Bloom"><div class="cfg-opts cfg-sizes">${sizeBtns}</div></div>`)}
       </div>
 
       <div class="cfg-preview">
@@ -502,7 +502,7 @@ function configurator() {
       <div class="cfg-summary"><span>Your order</span><b id="cfgSummary">Soft Glow · Soap · Lavender · My Butter &amp; Bloom · Standard (4 oz)</b></div>
       <button type="button" class="btn btn-pine" id="cfgRequest">Request this order</button>
     </div>
-    <p class="cfg-note">Configurations are handmade to order, lead time and price confirmed by email. Travel 1 oz · Standard 4 oz · Luxury 8 oz.</p>
+    <p class="cfg-note" id="cfgStatus">Configurations are handmade to order, lead time and price confirmed by email. Travel 1 oz · Standard 4 oz · Luxury 8 oz.</p>
   </section>`;
 }
 
@@ -867,7 +867,7 @@ const html = `<!DOCTYPE html>
     background:radial-gradient(1200px 600px at 85% -10%, #eee7d8 0%, transparent 55%), var(--paper); }
   .hero-inner { max-width:1080px; margin:0 auto; padding:0 2rem; width:100%; }
   .hero h1 { font-size:clamp(2.6rem,7vw,4.6rem); line-height:1.08; color:var(--pine-deep); margin:1rem 0 1.4rem; }
-  .hero-sub { max-width:540px; color:var(--ink-soft); font-size:1.02rem; margin-bottom:1.8rem; }
+  .hero-sub { max-width:620px; color:var(--ink-soft); font-size:clamp(1.02rem,2.6vw,1.18rem); line-height:1.6; margin-bottom:1.8rem; }
   .hero-line { transition:opacity .38s ease, transform .38s ease; min-height:2.35em; display:flex; flex-direction:column; justify-content:center; }
   .hero-line.switching { opacity:0; transform:translateY(8px); }
   .hero-cta { display:flex; gap:.8rem; flex-wrap:wrap; }
@@ -957,8 +957,11 @@ const html = `<!DOCTYPE html>
   .qa { margin-top:.55rem; }
   .q { font-size:.78rem; font-weight:600; color:var(--ink); }
   .a { font-size:.76rem; color:var(--ink-soft); margin-top:.15rem; line-height:1.55; }
-  .pc-foot { margin-top:.7rem; padding-top:.6rem; border-top:1px dotted var(--line); }
+  .pc-foot { margin-top:.7rem; padding-top:.6rem; border-top:1px dotted var(--line); display:flex; align-items:center; justify-content:space-between; gap:.6rem; }
   .pc-coll { font-size:.72rem; color:var(--sage); letter-spacing:.05em; }
+  .pc-add { font-size:.78rem; background:var(--pine); color:#FBF9F4; border:0; border-radius:999px; padding:.42rem .95rem; cursor:pointer; transition:background .15s, transform .15s; }
+  .pc-add:hover { background:var(--pine-deep); transform:translateY(-1px); }
+  .prod-photo { width:100%; height:100%; object-fit:cover; border-radius:inherit; }
 
   /* configurator */
   .cfg-layout { display:grid; grid-template-columns:1fr 320px; gap:1.6rem; align-items:start; }
@@ -1083,6 +1086,40 @@ const html = `<!DOCTYPE html>
   .socials { display:flex; gap:1rem; }
   .ca-block p { font-size:.88rem; color:var(--ink-soft); }
 
+  /* cart */
+  .cart-fab { position:fixed; right:1.2rem; bottom:1.2rem; z-index:80; display:flex; align-items:center; gap:.5rem; background:var(--pine); color:#FBF9F4; border:0; border-radius:999px; padding:.85rem 1.4rem; font-size:.9rem; font-weight:600; cursor:pointer; box-shadow:0 8px 24px rgba(30,50,34,.35); transition:background .15s, transform .15s; font-family:inherit; }
+  .cart-fab:hover { background:var(--pine-deep); transform:translateY(-1px); }
+  .cart-fab[hidden], .cart-badge[hidden], .cart-drawer[hidden] { display:none; }
+  .cart-badge { position:absolute; top:-6px; right:-6px; background:var(--clay); color:#fff; border-radius:999px; min-width:22px; height:22px; display:grid; place-items:center; font-size:.74rem; font-weight:700; }
+  .cart-fab-wrap { position:fixed; right:1.2rem; bottom:1.2rem; z-index:80; }
+  .cart-drawer { position:fixed; top:0; right:0; height:100vh; width:min(420px,100vw); background:var(--paper); border-left:1px solid var(--line); z-index:95; display:flex; flex-direction:column; padding:1.5rem 1.5rem 2rem; box-shadow:-12px 0 40px rgba(40,38,30,.18); overflow-y:auto; }
+  .cd-head { display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; margin-bottom:1rem; }
+  .cd-title { font-family:Georgia,serif; font-size:1.35rem; color:var(--pine-deep); }
+  .cd-sub { font-size:.78rem; color:var(--ink-soft); margin-top:.15rem; }
+  .cd-close { background:none; border:0; font-size:1.5rem; color:var(--ink-soft); cursor:pointer; line-height:1; }
+  .cd-items { flex:1; min-height:0; }
+  .cd-empty { font-size:.86rem; color:var(--ink-soft); padding:1rem 0; }
+  .cd-item { display:grid; grid-template-columns:1fr auto; gap:.35rem 1rem; padding:.7rem 0; border-top:1px solid var(--line); font-size:.86rem; }
+  .cd-item b { color:var(--ink); }
+  .cd-meta { font-size:.74rem; color:var(--ink-soft); }
+  .cd-qty { display:flex; align-items:center; gap:.4rem; grid-column:1; margin-top:.1rem; }
+  .cd-q, .cd-x { background:var(--cream); border:1px solid var(--line); width:26px; height:26px; border-radius:8px; cursor:pointer; font-size:.95rem; line-height:1; color:var(--pine-deep); }
+  .cd-x { width:auto; padding:0 .5rem; font-size:.72rem; color:var(--ink-soft); }
+  .cd-line-total { grid-column:2; grid-row:1 / span 2; align-self:center; font-weight:600; color:var(--pine-deep); }
+  .cd-total { display:flex; justify-content:space-between; align-items:baseline; margin-top:1rem; padding-top:1rem; border-top:2px solid var(--line); font-size:.95rem; }
+  .cd-total b { color:var(--pine-deep); font-size:1.15rem; }
+  .cd-fields { display:flex; flex-direction:column; gap:.55rem; margin-top:.9rem; }
+  .cd-fields input, .cd-fields textarea { font-family:inherit; font-size:.86rem; border:1px solid var(--line); border-radius:10px; padding:.6rem .8rem; background:var(--panel); color:var(--ink); }
+  .cd-fields input:focus, .cd-fields textarea:focus { outline:2px solid rgba(95,116,90,.3); border-color:var(--pine); }
+  .cd-checkout { width:100%; margin-top:.9rem; border:0; }
+  .cd-status { font-size:.8rem; color:var(--pine-deep); margin-top:.7rem; min-height:1.2em; }
+  .cd-hr { border:0; border-top:1px solid var(--line); margin:1.3rem 0 1rem; }
+  .cd-owner summary { cursor:pointer; font-size:.82rem; color:var(--sage); font-weight:600; }
+  .cd-o-hint { font-size:.74rem; color:var(--ink-soft); margin:.5rem 0 .8rem; }
+  .cd-order { font-size:.76rem; color:var(--ink-soft); border-top:1px dotted var(--line); padding:.55rem 0; }
+  .cd-order b { color:var(--ink); }
+  .cd-export { margin-top:.8rem; }
+
   /* footer */
   footer { border-top:1px solid var(--line); background:var(--cream); margin-top:2rem; }
   .foot-inner { max-width:1080px; margin:0 auto; padding:2.4rem 2rem; display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start; }
@@ -1136,6 +1173,33 @@ const html = `<!DOCTYPE html>
   <div class="page" id="contact">${contact()}</div>
   <div class="page" id="privacy">${privacy()}</div>
 </main>
+
+<div class="cart-fab-wrap"><button class="cart-fab" id="cartFab" aria-label="Open your cart">Cart <span class="cart-badge" id="cartBadge" hidden></span></button></div>
+<div class="cart-drawer" id="cartDrawer" hidden>
+  <div class="cd-head">
+    <div>
+      <div class="cd-title">Your order</div>
+      <div class="cd-sub">Requested here, confirmed by email before anything is made.</div>
+    </div>
+    <button class="cd-close" id="cdClose" aria-label="Close">×</button>
+  </div>
+  <div class="cd-items" id="cdItems"></div>
+  <div class="cd-total"><span>Total</span><b id="cdTotal">$0.00</b></div>
+  <div class="cd-fields">
+    <input id="cdName" placeholder="Your name" autocomplete="name">
+    <input id="cdEmail" type="email" placeholder="Your email, for a confirmation reply" autocomplete="email">
+    <textarea id="cdNotes" rows="2" placeholder="Scent, colour, occasion, pickup or delivery…"></textarea>
+  </div>
+  <button class="btn btn-pine cd-checkout" id="cdCheckout">Request this order</button>
+  <p class="cd-status" id="cdStatus"></p>
+  <hr class="cd-hr">
+  <details class="cd-owner">
+    <summary>Order log, owner view</summary>
+    <p class="cd-o-hint">Every order requested from this browser is recorded here. Use Export any time.</p>
+    <div id="cdOrderList"></div>
+    <button class="btn btn-ghost cd-export" id="cdExport">Export orders.csv</button>
+  </details>
+</div>
 
 <footer>
   <div class="foot-inner">
@@ -1206,7 +1270,6 @@ const html = `<!DOCTYPE html>
 
   // hero rotating taglines
   const heroSlides = [
-    'Artisanal skincare made by hand,<br>vegan and traceable, Ontario-made.',
     'Made slowly.<br>Made thoughtfully.',
     'Vegan, traceable,<br>small-batch care.',
     'Ontario-made,<br>with love and truth.',
@@ -1223,6 +1286,141 @@ const html = `<!DOCTYPE html>
       }, 380);
     }, 10000);
   }
+
+  // cart & orders
+  var cartKey = 'bb_cart_v1', orderKey = 'bb_orders_v1';
+  var cart = JSON.parse(localStorage.getItem(cartKey) || '[]');
+  function escH(s){ return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+  function cartCount() { return cart.reduce(function (s, i) { return s + i.qty; }, 0); }
+  function cartTotal() { return cart.reduce(function (s, i) { return s + i.price * i.qty; }, 0); }
+
+  function openCart() { var d = document.getElementById('cartDrawer'); if (d) { d.hidden = false; renderCart(); renderOrderLog(); } }
+  function closeCart() { var d = document.getElementById('cartDrawer'); if (d) d.hidden = true; }
+
+  function renderCart() {
+    var badge = document.getElementById('cartBadge'), list = document.getElementById('cdItems'), tot = document.getElementById('cdTotal'), co = document.getElementById('cdCheckout'), fab = document.getElementById('cartFab');
+    var n = cartCount();
+    if (fab) fab.hidden = n === 0;
+    if (badge) { badge.textContent = n; badge.hidden = n === 0; }
+    if (tot) tot.textContent = '$' + cartTotal().toFixed(2);
+    if (co) co.disabled = n === 0;
+    if (list) {
+      var h = '';
+      if (cart.length) {
+        for (var i = 0; i < cart.length; i++) {
+          var it = cart[i];
+          h += '<div class="cd-item"><div><b>' + escH(it.name) + '</b><div class="cd-meta">' + escH(it.format) + ' · $' + it.price.toFixed(2) + ' each</div></div>' +
+               '<div class="cd-line-total">$' + (it.price * it.qty).toFixed(2) + '</div>' +
+               '<div class="cd-qty"><button type="button" class="cd-q" data-i="' + i + '" data-d="1">−</button><span>' + it.qty + '</span>' +
+               '<button type="button" class="cd-q" data-i="' + i + '" data-a="1">+</button>' +
+               '<button type="button" class="cd-x" data-i="' + i + '">remove</button></div></div>';
+        }
+      } else { h = '<p class="cd-empty">Your cart is empty. Add something from the Shop.</p>'; }
+      list.innerHTML = h;
+    }
+  }
+
+  function renderOrderLog() {
+    var el = document.getElementById('cdOrderList');
+    if (!el) return;
+    var orders = JSON.parse(localStorage.getItem(orderKey) || '[]');
+    var h = '';
+    if (orders.length) {
+      for (var i = orders.length - 1; i >= 0; i--) {
+        var o = orders[i], items = '';
+        for (var j = 0; j < o.items.length; j++) { items += (j ? ', ' : '') + o.items[j].name + ' ×' + o.items[j].qty; }
+        h += '<div class="cd-order"><b>' + escH(o.num) + '</b> · ' + escH(o.date) + '<br>' + escH(o.name) + ' · ' + escH(items) + ' · $' + o.total.toFixed(2) + '</div>';
+      }
+    } else { h = '<p class="cd-o-hint">No orders recorded on this browser yet.</p>'; }
+    el.innerHTML = h;
+  }
+
+  function pushOrder(num, name, email, items) {
+    var orders = JSON.parse(localStorage.getItem(orderKey) || '[]');
+    var total = 0; for (var i = 0; i < items.length; i++) total += items[i].price * items[i].qty;
+    orders.push({ num: num, date: new Date().toLocaleString(), name: name, email: email, items: items, total: total });
+    localStorage.setItem(orderKey, JSON.stringify(orders));
+    renderOrderLog();
+  }
+
+  function sendOrder(subject, name, email, linesText, done) {
+    var body = new FormData();
+    body.append('name', name || 'Guest');
+    body.append('email', email || 'not given');
+    body.append('message', linesText);
+    body.append('_subject', subject);
+    if (email) body.append('_replyto', email);
+    fetch('https://formsubmit.co/butterandbloom.ca.shop@gmail.com', { method: 'POST', body: body, mode: 'no-cors' })
+      .then(function () { done(true); })
+      .catch(function () { done(false); });
+  }
+
+  function exportOrders() {
+    var orders = JSON.parse(localStorage.getItem(orderKey) || '[]');
+    var rows = [['Order #', 'Date', 'Name', 'Email', 'Items', 'Total (CAD)']];
+    for (var i = 0; i < orders.length; i++) {
+      var o = orders[i], items = '';
+      for (var j = 0; j < o.items.length; j++) { items += (j ? '; ' : '') + o.items[j].name + ' x' + o.items[j].qty; }
+      rows.push([o.num, o.date, o.name, o.email, items, o.total.toFixed(2)]);
+    }
+    var csv = '';
+    for (var r = 0; r < rows.length; r++) { csv += (r ? '\r\n' : '') + rows[r].map(function (v) { return '"' + String(v).replace(/"/g, '""') + '"'; }).join(','); }
+    var blob = new Blob([csv], { type: 'text/csv' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'butterbloom-orders.csv';
+    a.click();
+  }
+
+  document.addEventListener('click', function (e) {
+    var add = e.target.closest('.pc-add');
+    if (add) {
+      var it = { name: add.dataset.name, price: parseFloat(add.dataset.price), format: add.dataset.format, qty: 1 };
+      var ex = null; for (var i = 0; i < cart.length; i++) { if (cart[i].name === it.name) { ex = cart[i]; break; } }
+      if (ex) ex.qty++; else cart.push(it);
+      localStorage.setItem(cartKey, JSON.stringify(cart));
+      renderCart(); openCart();
+      return;
+    }
+    var q = e.target.closest('.cd-q');
+    if (q) { var k = +q.dataset.i; if (q.dataset.d) cart[k].qty = Math.max(1, cart[k].qty - 1); else cart[k].qty++; localStorage.setItem(cartKey, JSON.stringify(cart)); renderCart(); return; }
+    var x = e.target.closest('.cd-x');
+    if (x) { cart.splice(+x.dataset.i, 1); localStorage.setItem(cartKey, JSON.stringify(cart)); renderCart(); return; }
+    if (e.target.closest('#cartFab')) { openCart(); return; }
+    if (e.target.closest('#cdClose')) { closeCart(); return; }
+  });
+
+  var cdCheckout = document.getElementById('cdCheckout');
+  if (cdCheckout) cdCheckout.addEventListener('click', function () {
+    var name = (document.getElementById('cdName').value || '').trim();
+    var email = (document.getElementById('cdEmail').value || '').trim();
+    var notes = (document.getElementById('cdNotes').value || '').trim();
+    if (cart.length === 0) return;
+    var num = 'BB-' + new Date().toISOString().slice(2, 10).replace(/-/g, '') + '-' + Math.floor(100 + Math.random() * 900);
+    var itemLines = '';
+    for (var i = 0; i < cart.length; i++) { itemLines += (itemLines ? '\n' : '') + (i + 1) + '. ' + cart[i].name + ' ×' + cart[i].qty + ' (' + cart[i].format + ') @ $' + cart[i].price.toFixed(2) + ' = $' + (cart[i].price * cart[i].qty).toFixed(2); }
+    var lines = 'Web order ' + num + '\n\n' + itemLines + '\n\nTotal: $' + cartTotal().toFixed(2) + ' CAD (plus GST/HST)' + (notes ? '\nNotes: ' + notes : '');
+    var status = document.getElementById('cdStatus');
+    status.textContent = 'Sending your request…';
+    cdCheckout.disabled = true;
+    sendOrder('New web order ' + num, name || 'Guest', email, lines, function (ok) {
+      if (ok) {
+        pushOrder(num, name || 'Guest', email || 'not given', cart.slice());
+        cart = [];
+        localStorage.setItem(cartKey, JSON.stringify(cart));
+        renderCart();
+        status.textContent = 'Request sent! We’ll reply at ' + (email || 'your email') + ' to confirm. Logged as ' + num + '.';
+      } else {
+        status.textContent = 'Sending hiccuped. Please email butterandbloom.ca.shop@gmail.com with your list.';
+      }
+      cdCheckout.disabled = false;
+    });
+  });
+
+  var cdExport = document.getElementById('cdExport');
+  if (cdExport) cdExport.addEventListener('click', exportOrders);
+  renderCart();
 
   // design-your-own configurator
   const designerStage = ${designerStage.toString()};
@@ -1294,11 +1492,20 @@ const html = `<!DOCTYPE html>
   refreshCfg();
 
   const cfgRequest = document.getElementById('cfgRequest');
-  if (cfgRequest) cfgRequest.addEventListener('click', () => {
-    const msg = document.querySelector('#contact textarea[name="message"]');
-    if (msg) msg.value = 'Custom order request:\\n\\nCollection: ' + sel.coll + ' (' + sel.tag + ')\\nProduct: ' + sel.prod + '\\nScent: ' + sel.scent + '\\nSize: ' + sel.size + '\\nName: ' + sel.name + '\\n\\nChosen with the Design-your-own designer.';
-    show('contact', false);
-    setTimeout(() => { const f = document.querySelector('#contact .contact-form'); if (f) f.scrollIntoView({ behavior: 'smooth' }); }, 60);
+  if (cfgRequest) cfgRequest.addEventListener('click', function () {
+    var title = (cfgNameInput ? cfgNameInput.value.trim() || 'My Butter & Bloom' : sel.name);
+    var num = 'BB-C-' + new Date().toISOString().slice(2, 10).replace(/-/g, '') + '-' + Math.floor(100 + Math.random() * 900);
+    var items = [{ name: sel.coll + ' · ' + sel.prod + ' · ' + sel.scent, price: 0, qty: 1, format: sel.size }];
+    var lines = 'Custom order ' + num + '\n\nCollection: ' + sel.coll + ' (' + sel.tag + ')\nProduct: ' + sel.prod + '\nScent: ' + sel.scent + '\nSize: ' + sel.size + '\nName on the label: ' + title + '\n\nChosen with the Design-your-own designer.';
+    var st = document.getElementById('cfgStatus');
+    cfgRequest.disabled = true;
+    if (st) st.textContent = 'Sending your request…';
+    sendOrder('Custom order request ' + num, 'Design-your-own', '', lines, function (ok) {
+      if (st) st.textContent = ok
+        ? 'Sent! We’ll email you about price and lead time. It’s logged as ' + num + '.'
+        : 'Sending hiccuped. Please email butterandbloom.ca.shop@gmail.com with your selections.';
+      cfgRequest.disabled = false;
+    });
   });
 
   const init = (location.hash || '').replace('#', '');

@@ -247,6 +247,13 @@ const ingredients = [
   ['Fragrance Oils', 'Scent', 'Cosmetic-grade, IFRA-compliant. Used where a scent can’t be made from plants alone, always skin-safe.'],
   ['Baking Soda & Citric Acid', 'Fizz', 'The chemistry of a good bath bomb, two pantry staples meeting in warm water.'],
   ['Kaolin Clay & Arrowroot', 'Texture', 'Kaolin binds steamers; arrowroot sets body butter so it stays whipped.'],
+  ['Sugar', 'Exfoliant', 'The gentle grit in our scrubs, it polishes away dull skin and rinses clean.'],
+  ['Castor Oil', 'Carrier oil', 'Adds the creamy, pillowy lather that makes our soap feel like a cloud.'],
+  ['RSPO-Certified Sustainable Palm Oil', 'Carrier oil', 'Used sparingly in soap for a firm, long-lasting bar, certified sustainable from start to finish.'],
+  ['Cornstarch', 'Texture', 'Smooths and binds bath bombs so they hold their hand-pressed shape.'],
+  ['Polysorbate 80', 'Dispersant', 'A skin-kind emulsifier that carries bath-oil scent through the water instead of leaving a ring.'],
+  ['Witch Hazel', 'Binder', 'A natural distillate that binds steamers and bath bombs and keeps them shelf-stable.'],
+  ['Water', 'Base', 'The universal solvent in every recipe, where each batch begins.'],
   ['Vitamin E', 'Keep-fresh', 'A natural antioxidant that protects our nut and seed oils from going rancid.'],
   ['Sodium Hydroxide', 'Saponification', 'Present only in the soapmaking process, it becomes soap. Nothing of it remains in the finished bar.'],
 ];
@@ -363,8 +370,8 @@ function home() {
   return `
   <section class="hero">
     <div class="hero-inner">
-      <h1 class="hero-line" aria-live="polite">Made slowly.<br>Made thoughtfully.</h1>
-      <p class="hero-sub">Artisanal skincare made by hand, vegan and traceable, Ontario-made.</p>
+      <h1 class="hero-line" aria-live="polite">Handmade Vegan Skincare</h1>
+      <p class="hero-sub">Handmade, vegan skincare from Ontario.</p>
       <div class="hero-cta">
         <a class="btn btn-pine" href="#build" data-nav="shop">Shop the collection</a>
         <a class="btn btn-ghost" href="#scent-guide" data-nav="scent-guide">How to read a scent</a>
@@ -470,13 +477,6 @@ function home() {
 
 function shop() {
   return `
-  <section class="block" id="shop-colls">
-    <div class="block-head">
-      <h2>Shop the collections</h2>
-      <p class="sub">Three scented collections to start from, or design your own below.</p>
-    </div>
-    <div class="coll-grid">${collections.map(collectionCard).join('')}</div>
-  </section>
   ${configurator()}`;
 }
 
@@ -615,7 +615,8 @@ function collectionsPage() {
         <div class="cp-swatches">${c.tones.map(t => `<span class="swatch" style="background:${t}"></span>`).join('')}</div>
       </div>
     </div>`).join('')}
-  </section>`;
+  </section>
+  ${scentGuide()}`;
 }
 
 function scentGuide() {
@@ -644,7 +645,7 @@ function scentGuide() {
   </div>`).join('');
 
   return `
-  <section class="block" id="scent-guide-top">
+  <section class="block" id="scent-guide">
     <div class="block-head">
       <p class="eyebrow">Know your scent</p>
       <h2>How to read a scent</h2>
@@ -682,7 +683,7 @@ function scentGuide() {
       <h2>Build your own</h2>
     </div>
     <p class="about-p">Not sure which scent is “you”? The customizer lets you compare collections and read every pyramid before you commit.</p>
-    <a class="btn btn-pine" href="#collections" data-nav="collections">Build your collection</a>
+    <a class="btn btn-pine" href="#build" data-nav="shop">Start designing your own</a>
   </section>`;
 }
 
@@ -722,13 +723,22 @@ function about() {
       </div>`).join('')}
     </div>
 
-    <div class="statement">
+<div class="statement">
       <div class="leaf-big">${leaf}</div>
       <div>
         <p class="eyebrow">What we stand for</p>
-        <h2>Good ingredients, honest labels,<br>and time on our side.</h2>
-        <p class="about-p">We’d rather sell a little, slowly, to people who come back, than make a lot, fast, for people who don’t.</p>
+        <h2>What We Stand For</h2>
+        <p class="about-p">At Butter &amp; Bloom, we believe skincare should be simple, enjoyable, and made with care.</p>
+        <div class="stand-grid">
+          <div class="stand-item"><b>Thoughtfully Made</b><p>Every product is made in small batches, with care given to every ingredient and every step.</p></div>
+          <div class="stand-item"><b>Plant-Based</b><p>Everything we make is vegan and made with plant-based ingredients.</p></div>
+          <div class="stand-item"><b>Small-Batch</b><p>We make things in small batches so we can focus on quality, consistency, and the details.</p></div>
+          <div class="stand-item"><b>Know What You&rsquo;re Using</b><p>We believe skincare ingredients should be clear and easy to understand. We keep our products and batches carefully documented.</p></div>
+          <div class="stand-item"><b>A Little Joy</b><p>Skincare doesn&rsquo;t have to be complicated. A good bath, a favourite scent, or a soft bar of soap can make an ordinary day feel a little better.</p></div>
+        </div>
+        <div class="stand-slogan">Comfort for the body. Joy for the heart. Wellness for the soul.</div>
       </div>
+    </div>
     </div>
   </section>`;
 }
@@ -766,9 +776,12 @@ function guide() {
     <h3 class="g-h3">Allergens &amp; sensitivities in detail</h3>
     ${table(['Concern', 'How we handle it'], allergens)}
 
-    <div class="guide-note">
+<div class="guide-note">
       <div class="leaf-big">${leaf}</div>
-      <p>Spotting a concern? Every label lists the full ingredient list in descending order, and every batch is dated, write to us with the code, and we’ll tell you exactly what went into it and when.</p>
+      <div>
+        <p>Spotting a concern? Every label lists the full ingredient list in descending order, and every batch is dated. Write to us with the batch code and we'll tell you exactly what went into it and when.</p>
+        <a class="btn btn-ghost" href="#contact" data-nav="contact" style="margin-top:1rem">Contact us</a>
+      </div>
     </div>
   </section>`;
 }
@@ -802,8 +815,20 @@ function contact() {
             <a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">TikTok</a>
           </div>
         </div>
-        <div class="ca-block"><div class="ca-label">Custom orders</div>
-          <p>Markets, weddings, and small corporate gifting. Tell us the occasion and we’ll work something out in the right collection.</p>
+<div class="ca-block ca-custom">
+          <div class="ca-label">Custom orders</div>
+          <p class="ca-lead">Something with an occasion attached? Tell us the idea and we'll bring it to life in the right collection, sized, scented, and packed the way you imagine it.</p>
+          <ul class="ca-ideas">
+            <li>Weddings &amp; party favours</li>
+            <li>Markets, pop-ups &amp; wholesale</li>
+            <li>Corporate &amp; staff gifting</li>
+            <li>Seasonal sets &amp; gift boxes</li>
+            <li>Bridal, baby &amp; shower favours</li>
+            <li>Hotels, B&amp;Bs &amp; welcome kits</li>
+            <li>Fundraisers &amp; community groups</li>
+            <li>Bespoke scent blends &amp; label notes</li>
+          </ul>
+          <a class="btn btn-ghost" href="mailto:butterandbloom.ca.shop@gmail.com" style="margin-top:1.1rem">Email us your idea</a>
         </div>
       </div>
     </div>
@@ -896,7 +921,7 @@ function policies() {
 
     <div class="pol-card" id="pol-stock">
       <h3 class="g-h3">Stock status</h3>
-      <p class="about-p">Products show an "Out of stock" badge when they're between batches. We restock in small batches as fast as we can press and pour them, so new runs land regularly, and an email request reserves a place in the next batch.</p>
+      <p class="about-p">Everything is made to order in small batches, so your items are made for you after you request the order. If something is between batches, we'll say so in the confirmation email and reserve a place in the next run, which lands regularly as fast as we can press and pour.</p>
     </div>
 
     <div class="pol-card" id="pol-terms">
@@ -910,10 +935,27 @@ function policies() {
 // Assemble
 // ---------------------------------------------------------------------------
 
+const searchIndex = (() => {
+  const idx = [];
+  const push = (t, s, h, k) => idx.push({ t: esc(t), s: esc(s), h: h, k: (t + ' ' + s + ' ' + k).toLowerCase() });
+  push('Home', 'Handmade vegan skincare from Ontario.', '#home', 'hero skincare soap bath bomb scrub butter');
+  push('Shop · Design your own', 'Choose a collection, product, and a scent.', '#build', 'custom order design collection scent');
+  push('Collections', 'Soft Glow, Sweet Playful, Reset Minimal', '#collections', 'mood fragrance lavender citrus eucalyptus');
+  push('Scent Guide', 'How to read a scent: top, middle, base', '#scent-guide', 'scent pyramid fragrance notes');
+  push('About', 'Our story, values, and what we stand for', '#about', 'story small batch ontario handcrafted');
+  push('Care Guide', 'Ingredients, how to use, storage, allergens', '#guide', 'ingredients allergens shelf life storage');
+  push('Contact', 'Say hello, custom orders', '#contact', 'custom order wedding market corporate email');
+  push('Policies', 'How to order, shipping, returns, privacy', '#policies', 'order shipping return stock terms');
+  push('Privacy Policy', 'How we handle your information', '#privacy', 'privacy data local storage');
+  products.forEach(p => push(p.name, p.format + ' · ' + p.scents, '#build', p.cat + ' ' + p.note + ' ' + p.ingredients.join(' ')));
+  collections.forEach(c => push(c.name + ' collection', c.tag + ' · ' + c.blurb.slice(0, 90), '#collections', c.scents + ' ' + c.keywords.join(' ')));
+  configData.collections.forEach(c => c.scents.filter(s => s.notes).forEach(s => push(s.name + ' scent', c.name + ' · ' + s.hint, '#scent-guide', '')));
+  return idx;
+})();
+
 const nav = [
   ['home', '#home', 'Home'],
   ['shop', '#build', 'Shop'],
-  ['scent-guide', '#scent-guide', 'Scent Guide'],
   ['about', '#about', 'About'],
   ['guide', '#guide', 'Care Guide'],
   ['contact', '#contact', 'Contact'],
@@ -992,6 +1034,8 @@ const html = `<!DOCTYPE html>
   .hero-sub { max-width:620px; color:var(--ink-soft); font-size:clamp(1.02rem,2.6vw,1.18rem); line-height:1.6; margin-bottom:1.8rem; }
   .hero-line { transition:opacity .38s ease, transform .38s ease; min-height:2.35em; display:flex; flex-direction:column; justify-content:center; }
   .hero-line.switching { opacity:0; transform:translateY(8px); }
+  .hero-sub { transition:opacity .38s ease, transform .38s ease; }
+  .hero-sub.switching { opacity:0; transform:translateY(8px); }
   .hero-cta { display:flex; gap:.8rem; flex-wrap:wrap; }
   .hero-sig { margin-top:2rem; font-size:.82rem; color:var(--sage); letter-spacing:.02em; }
   .trust-row { display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; margin-top:1.6rem; }
@@ -1002,6 +1046,21 @@ const html = `<!DOCTYPE html>
   .btn-pine:hover { background:var(--pine-deep); transform:translateY(-1px); }
   .btn-ghost { border-color:var(--pine); color:var(--pine); background:transparent; }
   .btn-ghost:hover { background:var(--cream); }
+
+  /* search + login */
+  .nav-utils { display:flex; align-items:center; gap:.7rem; margin-left:1rem; }
+  .search-wrap { position:relative; }
+  .nav-search { width:160px; border:1px solid var(--line); background:var(--panel); border-radius:999px; padding:.42rem .9rem; font-size:.84rem; font-family:inherit; color:var(--ink); outline:none; transition:border-color .15s, width .25s; }
+  .nav-search:focus { border-color:var(--sage); box-shadow:0 0 0 3px rgba(95,114,83,.2); width:220px; }
+  .search-results { position:absolute; top:calc(100% + .5rem); right:0; width:340px; max-height:60vh; overflow-y:auto; background:var(--panel); border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow); z-index:70; padding:.35rem; }
+  .search-results[hidden] { display:none; }
+  .search-item { display:block; text-decoration:none; border-radius:10px; padding:.55rem .7rem; }
+  .search-item:hover { background:var(--cream); }
+  .search-item b { display:block; font-size:.88rem; color:var(--pine-deep); font-weight:500; }
+  .search-item span { font-size:.76rem; color:var(--ink-soft); display:block; margin-top:.05rem; }
+  .search-empty { font-size:.8rem; color:var(--ink-soft); padding:.6rem .7rem; }
+  .nav-login { border:1px solid var(--pine); background:transparent; color:var(--pine); border-radius:999px; padding:.42rem 1rem; font-size:.84rem; font-weight:500; cursor:pointer; font-family:inherit; transition:all .15s; white-space:nowrap; }
+  .nav-login:hover { background:var(--cream); }
 
   /* marquee */
   .marquee { overflow:hidden; border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--cream); padding:.7rem 0; }
@@ -1216,6 +1275,13 @@ const html = `<!DOCTYPE html>
   .pol-card { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:1.4rem 1.6rem; box-shadow:var(--shadow); margin-bottom:1.2rem; }
   .pol-card .g-h3 { margin-bottom:.3rem; }
 
+  /* about: what we stand for */
+  .stand-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1rem; margin:1.2rem 0 .3rem; }
+  .stand-item { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:1rem 1.1rem; box-shadow:var(--shadow); }
+  .stand-item b { font-family:Georgia,serif; font-weight:500; font-size:1.02rem; color:var(--pine-deep); display:block; margin-bottom:.3rem; }
+  .stand-item p { font-size:.84rem; color:var(--ink-soft); }
+  .stand-slogan { margin-top:1.1rem; font-family:Georgia,serif; font-size:1.18rem; color:var(--pine-deep); font-style:italic; }
+
   /* contact */
   .contact-grid { display:grid; grid-template-columns:1.2fr 1fr; gap:2rem; }
   .contact-form { display:flex; flex-direction:column; gap:1rem; background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:1.8rem; box-shadow:var(--shadow); }
@@ -1230,6 +1296,12 @@ const html = `<!DOCTYPE html>
   .ca-block a:hover { border-bottom-color:var(--pine); }
   .socials { display:flex; gap:1rem; }
   .ca-block p { font-size:.88rem; color:var(--ink-soft); }
+  .ca-custom { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:1.5rem 1.6rem; box-shadow:var(--shadow); }
+  .ca-custom .ca-label { font-size:.72rem; text-transform:uppercase; letter-spacing:.12em; color:var(--sage); margin-bottom:.5rem; }
+  .ca-lead { font-size:1.05rem; font-weight:500; color:var(--pine-deep); margin-bottom:1rem; line-height:1.55; }
+  .ca-ideas { list-style:disc; margin:0 0 .9rem 1.3rem; columns:2; column-gap:1.8rem; }
+  .ca-ideas li { font-size:.88rem; color:var(--ink-soft); padding:.18rem 0; break-inside:avoid; }
+  .ca-custom .btn { margin-top:.2rem; }
 
   /* cart */
   .cart-fab { position:fixed; right:1.2rem; bottom:1.2rem; z-index:80; display:flex; align-items:center; gap:.5rem; background:var(--pine); color:#FBF9F4; border:0; border-radius:999px; padding:.85rem 1.4rem; font-size:.9rem; font-weight:600; cursor:pointer; box-shadow:0 8px 24px rgba(30,50,34,.35); transition:background .15s, transform .15s; font-family:inherit; }
@@ -1265,6 +1337,29 @@ const html = `<!DOCTYPE html>
   .cd-order b { color:var(--ink); }
   .cd-export { margin-top:.8rem; }
 
+  /* account drawer */
+  .acct-drawer { position:fixed; top:0; right:0; height:100vh; width:min(380px,100vw); background:var(--paper); border-left:1px solid var(--line); z-index:95; display:flex; flex-direction:column; padding:1.5rem; box-shadow:-12px 0 40px rgba(40,38,30,.18); overflow-y:auto; }
+  .acct-drawer[hidden] { display:none; }
+  .cd-fields-input { font-family:inherit; font-size:.86rem; border:1px solid var(--line); border-radius:10px; padding:.6rem .8rem; background:var(--panel); color:var(--ink); margin-top:.8rem; }
+  .cd-fields-input:focus { outline:2px solid rgba(95,116,90,.3); border-color:var(--pine); }
+  .acct-find { margin-top:.5rem; align-self:flex-start; }
+  .acct-list { margin-top:1rem; }
+  .acct-order { border-top:1px solid var(--line); padding:1rem 0; }
+  .acct-order-head { display:flex; justify-content:space-between; align-items:baseline; gap:.5rem; }
+  .acct-order-head b { font-size:.95rem; color:var(--pine-deep); }
+  .acct-order-head span { font-size:.74rem; color:var(--ink-soft); white-space:nowrap; }
+  .acct-items { font-size:.82rem; color:var(--ink-soft); margin:.35rem 0 .6rem; }
+  .acct-total { font-size:.86rem; color:var(--clay); font-weight:600; }
+  .acct-track { display:flex; align-items:flex-start; margin-top:.85rem; }
+  .acct-step { display:flex; flex-direction:column; align-items:center; flex:0 0 auto; }
+  .acct-dot { width:14px; height:14px; border-radius:50%; background:var(--line); border:2px solid var(--paper); box-shadow:0 0 0 1px var(--line); margin-bottom:.35rem; }
+  .acct-step.done .acct-dot { background:var(--sage); box-shadow:0 0 0 1px var(--sage); }
+  .acct-step.now .acct-dot { background:var(--pine); box-shadow:0 0 0 3px rgba(63,90,62,.25); }
+  .acct-step small { font-size:.64rem; line-height:1.2; text-align:center; color:var(--ink-soft); max-width:58px; }
+  .acct-step.now small { color:var(--pine-deep); font-weight:600; }
+  .acct-link { flex:1; height:2px; background:var(--line); margin-top:6px; }
+  .acct-link.filled { background:var(--sage); }
+
   /* footer */
   footer { border-top:1px solid var(--line); background:var(--cream); margin-top:2rem; }
   .foot-inner { max-width:1080px; margin:0 auto; padding:2.4rem 2rem; display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start; }
@@ -1282,6 +1377,10 @@ const html = `<!DOCTYPE html>
   @media (max-width:820px) {
     .nav { padding:.8rem 1.2rem; gap:1rem; }
     .nav-links { margin-left:0; }
+    .nav-utils { margin-left:0; }
+    .nav-search { width:120px; }
+    .nav-search:focus { width:160px; }
+    .search-results { width:min(340px,calc(100vw - 2.4rem)); }
     .collection-panel, .about-grid, .contact-grid { grid-template-columns:1fr; }
     .cp-tile, .about-tile { height:200px; }
     .blend-rule { grid-template-columns:1fr; }
@@ -1306,13 +1405,19 @@ const html = `<!DOCTYPE html>
     <span class="word">Butter &amp; Bloom</span>
   </a>
   <div class="nav-links">${NAV}</div>
+  <div class="nav-utils">
+    <div class="search-wrap">
+      <input class="nav-search" id="siteSearch" type="search" placeholder="Search" autocomplete="off" aria-label="Search the site">
+      <div class="search-results" id="searchResults" hidden></div>
+    </div>
+    <button class="nav-login" id="acctBtn" type="button">Log in</button>
+  </div>
 </header>
 
 <main>
   <div class="page visible" id="home">${home()}</div>
   <div class="page" id="shop">${shop()}</div>
   <div class="page" id="collections">${collectionsPage()}</div>
-  <div class="page" id="scent-guide">${scentGuide()}</div>
   <div class="page" id="about">${about()}</div>
   <div class="page" id="guide">${guide()}</div>
   <div class="page" id="contact">${contact()}</div>
@@ -1345,6 +1450,20 @@ const html = `<!DOCTYPE html>
     <div id="cdOrderList"></div>
     <button class="btn btn-ghost cd-export" id="cdExport">Export orders.csv</button>
   </details>
+</div>
+
+<div class="acct-drawer" id="acctDrawer" hidden>
+  <div class="cd-head">
+    <div>
+      <div class="cd-title">Your account</div>
+      <div class="cd-sub">Past orders from this browser. Add your email to find orders placed anywhere.</div>
+    </div>
+    <button class="cd-close" id="acctClose" aria-label="Close">×</button>
+  </div>
+  <input class="cd-fields-input" id="acctEmail" type="email" placeholder="you@example.com" aria-label="Your email to find orders" autocomplete="email">
+  <button class="btn btn-ghost acct-find" id="acctFind" type="button">Find my orders</button>
+  <p class="cd-sub" style="margin-top:.9rem">Your orders are confirmed by email before anything is made. Progress is updated as each step happens.</p>
+  <div class="acct-list" id="acctList"></div>
 </div>
 
 <footer>
@@ -1407,24 +1526,30 @@ const html = `<!DOCTYPE html>
     });
   });
 
-  // hero rotating taglines
+  // hero headlines + descriptions (Google ad pairs)
   const heroSlides = [
-    'Made slowly.<br>Made thoughtfully.',
-    'Vegan, traceable,<br>small-batch care.',
-    'Ontario-made,<br>with love and truth.',
+    { h: 'Handmade Vegan Skincare', d: 'Handmade, vegan skincare from Ontario.' },
+    { h: 'Small-Batch Soaps &amp; Scrubs', d: 'Small-batch skincare from Ontario.' },
+    { h: 'Cold-Process Soap by Hand', d: 'Vegan, batch-tracked skincare made by hand.' },
+    { h: 'Made Slowly in Ontario', d: 'Handmade vegan skincare from Canada.' },
+    { h: 'Design Your Own Skincare', d: 'Choose your collection, product, and scent. We confirm by email before we make it.' },
   ];
   const heroLine = document.querySelector('.hero-line');
-  if (heroLine) {
+  const heroSub = document.querySelector('.hero-sub');
+  if (heroLine && heroSub) {
     let h = 0;
     const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!reduceMotion) setInterval(() => {
       h = (h + 1) % heroSlides.length;
       heroLine.classList.add('switching');
+      heroSub.classList.add('switching');
       setTimeout(() => {
-        heroLine.innerHTML = heroSlides[h];
+        heroLine.innerHTML = heroSlides[h].h;
+        heroSub.innerHTML = heroSlides[h].d;
         heroLine.classList.remove('switching');
+        heroSub.classList.remove('switching');
       }, 380);
-    }, 10000);
+    }, 8000);
   }
 
   // cart & orders
@@ -1433,6 +1558,7 @@ const html = `<!DOCTYPE html>
   function escH(s){ return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
   const CATALOG = ${JSON.stringify(products)};
   const productSVGjs = ${productSVG.toString()};
+  const SEARCH_INDEX = ${JSON.stringify(searchIndex)};
 
   function cartCount() { return cart.reduce(function (s, i) { return s + i.qty; }, 0); }
   function cartTotal() { return cart.reduce(function (s, i) { return s + i.price * i.qty; }, 0); }
@@ -1601,6 +1727,83 @@ const html = `<!DOCTYPE html>
   renderCart();
   renderBestSellers();
 
+  // site search
+  const searchInput = document.getElementById('siteSearch');
+  const searchBox = document.getElementById('searchResults');
+  function searchRender() {
+    const q = (searchInput.value || '').trim().toLowerCase();
+    if (!q) { searchBox.hidden = true; return; }
+    const found = SEARCH_INDEX.filter(r => r.k.indexOf(q) > -1).slice(0, 8);
+    let h = '';
+    if (found.length) {
+      h = found.map(r => '<a class="search-item" href="' + r.h + '"><b>' + r.t + '</b><span>' + r.s + '</span></a>').join('');
+    } else {
+      h = '<div class="search-empty">No matches yet. Try “soap”, “lavender”, or “gifting”.</div>';
+    }
+    searchBox.innerHTML = h;
+    searchBox.hidden = false;
+  }
+  searchInput.addEventListener('input', searchRender);
+  searchInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { searchBox.hidden = true; searchInput.blur(); }
+    if (e.key === 'Enter') { const first = searchBox.querySelector('.search-item'); if (first) { first.click(); e.preventDefault(); } }
+  });
+  document.addEventListener('click', function (e) {
+    const item = e.target.closest('.search-item');
+    if (item) {
+      e.preventDefault();
+      const id = item.getAttribute('href').slice(1);
+      const t = document.getElementById(id);
+      if (t) {
+        if (t.classList.contains('page')) { show(id, true); }
+        else {
+          const page = t.closest('.page');
+          const pageId = page ? page.id : null;
+          if (pageId && !page.classList.contains('visible')) show(pageId, true);
+          setTimeout(() => t.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
+        }
+      }
+      searchBox.hidden = true;
+      searchInput.value = '';
+      return;
+    }
+    if (!e.target.closest('.search-wrap')) searchBox.hidden = true;
+  });
+
+  // customer account: past orders + progress tracker
+  function openAcct() { const d = document.getElementById('acctDrawer'); if (d) { d.hidden = false; closeCart(); renderAcct(''); } }
+  function closeAcct() { const d = document.getElementById('acctDrawer'); if (d) d.hidden = true; }
+  function renderAcct(email) {
+    const el = document.getElementById('acctList');
+    if (!el) return;
+    const orders = JSON.parse(localStorage.getItem(orderKey) || '[]');
+    const match = orders.filter(o => !email || (o.email || '').toLowerCase() === email.toLowerCase());
+    const steps = ['Requested', 'Confirmed', 'In the making', 'Ready for you', 'On its way'];
+    let h = '';
+    if (match.length) {
+      for (let i = match.length - 1; i >= 0; i--) {
+        const o = match[i];
+        const st = typeof o.status === 'number' ? o.status : 0;
+        let items = '';
+        for (let j = 0; j < o.items.length; j++) items += (j ? ', ' : '') + escH(o.items[j].name) + ' ×' + o.items[j].qty;
+        let track = '';
+        for (let s = 0; s < steps.length; s++) {
+          track += '<div class="acct-step' + (s < st ? ' done' : (s === st ? ' now' : '')) + '"><span class="acct-dot"></span><small>' + steps[s] + '</small></div>';
+          if (s < steps.length - 1) track += '<div class="acct-link' + (s < st ? ' filled' : '') + '"></div>';
+        }
+        h += '<div class="acct-order"><div class="acct-order-head"><b>' + escH(o.num) + '</b><span>' + escH(o.date) + '</span></div>' +
+          '<div class="acct-items">' + escH(items) + '</div><div class="acct-total">$' + o.total.toFixed(2) + '</div>' +
+          '<div class="acct-track">' + track + '</div></div>';
+      }
+    } else {
+      h = '<p class="cd-empty">No orders found' + (email ? ' for that email' : ' on this browser yet') + '. Orders are confirmed by email before anything is made.</p>';
+    }
+    el.innerHTML = h;
+  }
+  document.getElementById('acctBtn').addEventListener('click', openAcct);
+  document.getElementById('acctClose').addEventListener('click', closeAcct);
+  document.getElementById('acctFind').addEventListener('click', function () { renderAcct(document.getElementById('acctEmail').value.trim()); });
+
   // design-your-own configurator
   const designerStage = ${designerStage.toString()};
   const cfgProductPrices = ${JSON.stringify(configData.productPrices)};
@@ -1699,14 +1902,16 @@ const html = `<!DOCTYPE html>
   });
 
   const initRaw = (location.hash || '').replace('#', '');
-  const init = initRaw === 'build' ? 'shop' : initRaw;
+  const pageAlias = { build: 'shop', 'scent-guide': 'collections' };
+  const init = pageAlias[initRaw] || initRaw;
   show(document.getElementById(init) && init !== 'home' ? init : 'home', true);
-  if (initRaw === 'build') setTimeout(() => { const t = document.getElementById('build'); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80);
+  if (initRaw === 'build' || initRaw === 'scent-guide') setTimeout(() => { const t = document.getElementById(initRaw); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80);
   window.addEventListener('hashchange', () => {
     let h = (location.hash || 'home').replace('#', '');
-    if (h === 'build') {
-      show('shop', false);
-      setTimeout(() => { const t = document.getElementById('build'); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80);
+    const pid = pageAlias[h];
+    if (pid) {
+      show(pid, false);
+      setTimeout(() => { const t = document.getElementById(h); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80);
     } else {
       show(h, false);
     }

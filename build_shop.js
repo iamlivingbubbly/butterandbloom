@@ -60,10 +60,10 @@ const collections = [
       ['Base', '20–30%', 'Quiet woody finish, depth that lingers'],
     ],
     feel: 'cool, airy, precisely tuned',
-    for: 'congestion days, winding down, minimalists and reset-seekers',
+    for: 'winding down, minimalists and reset-seekers',
     story: [
       'Reset Minimal is the deep breath at the end of a long day. Clean, restrained, and modern, it strips everything away until only the essentials remain: honest ingredients, precise scents, a calmer head.',
-      'Eucalyptus steams and cool mint cut through the fog; shower steamers turn an ordinary shower into a breathing room. No bath required, no fuss involved. The palette is quiet and the formulas are shorter than your to-do list.',
+      'Eucalyptus steam and cool mint wake the senses; shower steamers turn an ordinary shower into a breathing room. No bath required, no fuss involved. The palette is quiet and the formulas are shorter than your to-do list.',
       'It’s for people who want skincare that stays out of the way, no noise, no clutter, no twelve-step regimen. Just a clean ritual and a moment to reset.',
     ],
   },
@@ -106,7 +106,7 @@ const configData = {
       id: 'reset-minimal', name: 'Reset Minimal', tag: 'Clean · restrained · modern',
       frag: 'Eucalyptus · Mint · Unscented', dot: '#7C916F', t1: '#EDEDE8', t2: '#9AA7A0',
       scents: [
-        { name: 'Eucalyptus', hint: 'Clears the fog', notes: [['Top', '20–30%', 'Mint, cool and instant'], ['Middle', '40–50%', 'Eucalyptus, the clearing heart'], ['Base', '20–30%', 'Quiet cedar, depth that lingers']] },
+        { name: 'Eucalyptus', hint: 'Cool, clear, bracing', notes: [['Top', '20–30%', 'Mint, cool and instant'], ['Middle', '40–50%', 'Eucalyptus, the clearing heart'], ['Base', '20–30%', 'Quiet cedar, depth that lingers']] },
         { name: 'Mint', hint: 'Cool, precise, clean', notes: [['Top', '20–30%', 'Peppermint, crisp opener'], ['Middle', '40–50%', 'Eucalyptus & green breath'], ['Base', '20–30%', 'Clean woody calm']] },
         { name: 'Unscented', hint: 'No fragrance, no fuss', unscented: true, notes: null },
       ],
@@ -118,10 +118,17 @@ const configData = {
   sizes: [
     ['Travel', '1 oz'], ['Standard', '4 oz'], ['Luxury', '8 oz'],
   ],
+  productPrices: { Soap: 9.00, 'Bath Bomb': 7.00, 'Shower Steamer': 11.00, 'Sugar Scrub': 7.00, 'Lip Balm': 4.00, 'Body Butter': 12.00 },
+  sizeMult: { 'Travel (1 oz)': 0.6, 'Standard (4 oz)': 1, 'Luxury (8 oz)': 1.8 },
 };
 
+// Photo spec (when product photos arrive): shoot all SKUs in one session with the same
+// background, the same lighting, and the same container style so the shelf looks uniform.
+// Each product takes one hero shot (img, product + label, square crop), one close-up
+// texture shot (imgClose), and optionally one in-use shot (imgUse, product in a hand).
+// The shop + featured cards inherit whatever is set; until then the SVG art is the fallback.
 const products = [
-  { cat: 'butters', name: 'Whipped Body Butter', format: '450 g', price: 7.00, icon: 'jar', out: false,
+  { cat: 'butters', name: 'Whipped Body Butter', format: '450 g', price: 12.00, icon: 'jar', out: false,
     scents: 'Lavender Dream · Vanilla Bean · Citrus Sunrise', coll: 'Soft Glow',
     note: 'Whipped shea & coconut. Softens above 25°C. That’s normal, just give it a stir.',
     desc: [
@@ -138,7 +145,7 @@ const products = [
       ['Is it gluten-free?', 'Yes, shea, coconut oil, sweet almond oil, arrowroot, and fragrance. Nothing in the formula contains gluten.'],
       ['How much should I use?', 'A little goes a long way. Start with a fingertip-sized scoop, massage into warm just-showered skin, and build from there.'],
     ] },
-  { cat: 'balms', name: 'Lip Balm', format: '10 g', price: 2.00, icon: 'tube', out: false,
+  { cat: 'balms', name: 'Lip Balm', format: '10 g', price: 4.00, icon: 'tube', out: false,
     scents: 'Peppermint · Honey · Vanilla Bean', coll: 'Sweet Playful',
     note: 'Fully vegan, candelilla wax, cocoa or mango butter.',
     desc: [
@@ -155,7 +162,7 @@ const products = [
       ['Will it melt in my pocket?', 'Candelilla wax has a higher melt point than beeswax, so it holds its shape in warm pockets far better than most natural balms.'],
       ['How much should I use?', 'One light pass is plenty, it’s rich enough to last between applications without constant reapplying.'],
     ] },
-  { cat: 'scrubs', name: 'Sugar Scrub', format: '450 g', price: 5.00, icon: 'jar', out: false,
+  { cat: 'scrubs', name: 'Sugar Scrub', format: '450 g', price: 7.00, icon: 'jar', out: false,
     scents: 'Vanilla Bean · Brown Sugar Glow · Coffee', coll: 'Sweet Playful',
     note: 'Scoop with dry hands and keep water out of the jar.',
     desc: [
@@ -172,7 +179,7 @@ const products = [
       ['How do I stop it from spoiling?', 'Keep water out of the jar above all else, scoop with completely dry hands. Sealed and dry, it keeps for about a year.'],
       ['Which scent should I try first?', 'Vanilla Bean is our most-loved. Coffee is the morning pick, and Brown Sugar Glow is the gentle sweet spot between the two.'],
     ] },
-  { cat: 'soaps', name: 'Soap', format: '70 g', price: 5.00, icon: 'bar', out: false,
+  { cat: 'soaps', name: 'Soap', format: '70 g', price: 9.00, icon: 'bar', out: false,
     scents: 'Lavender Oat · Tea Tree Charcoal · Honey Oat · Rose Clay · Eucalyptus Mint', coll: 'Soft Glow',
     note: 'Slow-cured at least six weeks for a hard, gentle bar.',
     desc: [
@@ -190,13 +197,13 @@ const products = [
       ['How should I store it?', 'Between washes, keep the bar somewhere it can drain and dry. A dry bar genuinely lasts months longer.'],
       ['How long does one bar last?', 'With basic care, a single 70 g bar typically lasts four to six weeks of daily body use.'],
     ] },
-  { cat: 'steamers', name: 'Shower Steamer', format: '340 g', price: 8.00, icon: 'steamer', out: true,
+  { cat: 'steamers', name: 'Shower Steamer', format: '340 g', price: 11.00, icon: 'steamer', out: true,
     scents: 'Eucalyptus Mint · Lavender · Citrus Burst', coll: 'Reset Minimal',
     note: 'Aromatherapy for breathing rooms, not baths.',
     desc: [
       'A shower steamer is aromatherapy without the bath. Set one on the floor, let the warm water spark it, and breathe.',
       'Each 340 gram pack comes with three tablets pressed from baking soda, citric acid, and a binding kiss of kaolin clay, scented generously with pure essential oils.',
-      'This is our congestion-season hero: eucalyptus and mint steam that opens up sinuses and turns a rushed shower into a genuine reset. Equally lovely on grey winter mornings, when a hot shower is the best idea of the day.',
+      'The eucalyptus-and-mint blend is a steady favourite in cold season, a warm aromatic steam that turns a rushed shower into a genuine reset. Equally lovely on grey winter mornings, when a hot shower is the best idea of the day.',
     ],
     ingredients: ['Baking soda', 'Citric acid', 'Kaolin clay', 'Essential oils', 'Witch hazel'],
     use: 'Set on the shower floor, away from the direct water stream. Breathe slowly.',
@@ -205,9 +212,9 @@ const products = [
       ['Do I need a bathtub?', 'No, that’s the whole point. A shower steamer is aromatherapy for people without a tub: place it on the floor and let the warm water do the rest.'],
       ['How long does one tablet last?', 'Each tablet fizzes on and off for the length of a normal shower, one tablet per shower is usually plenty.'],
       ['Is it safe for kids?', 'Yes, with adult supervision, with the tablet placed out of a child’s reach. Essential-oil products should never be eaten, so keep them up and away from little hands.'],
-      ['What are they good for?', 'Congestion, stuffy winter sinuses, or simply turning a rushed morning shower into a mindful two minutes. Eucalyptus Mint is the classic pick.'],
+      ['What are they good for?', 'Winter congestion, a heavy head, or simply turning a rushed morning shower into a mindful two minutes. Eucalyptus Mint is the classic pick.'],
     ] },
-  { cat: 'bombs', name: 'Bath Bomb', format: '70 g', price: 5.00, icon: 'bomb', out: true,
+  { cat: 'bombs', name: 'Bath Bomb', format: '70 g', price: 7.00, icon: 'bomb', out: true,
     scents: 'Rose Garden · Lavender Dream · Citrus Sunrise', coll: 'Sweet Playful',
     note: 'Hand-pressed in small batches. Use caution getting out. The tub gets slippery.',
     desc: [
@@ -269,7 +276,7 @@ const shelfLife = [
 const allergens = [
   ['Tree nuts', 'Sweet almond oil appears in bath bombs, scrubs, lip balm and body butter. Always labelled.'],
   ['Essential oils', 'Labels list the specific oils used in each product.'],
-  ['Gluten', 'Our oatmeal topping and honey are food-grade; we do not make certified gluten-free claims.'],
+  ['Gluten', 'Our oatmeal topping is real, food-grade oat. The honey and oat-milk notes in our scent names are fragrances, not ingredients. We do not make certified gluten-free claims.'],
   ['Palm oil', 'We only use RSPO-certified sustainable palm, and keep amounts minimal.'],
 ];
 
@@ -350,6 +357,12 @@ function productCard(p) {
 // ---------------------------------------------------------------------------
 
 function home() {
+  const why = [
+    ['🌿', 'Small batch', 'Made in small quantities, not factory-produced.'],
+    ['🧈', 'Thoughtful formulas', 'Short ingredient lists where every ingredient has a purpose.'],
+    ['🏷️', 'Batch tracked', 'Every product is labelled with its batch code and date.'],
+    ['🇨🇦', 'Made in Ontario', 'Handmade locally in Ontario, Canada.'],
+  ];
   return `
   <section class="hero">
     <div class="hero-inner">
@@ -358,6 +371,9 @@ function home() {
       <div class="hero-cta">
         <a class="btn btn-pine" href="#shop" data-nav="shop">Shop the collection</a>
         <a class="btn btn-ghost" href="#scent-guide" data-nav="scent-guide">How to read a scent</a>
+      </div>
+      <div class="trust-row">
+        <span>🌱 Vegan</span><span>🏷️ Batch tracked</span><span>🇨🇦 Made in Ontario</span><span>♻️ Minimal packaging</span>
       </div>
     </div>
   </section>
@@ -369,7 +385,7 @@ function home() {
   <section class="block" id="lines">
     <div class="block-head">
       <p class="eyebrow">Three ways to feel</p>
-      <h2>The collections</h2>
+      <h2>Shop the collections</h2>
     </div>
     <div class="coll-grid">${collections.map(collectionCard).join('')}</div>
   </section>
@@ -377,24 +393,33 @@ function home() {
   <section class="block sand" id="featured">
     <div class="block-head">
       <p class="eyebrow">Favourites</p>
-      <h2>Favorites</h2>
+      <h2>Featured products</h2>
+      <p class="sub">The best sellers from real orders placed on this device. Until then, our favourites.</p>
     </div>
-    <div class="feature-grid">
+    <div class="feature-grid" id="homeFeatured">
       <div class="feature">
         <div class="f-tile" style="background:linear-gradient(150deg,#efe7dc,#ead9d6)">${productSVG('bar', '#C9A39B')}</div>
         <div class="f-meta"><span>Soap</span><b>Lavender Oat</b></div>
+        <div class="f-price">$9.00</div>
+        <a class="f-shop" href="#shop" data-nav="shop">Shop</a>
       </div>
       <div class="feature">
         <div class="f-tile" style="background:linear-gradient(150deg,#f8f0da,#f4d9a6)">${productSVG('jar', '#D9A441')}</div>
         <div class="f-meta"><span>Sugar Scrub</span><b>Vanilla Bean</b></div>
+        <div class="f-price">$7.00</div>
+        <a class="f-shop" href="#shop" data-nav="shop">Shop</a>
       </div>
       <div class="feature">
         <div class="f-tile" style="background:linear-gradient(150deg,#f3efe4,#e7e0cf)">${productSVG('tube', '#B9805F')}</div>
         <div class="f-meta"><span>Lip Balm</span><b>Vanilla Bean</b></div>
+        <div class="f-price">$4.00</div>
+        <a class="f-shop" href="#shop" data-nav="shop">Shop</a>
       </div>
       <div class="feature">
         <div class="f-tile" style="background:linear-gradient(150deg,#efe7dc,#e3d5c4)">${productSVG('jar', '#B9805F')}</div>
-        <div class="f-meta"><span>Whipped Body Butter</span><b>Lavender Dream</b></div>
+        <div class="f-meta"><span>Body Butter</span><b>Lavender Dream</b></div>
+        <div class="f-price">$12.00</div>
+        <a class="f-shop" href="#shop" data-nav="shop">Shop</a>
       </div>
     </div>
     <div style="text-align:center;margin-top:1.6rem">
@@ -402,10 +427,47 @@ function home() {
     </div>
   </section>
 
-  <section class="block quote">
-    <div class="leaf-big">${leaf}</div>
-    <blockquote>Simple. Thoughtful. Slowly made.</blockquote>
-    <p class="quote-src">from the Butter &amp; Bloom kitchen</p>
+  <section class="block" id="why">
+    <div class="block-head">
+      <p class="eyebrow">Why us</p>
+      <h2>Why Butter &amp; Bloom?</h2>
+    </div>
+    <div class="principles">
+      ${why.map(w => `<div class="principle"><div class="p-ico">${w[0]}</div><div class="principle-name">${w[1]}</div><p>${w[2]}</p></div>`).join('')}
+    </div>
+  </section>
+
+  <section class="block" id="home-scent">
+    <div class="blend-rule">
+      <div class="blend-rule-head">
+        <div class="blend-rule-title">Scent, in three acts</div>
+        <p>Every Butter &amp; Bloom fragrance is built top, middle, and base. We lay every pyramid bare, scent by scent.</p>
+        <a class="btn btn-ghost" href="#scent-guide" data-nav="scent-guide">How to read a scent</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="home-story">
+    <div class="statement">
+      <div class="leaf-big">${leaf}</div>
+      <div>
+        <p class="eyebrow">Our story</p>
+        <h2>Handmade, with the fingerprints to prove it.</h2>
+        <p class="about-p">Butter &amp; Bloom began with a stubborn pot of lye slurry and a first golden bar that actually lathered. Nothing is stamped out by a machine, every batch is weighed by hand, dated, and given a code.</p>
+        <a class="btn btn-ghost" href="#about" data-nav="about" style="margin-top:1rem">Read our story</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="home-shop">
+    <div class="cta-band">
+      <div>
+        <p class="eyebrow">Ready when you are</p>
+        <h2>Shop the collection</h2>
+        <p class="about-p" style="margin-top:.4rem">Everything batched by hand, labelled with its code and date. Prices in CAD.</p>
+      </div>
+      <a class="btn btn-pine" href="#shop" data-nav="shop">Shop all products</a>
+    </div>
   </section>`;
 }
 
@@ -415,7 +477,7 @@ function shop() {
     <div class="block-head">
       <p class="eyebrow">The range</p>
       <h2>Shop</h2>
-      <p class="sub">Everything batched by hand, labelled with its code and date. Prices in CAD.</p>
+      <p class="sub">Everything batched by hand, labelled with its code and date. Prices in CAD, handmade to order.</p>
     </div>
     <div class="cat-filters" id="catFilters">
       ${categories.map((c, i) => `<button class="cat-chip ${i === 0 ? 'active' : ''}" data-cat="${c.id}">${c.label}</button>`).join('')}
@@ -452,7 +514,7 @@ function configurator() {
     </div>`;
 
   const collBtns = configData.collections.map(c => `<button type="button" class="cfg-opt cfg-coll" data-group="coll" data-value="${c.name}" data-tag="${c.tag}" data-dot="${c.dot}" data-t1="${c.t1}" data-t2="${c.t2}"><i style="background:${c.dot}"></i><b>${c.name}</b><span>${c.frag}</span></button>`).join('');
-  const prodBtns = configData.products.map((p, i) => `<button type="button" class="cfg-opt cfg-prod" data-group="prod" data-shape="${configData.shapes[i]}" data-value="${p}"><b>${p}</b><span>${configData.productHints[i]}</span></button>`).join('');
+  const prodBtns = configData.products.map((p, i) => `<button type="button" class="cfg-opt cfg-prod" data-group="prod" data-shape="${configData.shapes[i]}" data-value="${p}"><span class="cfg-prod-thumb">${productSVG(configData.shapes[i], '#B9805F')}</span><span class="cfg-prod-text"><b>${p}</b><span>${configData.productHints[i]}</span></span></button>`).join('');
   const scentBtns = configData.collections.map(c => c.scents.map(s => `
     <button type="button" class="cfg-opt cfg-scent" data-group="scent" data-coll="${c.name}" data-value="${s.name}">
       <b>${s.name}</b><span>${s.hint}</span>
@@ -465,18 +527,27 @@ function configurator() {
     <div class="block-head">
       <p class="eyebrow">Custom order</p>
       <h2>Design your own</h2>
-      <p class="sub">Four steps to your own bar. Pick a collection, then the product, then the size, then the scent.</p>
+      <p class="sub">Choose a collection, a product, a size, and a scent. We price it on the spot, confirm by email, and make it by hand.</p>
     </div>
 
     <div class="cfg-layout">
       <div class="cfg-steps">
         ${step('01', 'Collection &amp; fragrance', 'Three moods, three scent homes', collBtns)}
-        ${step('02', 'Product', 'Whatever your ritual needs', prodBtns)}
-
+        ${step('02', 'Product', 'Whatever your ritual needs', `<div class="cfg-opts cfg-prods">${prodBtns}</div>`)}
         ${step('03', 'Size', 'Travel, standard, or luxury', `<div class="cfg-opts cfg-sizes">${sizeBtns}</div>`)}
-
-        ${step('04', 'Scent &amp; name', 'Collection-specific, tap one to read its pyramid',
-          `<div class="cfg-name-row"><input class="cfg-name" id="cfgName" maxlength="40" placeholder="Name your creation…" value="My Butter &amp; Bloom"></div>${scentBtns}`)}
+        ${step('04', 'Scent', 'Collection-specific, tap one to read its pyramid', `<div class="cfg-opts">${scentBtns}</div>`)}
+        ${step('05', 'Price &amp; details', 'Your total, your recipe, your lead time', `
+          <div class="cfg-price" id="cfgPriceBlock">
+            <span class="cfg-price-label">Estimated total (CAD)</span>
+            <span class="cfg-price-value" id="cfgPrice">$9.00</span>
+            <span class="cfg-price-note">Excluding GST/HST. Confirmed by email before anything is made.</span>
+          </div>
+          <div class="cfg-details">
+            <span>Collection</span><b id="cfgDcoll">Soft Glow</b>
+            <span>Product</span><b id="cfgDprod">Soap</b>
+            <span>Scent</span><b id="cfgDscent">Lavender</b>
+            <span>Size</span><b id="cfgDsize">Standard (4 oz)</b>
+          </div>`)}
         <div class="cfg-legend">
           <b>Note guide</b>
           <span><i class="lg-top"></i>Top <b>20–30%</b> · bright, immediate, fastest fading</span>
@@ -490,8 +561,8 @@ function configurator() {
         <div class="cfg-pv-stage" id="cfgStage"></div>
         <div class="cfg-card">
           <div class="cfg-card-brand">Butter &amp; Bloom</div>
-          <div class="cfg-card-name" id="cfgCardName">My Butter &amp; Bloom</div>
-          <div class="cfg-card-line" id="cfgCardLine">Soft Glow · Soap · Lavender</div>
+          <div class="cfg-card-name" id="cfgCardName">Soap</div>
+          <div class="cfg-card-line" id="cfgCardLine">Soft Glow · Lavender</div>
           <div class="cfg-card-meta" id="cfgCardMeta">Standard (4 oz)</div>
           <div class="cfg-card-foot">Handmade in Ontario · batch-dated</div>
         </div>
@@ -499,10 +570,10 @@ function configurator() {
     </div>
 
     <div class="cfg-bar">
-      <div class="cfg-summary"><span>Your order</span><b id="cfgSummary">Soft Glow · Soap · Lavender · My Butter &amp; Bloom · Standard (4 oz)</b></div>
-      <button type="button" class="btn btn-pine" id="cfgRequest">Request this order</button>
+      <div class="cfg-summary"><span>Your order</span><b id="cfgSummary">Soft Glow · Soap · Lavender · Standard (4 oz)</b></div>
+      <button type="button" class="btn btn-pine" id="cfgRequest">Create Your Skincare</button>
     </div>
-    <p class="cfg-note" id="cfgStatus">Configurations are handmade to order, lead time and price confirmed by email. Travel 1 oz · Standard 4 oz · Luxury 8 oz.</p>
+    <p class="cfg-note" id="cfgStatus">Configurations are handmade to order, estimated price above. Travel 1 oz · Standard 4 oz · Luxury 8 oz.</p>
   </section>`;
 }
 
@@ -608,6 +679,7 @@ function scentGuide() {
       <div class="ing-card"><div class="ing-name">Fragrance Oils</div><div class="ing-role">Scent</div><p>Cosmetic-grade, IFRA-compliant. Used where a scent can’t be made from plants alone, always skin-safe.</p></div>
     </div>
     <p class="about-p">Every scent source is named honestly on the label and in our fragrance profiles, “essential oil”, “fragrance oil”, or a blend of both. Want the full breakdown for your actual jar? Email us the batch code.</p>
+    <p class="about-p"><b>A note on honey:</b> “Honey”, “Oat &amp; Honey”, and honey-like notes are fragrances, not food. The range stays fully vegan, and real food ingredients, like our oatmeal topping, are always named as the ingredients they are.</p>
 
     <div class="block-head" style="margin-top:2.6rem">
       <p class="eyebrow">Ready when you are</p>
@@ -798,6 +870,47 @@ function privacy() {
   </section>`;
 }
 
+function policies() {
+  return `
+  <section class="block" id="policies">
+    <div class="block-head">
+      <p class="eyebrow">Store info</p>
+      <h2>Policies</h2>
+      <p class="sub">How to order, shipping, returns, stock, and the small print. Questions anytime at <a href="mailto:butterandbloom.ca.shop@gmail.com">butterandbloom.ca.shop@gmail.com</a>.</p>
+    </div>
+
+    <div class="pol-card" id="pol-order">
+      <h3 class="g-h3">How to order</h3>
+      <p class="about-p">Add products to your cart from the <a href="#shop" data-nav="shop">Shop</a>, enter your name and email, and request the order. We reply by email to confirm the details and the total before anything is made. Want it your way? Use the Design-your-own builder for a custom collection, product, size, and scent.</p>
+    </div>
+
+    <div class="pol-card" id="pol-shipping">
+      <h3 class="g-h3">Shipping &amp; pickup</h3>
+      <p class="about-p">Everything is handmade to order in small batches, so please allow about one to two weeks to make your products, plus courier time. We ship across Canada with Canada Post and offer local pickup in Cornwall, Ontario, by arrangement or at the makers' market.</p>
+    </div>
+
+    <div class="pol-card" id="pol-returns">
+      <h3 class="g-h3">Returns</h3>
+      <p class="about-p">Because everything is handmade to your request and is a hygiene product, we don't accept returns or exchanges. If something arrives damaged or isn't what you ordered, write to us within seven days with a photo and we'll make it right.</p>
+    </div>
+
+    <div class="pol-card" id="pol-ingredients">
+      <h3 class="g-h3">Ingredients &amp; allergens</h3>
+      <p class="about-p">Every label prints the full ingredient list in descending order plus a batch code and a date. Sweet almond oil, a tree nut, appears in bath bombs, scrubs, lip balm, and body butter. The honey and oat-milk notes in our scent names are fragrance, not food. See the <a href="#guide" data-nav="guide">care guide</a> for the full breakdown.</p>
+    </div>
+
+    <div class="pol-card" id="pol-stock">
+      <h3 class="g-h3">Stock status</h3>
+      <p class="about-p">Products show an "Out of stock" badge when they're between batches. We restock in small batches as fast as we can press and pour them, so new runs land regularly, and an email request reserves a place in the next batch.</p>
+    </div>
+
+    <div class="pol-card" id="pol-terms">
+      <h3 class="g-h3">Terms &amp; privacy</h3>
+      <p class="about-p">Prices are in CAD and exclude GST/HST until confirmed in your order email. By requesting an order you agree to our <a href="#privacy" data-nav="privacy">Privacy Policy</a>. We're Butter &amp; Bloom, a small-batch skincare studio in Cornwall, Ontario, Canada, reachable at <a href="mailto:butterandbloom.ca.shop@gmail.com">butterandbloom.ca.shop@gmail.com</a>.</p>
+    </div>
+  </section>`;
+}
+
 // ---------------------------------------------------------------------------
 // Assemble
 // ---------------------------------------------------------------------------
@@ -809,6 +922,7 @@ const nav = [
   ['about', '#about', 'About'],
   ['guide', '#guide', 'Care Guide'],
   ['contact', '#contact', 'Contact'],
+  ['policies', '#policies', 'Policies'],
 ];
 
 const NAV = nav.map(n => `<a class="nav-item" href="${n[1]}" data-nav="${n[0]}">${n[2]}</a>`).join('');
@@ -821,8 +935,8 @@ const html = `<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
-<title>Butter &amp; Bloom | Made slowly. Made thoughtfully. | Handmade vegan bath &amp; body care, Ontario</title>
-<meta name="description" content="Butter &amp; Bloom is a small-batch, vegan handcrafted bath and body care brand based in Ontario, Canada. Slow-cured cold-process soap, bath bombs, shower steamers, sugar scrubs, lip balm, and whipped body butter, made slowly, made thoughtfully. Every batch traceable, every ingredient named.">
+<title>Butter &amp; Bloom | Made slowly. Made thoughtfully. | Handmade vegan skincare, Ontario</title>
+<meta name="description" content="Butter &amp; Bloom is a small-batch, vegan handcrafted skincare brand based in Ontario, Canada. Slow-cured cold-process soap, bath bombs, shower steamers, sugar scrubs, lip balm, and whipped body butter, made slowly, made thoughtfully. Every batch traceable, every ingredient named.">
 <style>
   :root {
     --paper:#FBF9F4; --panel:#FFFFFF; --cream:#F4EFE6; --sand:#F4EFE6;
@@ -872,6 +986,8 @@ const html = `<!DOCTYPE html>
   .hero-line.switching { opacity:0; transform:translateY(8px); }
   .hero-cta { display:flex; gap:.8rem; flex-wrap:wrap; }
   .hero-sig { margin-top:2rem; font-size:.82rem; color:var(--sage); letter-spacing:.02em; }
+  .trust-row { display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; margin-top:1.6rem; }
+  .trust-row span { font-size:.76rem; color:var(--pine-deep); background:var(--cream); border:1px solid var(--line); border-radius:999px; padding:.32rem .85rem; }
 
   .btn { display:inline-block; padding:.72rem 1.6rem; border-radius:999px; font-size:.9rem; font-weight:500; text-decoration:none; cursor:pointer; border:1px solid transparent; transition:all .18s; }
   .btn-pine { background:var(--pine); color:#FBF9F4; }
@@ -918,6 +1034,9 @@ const html = `<!DOCTYPE html>
   .f-meta { padding:.7rem .2rem .2rem; }
   .f-meta span { font-size:.72rem; text-transform:uppercase; letter-spacing:.1em; color:var(--sage); display:block; }
   .f-meta b { font-family:Georgia,serif; font-weight:500; font-size:1.02rem; color:var(--pine-deep); }
+  .f-price { font-size:.92rem; color:var(--clay); font-weight:600; margin-top:.2rem; }
+  .f-shop { display:inline-block; margin-top:.55rem; font-size:.78rem; color:var(--pine); font-weight:500; text-decoration:none; border-bottom:1px solid transparent; }
+  .f-shop:hover { border-bottom-color:var(--pine); }
 
   .block.quote { text-align:center; padding:3.6rem 2rem; }
   .block.quote blockquote { font-family:Georgia,serif; font-size:1.6rem; color:var(--pine-deep); max-width:640px; margin:1.1rem auto .8rem; line-height:1.4; }
@@ -979,6 +1098,10 @@ const html = `<!DOCTYPE html>
   .cfg-opt b { display:block; font-size:.88rem; color:var(--pine-deep); }
   .cfg-opt span { display:block; font-size:.76rem; color:var(--ink-soft); }
   .cfg-scent { flex:1 1 230px; max-width:340px; }
+  .cfg-prod { flex-direction:row; align-items:center; gap:.7rem; min-width:210px; }
+  .cfg-prod-thumb { width:46px; height:46px; border-radius:10px; background:linear-gradient(150deg,var(--cream),#efe7dc); display:grid; place-items:center; flex:none; }
+  .cfg-prod-thumb .prod-svg { width:40px; height:40px; }
+  .cfg-prod-text { display:flex; flex-direction:column; gap:.1rem; }
   .cfg-pyr { display:flex; flex-direction:column; gap:.15rem; border-top:1px dotted var(--line); margin-top:.45rem; padding-top:.45rem; }
   .pyr-tier { font-size:.71rem; color:var(--ink-soft); line-height:1.35; }
   .pyr-tier i { width:auto; height:auto; border-radius:3px; display:inline-block; font-style:normal; font-weight:700; font-size:.66rem; text-transform:uppercase; letter-spacing:.05em; padding:.05rem .3rem; margin:0 .35rem 0 0; background:var(--cream); color:var(--sage); }
@@ -989,9 +1112,13 @@ const html = `<!DOCTYPE html>
   .cfg-legend span { display:flex; align-items:center; gap:.5rem; }
   .cfg-legend i { width:10px; height:10px; border-radius:50%; display:inline-block; }
   .lg-top { background:#C9A39B; } .lg-mid { background:#8D7CC3; } .lg-base { background:#5B4A3F; }
-  .cfg-name-row { display:flex; gap:1rem; align-items:center; flex-wrap:wrap; width:100%; }
-  .cfg-name { font-family:Georgia,serif; font-size:1rem; color:var(--pine-deep); border:1px solid var(--line); border-radius:12px; padding:.7rem .95rem; background:var(--panel); box-shadow:var(--shadow); flex:1 1 220px; min-width:200px; }
-  .cfg-name:focus { outline:2px solid rgba(95,116,90,.3); }
+  .cfg-price { display:flex; flex-direction:column; gap:.1rem; background:var(--pine); color:#FBF9F4; border-radius:14px; padding:1rem 1.15rem; margin:.2rem 0 .9rem; max-width:360px; }
+  .cfg-price-label { font-size:.68rem; text-transform:uppercase; letter-spacing:.12em; color:rgba(251,249,244,.72); }
+  .cfg-price-value { font-family:'DM Serif Display',Georgia,serif; font-size:1.7rem; font-weight:500; line-height:1.15; }
+  .cfg-price-note { font-size:.74rem; color:rgba(251,249,244,.82); }
+  .cfg-details { display:grid; grid-template-columns:auto 1fr; gap:.4rem 1.1rem; font-size:.84rem; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:.9rem 1.05rem; max-width:360px; }
+  .cfg-details span { color:var(--ink-soft); }
+  .cfg-details b { color:var(--pine-deep); font-weight:600; }
   .cfg-preview { position:sticky; top:1rem; display:flex; flex-direction:column; gap:.9rem; }
   .cfg-preview-head { font-family:'DM Serif Display',Georgia,serif; font-size:1.06rem; color:var(--pine-deep); }
   .cfg-pv-stage { background:linear-gradient(160deg,#faf7f0,#efe7dc); border:1px solid var(--line); border-radius:18px; padding:1.4rem 1.4rem 1rem; text-align:center; box-shadow:var(--shadow); }
@@ -1050,6 +1177,9 @@ const html = `<!DOCTYPE html>
   .statement { display:flex; gap:1.4rem; align-items:flex-start; background:var(--sand); border-radius:20px; padding:2.2rem 2.4rem; }
   .statement h2 { font-size:1.65rem; color:var(--pine-deep); line-height:1.3; }
   .statement .leaf-big { margin-top:.3rem; }
+  .p-ico { font-size:1.7rem; line-height:1; margin-bottom:.6rem; }
+  .cta-band { display:flex; align-items:center; justify-content:space-between; gap:1.4rem; flex-wrap:wrap; background:var(--sand); border-radius:20px; padding:2.2rem 2.4rem; margin-top:1rem; }
+  .cta-band h2 { font-size:1.6rem; color:var(--pine-deep); line-height:1.3; }
 
   /* guide */
   .g-h3 { font-family:Georgia,serif; font-size:1.25rem; color:var(--pine-deep); margin:0 0 1.1rem; }
@@ -1070,6 +1200,10 @@ const html = `<!DOCTYPE html>
   tbody tr:last-child td { border-bottom:none; }
   .guide-note { display:flex; gap:1.2rem; align-items:flex-start; background:var(--sand); border-radius:18px; padding:1.8rem 2rem; }
   .guide-note p { color:var(--ink-soft); font-size:.92rem; max-width:70ch; }
+
+  /* policies */
+  .pol-card { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:1.4rem 1.6rem; box-shadow:var(--shadow); margin-bottom:1.2rem; }
+  .pol-card .g-h3 { margin-bottom:.3rem; }
 
   /* contact */
   .contact-grid { display:grid; grid-template-columns:1.2fr 1fr; gap:2rem; }
@@ -1172,6 +1306,7 @@ const html = `<!DOCTYPE html>
   <div class="page" id="guide">${guide()}</div>
   <div class="page" id="contact">${contact()}</div>
   <div class="page" id="privacy">${privacy()}</div>
+  <div class="page" id="policies">${policies()}</div>
 </main>
 
 <div class="cart-fab-wrap"><button class="cart-fab" id="cartFab" aria-label="Open your cart">Cart <span class="cart-badge" id="cartBadge" hidden></span></button></div>
@@ -1205,13 +1340,16 @@ const html = `<!DOCTYPE html>
   <div class="foot-inner">
     <div class="foot-brand">
       <div class="row">${logoDataUri ? `<img class="brand-mark foot" src="${logoDataUri}" alt="Butter &amp; Bloom logo">` : leaf}<span class="word">Butter &amp; Bloom</span></div>
-      <p>Handcrafted bath &amp; body care, made slowly and made thoughtfully in small batches.</p>
+      <p>Handcrafted skincare, made slowly and made thoughtfully in small batches.</p>
     </div>
     <div class="foot-col"><div class="fc-title">Explore</div>
       <a href="#shop" data-nav="shop">Shop</a><a href="#collections" data-nav="collections">Collections</a><a href="#about" data-nav="about">About</a>
     </div>
     <div class="foot-col"><div class="fc-title">Learn</div>
-      <a href="#guide" data-nav="guide">Care Guide</a><a href="#scent-guide" data-nav="scent-guide">How to read a scent</a><a href="#guide" data-nav="guide">Shelf Life</a>
+      <a href="#guide" data-nav="guide">Care Guide</a><a href="#scent-guide" data-nav="scent-guide">How to read a scent</a><a href="#guide" data-nav="guide">Shelf Life</a><a href="#contact" data-nav="contact">Ingredients &amp; allergens</a>
+    </div>
+    <div class="foot-col"><div class="fc-title">Store info</div>
+      <a href="#pol-order" data-nav="policies">How to order</a><a href="#pol-shipping" data-nav="policies">Shipping &amp; pickup</a><a href="#pol-returns" data-nav="policies">Returns</a><a href="#pol-stock" data-nav="policies">Stock status</a><a href="#pol-terms" data-nav="policies">Terms &amp; policies</a>
     </div>
     <div class="foot-col"><div class="fc-title">Legal</div>
       <a href="#privacy" data-nav="privacy">Privacy Policy</a>
@@ -1365,7 +1503,7 @@ const html = `<!DOCTYPE html>
       rows.push([o.num, o.date, o.name, o.email, items, o.total.toFixed(2)]);
     }
     var csv = '';
-    for (var r = 0; r < rows.length; r++) { csv += (r ? '\r\n' : '') + rows[r].map(function (v) { return '"' + String(v).replace(/"/g, '""') + '"'; }).join(','); }
+    for (var r = 0; r < rows.length; r++) { csv += (r ? '\\r\\n' : '') + rows[r].map(function (v) { return '"' + String(v).replace(/"/g, '""') + '"'; }).join(','); }
     var blob = new Blob([csv], { type: 'text/csv' });
     var a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
@@ -1399,8 +1537,8 @@ const html = `<!DOCTYPE html>
     if (cart.length === 0) return;
     var num = 'BB-' + new Date().toISOString().slice(2, 10).replace(/-/g, '') + '-' + Math.floor(100 + Math.random() * 900);
     var itemLines = '';
-    for (var i = 0; i < cart.length; i++) { itemLines += (itemLines ? '\n' : '') + (i + 1) + '. ' + cart[i].name + ' ×' + cart[i].qty + ' (' + cart[i].format + ') @ $' + cart[i].price.toFixed(2) + ' = $' + (cart[i].price * cart[i].qty).toFixed(2); }
-    var lines = 'Web order ' + num + '\n\n' + itemLines + '\n\nTotal: $' + cartTotal().toFixed(2) + ' CAD (plus GST/HST)' + (notes ? '\nNotes: ' + notes : '');
+    for (var i = 0; i < cart.length; i++) { itemLines += (itemLines ? '\\n' : '') + (i + 1) + '. ' + cart[i].name + ' ×' + cart[i].qty + ' (' + cart[i].format + ') @ $' + cart[i].price.toFixed(2) + ' = $' + (cart[i].price * cart[i].qty).toFixed(2); }
+    var lines = 'Web order ' + num + '\\n\\n' + itemLines + '\\n\\nTotal: $' + cartTotal().toFixed(2) + ' CAD (plus GST/HST)' + (notes ? '\\nNotes: ' + notes : '');
     var status = document.getElementById('cdStatus');
     status.textContent = 'Sending your request…';
     cdCheckout.disabled = true;
@@ -1418,12 +1556,56 @@ const html = `<!DOCTYPE html>
     });
   });
 
+  function renderBestSellers() {
+    var g = document.getElementById('homeFeatured');
+    if (!g) return;
+    var orders = JSON.parse(localStorage.getItem(orderKey) || '[]');
+    var counts = {};
+    for (var i = 0; i < orders.length; i++) {
+      var its = orders[i].items || [];
+      for (var j = 0; j < its.length; j++) { var k = its[j].name; counts[k] = (counts[k] || 0) + its[j].qty; }
+    }
+    var ranked = Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; }).slice(0, 4);
+    if (!ranked.length) return;
+    var cards = document.querySelectorAll('.product-card');
+    var html = '';
+    for (var r = 0; r < ranked.length; r++) {
+      var label = ranked[r], scent = '', prodName = ranked[r];
+      if (ranked[r].indexOf(' · ') > -1) {
+        var parts = ranked[r].split(' · ');
+        prodName = parts[1]; scent = parts[2];
+      }
+      var found = null;
+      for (var c = 0; c < cards.length; c++) {
+        var pn = cards[c].querySelector('.pc-name');
+        if (pn && pn.textContent === prodName) { found = cards[c]; break; }
+      }
+      if (found) {
+        var tile = found.querySelector('.pc-tile');
+        var art = tile ? tile.innerHTML : '';
+        var bg = tile ? (tile.getAttribute('style') || '') : '';
+        var price = found.querySelector('.pc-price') ? found.querySelector('.pc-price').textContent : '';
+        if (!scent) {
+          var sc = found.querySelector('.pc-scent span');
+          scent = sc ? sc.textContent.split(' · ')[0] : '';
+        }
+        html += '<div class="feature"><div class="f-tile" style="' + bg + '">' + art + '</div>' +
+          '<div class="f-meta"><span>' + escH(label) + '</span><b>' + escH(scent) + '</b></div>' +
+          '<div class="f-price">' + price + '</div><a class="f-shop" href="#shop" data-nav="shop">Shop</a></div>';
+      }
+    }
+    if (html) g.innerHTML = html;
+  }
+
   var cdExport = document.getElementById('cdExport');
   if (cdExport) cdExport.addEventListener('click', exportOrders);
   renderCart();
+  renderBestSellers();
 
   // design-your-own configurator
   const designerStage = ${designerStage.toString()};
+  const cfgProductPrices = ${JSON.stringify(configData.productPrices)};
+  const cfgSizeMult = ${JSON.stringify(configData.sizeMult)};
   const $q = s => document.querySelector(s);
   const cfgAll = document.querySelectorAll('.cfg-opt');
   const cfgSummary = $q('#cfgSummary');
@@ -1431,7 +1613,11 @@ const html = `<!DOCTYPE html>
   const cfgCardLine = $q('#cfgCardLine');
   const cfgCardMeta = $q('#cfgCardMeta');
   const cfgStage = $q('#cfgStage');
-  const cfgNameInput = $q('#cfgName');
+  const cfgPriceEl = $q('#cfgPrice');
+  const cfgDcoll = $q('#cfgDcoll');
+  const cfgDprod = $q('#cfgDprod');
+  const cfgDscent = $q('#cfgDscent');
+  const cfgDsize = $q('#cfgDsize');
   const collBtns = document.querySelectorAll('.cfg-coll');
   const prodBtns = document.querySelectorAll('.cfg-prod');
   const scentBtns = document.querySelectorAll('.cfg-scent');
@@ -1439,17 +1625,26 @@ const html = `<!DOCTYPE html>
 
   const sel = {
     coll: 'Soft Glow', tag: 'Gentle · soft · natural', dot: '#C9A39B', t1: '#F1EAE0', t2: '#A9B894',
-    prod: 'Soap', shape: 'bar', scent: 'Lavender', size: 'Standard (4 oz)', name: 'My Butter & Bloom',
+    prod: 'Soap', shape: 'bar', scent: 'Lavender', size: 'Standard (4 oz)',
   };
 
+  function cfgPrice() {
+    return cfgProductPrices[sel.prod] * cfgSizeMult[sel.size];
+  }
+
   function refreshCfg() {
-    const base = sel.name || 'My Butter & Bloom';
+    const p = cfgPrice();
     cfgStage.innerHTML = designerStage(sel.shape, sel.dot, sel.t1, sel.t2) +
       '<div class="cfg-stage-name">' + sel.prod + ' · ' + sel.coll + '</div>';
-    cfgCardName.textContent = base;
-    cfgCardLine.textContent = sel.coll + ' · ' + sel.prod + ' · ' + sel.scent;
+    cfgCardName.textContent = sel.prod;
+    cfgCardLine.textContent = sel.coll + ' · ' + sel.scent;
     cfgCardMeta.textContent = sel.size + (sel.scent === 'Unscented' ? ' · fragrance-free' : '');
-    cfgSummary.textContent = sel.coll + ' · ' + sel.prod + ' · ' + sel.scent + ' · ' + base + ' · ' + sel.size;
+    cfgPriceEl.textContent = '$' + p.toFixed(2);
+    cfgSummary.textContent = sel.coll + ' · ' + sel.prod + ' · ' + sel.scent + ' · ' + sel.size + ' · $' + p.toFixed(2);
+    cfgDcoll.textContent = sel.coll;
+    cfgDprod.textContent = sel.prod;
+    cfgDscent.textContent = sel.scent;
+    cfgDsize.textContent = sel.size;
   }
 
   collBtns.forEach(b => b.addEventListener('click', () => {
@@ -1480,11 +1675,6 @@ const html = `<!DOCTYPE html>
     refreshCfg();
   }));
 
-  if (cfgNameInput) cfgNameInput.addEventListener('input', () => {
-    sel.name = cfgNameInput.value.trim() || 'My Butter & Bloom';
-    refreshCfg();
-  });
-
   collBtns.forEach(x => x.classList.toggle('active', x.dataset.value === sel.coll));
   prodBtns.forEach(x => x.classList.toggle('active', x.dataset.value === sel.prod));
   scentBtns.forEach(s => { const on = s.dataset.coll === sel.coll; s.style.display = on ? '' : 'none'; s.classList.toggle('active', on && s.dataset.value === sel.scent); });
@@ -1493,17 +1683,20 @@ const html = `<!DOCTYPE html>
 
   const cfgRequest = document.getElementById('cfgRequest');
   if (cfgRequest) cfgRequest.addEventListener('click', function () {
-    var title = (cfgNameInput ? cfgNameInput.value.trim() || 'My Butter & Bloom' : sel.name);
     var num = 'BB-C-' + new Date().toISOString().slice(2, 10).replace(/-/g, '') + '-' + Math.floor(100 + Math.random() * 900);
-    var items = [{ name: sel.coll + ' · ' + sel.prod + ' · ' + sel.scent, price: 0, qty: 1, format: sel.size }];
-    var lines = 'Custom order ' + num + '\n\nCollection: ' + sel.coll + ' (' + sel.tag + ')\nProduct: ' + sel.prod + '\nScent: ' + sel.scent + '\nSize: ' + sel.size + '\nName on the label: ' + title + '\n\nChosen with the Design-your-own designer.';
+    var price = cfgPrice();
+    var items = [{ name: sel.coll + ' · ' + sel.prod + ' · ' + sel.scent, price: price, qty: 1, format: sel.size }];
+    var lines = 'Custom order ' + num + '\\n\\nCollection: ' + sel.coll + ' (' + sel.tag + ')\\nProduct: ' + sel.prod + '\\nScent: ' + sel.scent + '\\nSize: ' + sel.size + '\\nEstimated price: $' + price.toFixed(2) + ' CAD (plus GST/HST)\\n\\nChosen with the Design-your-own designer.';
     var st = document.getElementById('cfgStatus');
     cfgRequest.disabled = true;
     if (st) st.textContent = 'Sending your request…';
     sendOrder('Custom order request ' + num, 'Design-your-own', '', lines, function (ok) {
-      if (st) st.textContent = ok
-        ? 'Sent! We’ll email you about price and lead time. It’s logged as ' + num + '.'
-        : 'Sending hiccuped. Please email butterandbloom.ca.shop@gmail.com with your selections.';
+      if (ok) {
+        pushOrder(num, 'Design-your-own', 'not given', items);
+        if (st) st.textContent = 'Sent! It’s logged as ' + num + '. We’ll email you about price and lead time.';
+      } else {
+        if (st) st.textContent = 'Sending hiccuped. Please email butterandbloom.ca.shop@gmail.com with your selections.';
+      }
       cfgRequest.disabled = false;
     });
   });
